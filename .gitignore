@@ -14,6 +14,16 @@ sysinfo.txt
 *.pidb.meta
 
 ###
+# Merging Scenes correctly with Unity
+###
+[merge]
+    tool = unityyamlmerge
+
+    [mergetool "unityyamlmerge"]
+    trustExitCode = false
+    cmd = '<C:\Program Files\Unity\Editor\Data\Tools\UnityYAMLMerge.exe>' merge -p "$BASE" "$REMOTE" "$LOCAL" "$MERGED"
+
+###
 # VS/MD solution and project files
 ###
 [Ee]xportedObj/
@@ -42,4 +52,3 @@ sysinfo.txt
 Icon?
 ehthumbs.db
 Thumbs.db
-*.meta
