@@ -25,12 +25,24 @@ public class CharacterMovement : MonoBehaviour {
     private bool toggledMoving = false;
     private Timer accTajmer;
 
+    ScreenFadeScript screenFadeScript;
+
     // Use this for initialization
     void Start () {
         cc = GetComponent<CharacterController>();
         accTajmer = new Timer(0f);
+        screenFadeScript = FindObjectOfType<ScreenFadeScript>();
+        screenFadeScript.SetFade(1);
+        StartCoroutine(Fade());
     }
 	
+    IEnumerator Fade()
+    {
+        yield return new WaitForSeconds(1);
+        screenFadeScript.InvertFade();
+        yield return new WaitForSeconds(2);
+    }
+
 	// Update is called once per frame
 	void Update (){
         CheckInputs();

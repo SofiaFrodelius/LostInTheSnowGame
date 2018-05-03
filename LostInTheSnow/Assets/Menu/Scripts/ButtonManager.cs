@@ -6,8 +6,23 @@ using UnityEngine.UI;
 
 public class ButtonManager : MonoBehaviour {
 
+    ScreenFadeScript screenFadeScript;
+
+    void Awake()
+    {
+        screenFadeScript = FindObjectOfType<ScreenFadeScript>();
+    }
+
+
     public void StartBtn(string SceneName)
     {
+        StartCoroutine(NewGame());
+    }
+
+    IEnumerator NewGame()
+    {
+        screenFadeScript.InvertFade();
+        yield return new WaitForSeconds(1);
         SceneManager.LoadScene(1);
     }
 
@@ -72,7 +87,7 @@ public class ButtonManager : MonoBehaviour {
 
     public void ExitBtn()
     {
-        UnityEditor.EditorApplication.isPlaying = false;
+        //UnityEditor.EditorApplication.isPlaying = false;
         Application.Quit();
     }
 
