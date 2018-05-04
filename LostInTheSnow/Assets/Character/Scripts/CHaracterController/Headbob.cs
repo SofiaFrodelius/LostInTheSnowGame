@@ -18,7 +18,7 @@ public class Headbob : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
     {
-        bobIsOn = PlayerPrefs.GetInt("Headbob");
+        bobIsOn = 1;// PlayerPrefs.GetInt("Headbob");
         if (bobIsOn == 1) { 
             if (cc.velocity.x != 0 && cc.isGrounded || cc.velocity.z != 0 && cc.isGrounded)
             {

@@ -57,6 +57,7 @@ GameObject:
   - component: {fileID: 4631084388765738}
   - component: {fileID: 95827776094201886}
   - component: {fileID: 114245977067720954}
+  - component: {fileID: 114428917269092332}
   m_Layer: 0
   m_Name: HeadBobShell
   m_TagString: Untagged
@@ -363,6 +364,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Resolution: 0
   DefaultSpotCookie: {fileID: 0}
+--- !u!114 &114428917269092332
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1535995647152686}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event: event:/Sound/Avatar/Footsteps/Footsteps_Snow
+  PlayEvent: 0
+  StopEvent: 0
+  CollisionTag: 
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 0
+  OverrideMaxDistance: 0
 --- !u!114 &114433927477578646
 MonoBehaviour:
   m_ObjectHideFlags: 1
