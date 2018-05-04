@@ -87,7 +87,7 @@ public class ButtonManager : MonoBehaviour {
 
     public void ExitBtn()
     {
-        //UnityEditor.EditorApplication.isPlaying = false;
+        UnityEditor.EditorApplication.isPlaying = false;
         Application.Quit();
     }
 
@@ -95,7 +95,6 @@ public class ButtonManager : MonoBehaviour {
     {
         GameObject Bobtoggle;
         Bobtoggle = GameObject.Find("BobToggle");
-        //Debug.Log(PlayerPrefs.GetInt("Headbob"));
         if (PlayerPrefs.GetInt("Headbob") == 1)
         {
             Bobtoggle.GetComponent<UnityEngine.UI.Toggle>().isOn = true;
