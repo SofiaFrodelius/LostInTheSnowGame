@@ -15,42 +15,57 @@ public class ItemHand : MonoBehaviour
     public void Start()
     {
         inventory = Inventory.instance;
-        if(inventory != null)
+        if (inventory != null)
             inventory.updateItemInHandCallback += updateItemInHand;
     }
-    
-    
+
+
 
     public void Update()
     {
-        if (Input.GetAxis("Scroll") > 0.1) scroll = 1;
-        else if (Input.GetAxis("Scroll") < -0.1) scroll = -1;
+        if (Input.GetAxis("Scroll") > 0.1) scroll = 1; //change to input based on keybind settings
+        else if (Input.GetAxis("Scroll") < -0.1) scroll = -1; //change to input based on keybind settings
         else scroll = 0;
 
         if (scroll != 0 && inventory != null && inventory.getNumOfUsedHoldableSlots() > 1)
         {
             selectedItem += scroll;
             if (selectedItem >= inventory.getNumOfUsedHoldableSlots()) selectedItem = 0;
-            else if (selectedItem < 0) selectedItem = inventory.getNumOfUsedHoldableSlots() - 1;
+            else if (selectedItem < 0) selectedItem = inventory.getNumOfUsedHoldableSlots() - 1;// -1 to not be out of range in list because list starts at 0 getnumofholdableslots starts at 1
             inventory.updateItemInHandCallback.Invoke();
         }
     }
 
     public void updateItemInHand()
     {
-        GameObject itemToInstansiate = inventory.getObjectFromHoldableSlot(selectedItem);
-        if (activeItem != itemToInstansiate)
+        if (selectedItem == inventory.getNumOfUsedHoldableSlots() && selectedItem > 0)
         {
-            if (activeItem != null) Destroy(activeItem);
+            selectedItem--;
+        }
+
+        GameObject itemToInstansiate;
+        if (inventory.getNumOfUsedHoldableSlots() > 0)
+            itemToInstansiate = inventory.getObjectFromHoldableSlot(selectedItem);
+        else itemToInstansiate = null;
+
+
+        if (itemToInstansiate == null) activeItem = null;
+        else if (activeItem != itemToInstansiate)
+        {
+            Collider tempCol;
+            if (activeItem != null && activeItem.transform.parent != null) Destroy(activeItem);
 
             activeItem = Instantiate(itemToInstansiate, transform);
-			activeItem.GetComponent<Rigidbody>().isKinematic = true;
             activeItem.layer = currentItemLayerValue;
+            tempCol = activeItem.GetComponent<Collider>();
+            if (tempCol) tempCol.enabled = false;
             updateAllChildLayers(activeItem.gameObject);
 
         }
-        if(inventory.holdableItemsChangedCallback != null) //if hud exists
+        if (inventory.holdableItemsChangedCallback != null) //if hud exists
             inventory.holdableItemsChangedCallback.Invoke(selectedItem);
+
+
     }
 
 
@@ -62,7 +77,7 @@ public class ItemHand : MonoBehaviour
         {
             updateAllChildLayers(child.gameObject);
         }
-        
+
     }
     public GameObject ActiveItem
     {
@@ -73,10 +88,17 @@ public class ItemHand : MonoBehaviour
         set
         {
             activeItem = value;
-            
+
             if (inventory.holdableItemsChangedCallback != null) //if hud exists
-                inventory.holdableItemsChangedCallback.Invoke(selectedItem); 
+                inventory.holdableItemsChangedCallback.Invoke(selectedItem);
         }
     }
+
+
+    public int getSelectedItem()
+    {
+        return selectedItem;
+    }
+
 
 }

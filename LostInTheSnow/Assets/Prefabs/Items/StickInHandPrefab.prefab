@@ -25,7 +25,7 @@ GameObject:
   - component: {fileID: 65565299581859522}
   - component: {fileID: 114674102313596372}
   - component: {fileID: 54581758639677870}
-  - component: {fileID: 114965999466100930}
+  - component: {fileID: 114499811033376782}
   m_Layer: 0
   m_Name: StickInHandPrefab
   m_TagString: Untagged
@@ -98,7 +98,7 @@ Rigidbody:
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -131,6 +131,18 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &114499811033376782
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1579897241715744}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21782d184c4940243a46d340e2e6e61d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  throwForce: 20
 --- !u!114 &114674102313596372
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -143,15 +155,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   throwForce: 20
---- !u!114 &114965999466100930
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1579897241715744}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6ed5f25c58c9d824aa5e33604117d630, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemType: {fileID: 11400000, guid: 475d8b70b0cb4834ebedfe0687689834, type: 2}

@@ -22,8 +22,8 @@ GameObject:
   - component: {fileID: 33615447216233456}
   - component: {fileID: 23080495637135712}
   - component: {fileID: 64561796119105946}
-  - component: {fileID: 114414366527537024}
   - component: {fileID: 54852448865192126}
+  - component: {fileID: 114042130485896140}
   m_Layer: 0
   m_Name: Axe
   m_TagString: Axe
@@ -115,7 +115,7 @@ MeshCollider:
   m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: 43a32d83f4060444aa0ca53e6ecd59ce, type: 3}
---- !u!114 &114414366527537024
+--- !u!114 &114042130485896140
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -123,7 +123,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1819587611703998}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6ed5f25c58c9d824aa5e33604117d630, type: 3}
+  m_Script: {fileID: 11500000, guid: 5ab0bb15fb43b492d9ecdec1adcc9e07, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   itemType: {fileID: 11400000, guid: 1a83dc444e6866c48a726bac6d2d2d8a, type: 2}

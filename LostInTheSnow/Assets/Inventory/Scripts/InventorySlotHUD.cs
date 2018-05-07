@@ -16,7 +16,8 @@ public class InventorySlotHUD : MonoBehaviour
     [SerializeField]
     private Text numOfItemsInSlot;
 
-    private Item currentItem;
+    private static float previewTime = 2.5f;
+    public Item currentItem;
     private Vector3 previousPosition;
     IEnumerator currentCoroutine;
 
@@ -38,6 +39,16 @@ public class InventorySlotHUD : MonoBehaviour
         showInventorySlot();
     }
 
+    public void resetSlot()
+    {
+        itemImage.enabled = false;
+        currentItem = null;
+        itemImage.sprite = null;
+        itemDescription.text = "";
+        itemName.text = "";
+        numOfItemsInSlot.text = "";
+    }
+
     public void showInventorySlot()
     {
         if (currentCoroutine != null)
@@ -47,6 +58,12 @@ public class InventorySlotHUD : MonoBehaviour
         StartCoroutine(currentCoroutine);
     }
 
+
+    public void Update()
+    {
+        //tempkod
+        if (Input.GetKeyDown(KeyCode.Tab) && currentItem != null) showInventorySlot();
+    }
 
     IEnumerator previewSlot(float time)
     {
@@ -62,7 +79,7 @@ public class InventorySlotHUD : MonoBehaviour
 
         previousAlphaImage = itemImage.color.a;
         previousAlphaText = numOfItemsInSlot.color.a;
-        yield return new WaitForSeconds(2.5f);
+        yield return new WaitForSeconds(previewTime);
 
         for (float f = 0; f < 1.0f; f += Time.deltaTime / time)
         {

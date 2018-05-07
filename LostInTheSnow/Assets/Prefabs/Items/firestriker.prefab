@@ -22,8 +22,8 @@ GameObject:
   - component: {fileID: 33108179799474452}
   - component: {fileID: 23124127438292424}
   - component: {fileID: 95505542769546806}
-  - component: {fileID: 114865468382113956}
   - component: {fileID: 65352802559643426}
+  - component: {fileID: 114006907793943588}
   m_Layer: 0
   m_Name: firestriker
   m_TagString: Untagged
@@ -114,7 +114,7 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!114 &114865468382113956
+--- !u!114 &114006907793943588
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -122,7 +122,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1129497370890232}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6ed5f25c58c9d824aa5e33604117d630, type: 3}
+  m_Script: {fileID: 11500000, guid: 5ab0bb15fb43b492d9ecdec1adcc9e07, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   itemType: {fileID: 11400000, guid: cc75e486fc0f3d14088dd7cd5d9722ec, type: 2}

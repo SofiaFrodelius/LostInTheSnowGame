@@ -16,6 +16,8 @@ public class Dog : MonoBehaviour, IInteractible {
 
 	[Header("Debug Tools")]
 	public Transform TestWaypoint;
+	public float forwardd;
+	public float rightd;
     public Item grabbedItem;
     public GameObject itemObject;
 	public DogAction currentAction;
@@ -41,11 +43,23 @@ public class Dog : MonoBehaviour, IInteractible {
 	public void Interact(){
 		
 	}
+	public bool IsIdle(){
+		return currentAction == null;
+	}
 	public void Call(Transform player){
 		ai.StartAction (new Call (this, player));
 	}
 	public void Pet(){
 		ai.StartAction (new Pet (this));
+	}
+	public void PickupDog(){
+		//ai.StartAction (new PickupDog (this));
+	}
+	public void ParentDog(){
+		transform.parent = player;
+	}
+	public void BreakLoose(){
+		transform.parent = null;
 	}
 	public void AddEffectToMood(Mood effect){
 		currentMood = currentMood + effect;

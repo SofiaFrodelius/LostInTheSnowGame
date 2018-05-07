@@ -27,7 +27,10 @@ public class InventorySlot : MonoBehaviour
         itemsInSlot++;
     }
 
-
+    public void decrementItemsInSlot()
+    {
+        itemsInSlot--;
+    }
 
 
 

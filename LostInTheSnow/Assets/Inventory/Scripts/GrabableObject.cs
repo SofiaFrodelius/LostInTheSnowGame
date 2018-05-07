@@ -6,18 +6,19 @@ public class GrabableObject : MonoBehaviour, IGrabable {
     [SerializeField]
     private Item itemType;
 
-    public void getItemOnPickup(out Item item)
+    public Item getItemOnPickup()
     {
-        //all i want from c# is pointers :(
-        item = itemType;
-
-        Destroy(gameObject);
-
+        return itemType;
     }
 
     public void Drop()
     {
 
+    }
+
+    public void destroyItem()
+    {
+        Destroy(gameObject);
     }
 
 

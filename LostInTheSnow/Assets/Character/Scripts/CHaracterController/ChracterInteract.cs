@@ -55,7 +55,6 @@ public class ChracterInteract : MonoBehaviour
             
             if (Physics.Raycast(ray, out hit, maxInteractLength, interactLayerMask))
             {
-                Debug.Log(hit.transform.gameObject.name);
                 ExecuteEvents.ExecuteHierarchy<IInteractible>(hit.transform.gameObject, null, (handler, eventData) => handler.Interact());
                 ExecuteEvents.ExecuteHierarchy<IGrabable>(hit.transform.gameObject, null, pickup);
             }
@@ -65,11 +64,16 @@ public class ChracterInteract : MonoBehaviour
     //callback funktion for iGrabable
     private void pickup(IGrabable handler, BaseEventData eventData)
     {
+        bool success = true;
         Inventory inventory;
         inventory = Inventory.instance;
         Item item;
-        handler.getItemOnPickup(out item);
+        item = handler.getItemOnPickup();
+
         if (inventory != null)
-            inventory.addItem(item);
+            success = inventory.addItem(item);
+
+        if(success)
+            handler.destroyItem();
     }
 }
