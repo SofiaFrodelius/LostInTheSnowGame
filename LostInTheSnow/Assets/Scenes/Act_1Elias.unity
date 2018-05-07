@@ -2243,6 +2243,10 @@ MonoBehaviour:
   maxDistance: 10
   wayPoints:
   - {fileID: 984274319}
+  - {fileID: 817599616}
+  - {fileID: 320547055}
+  - {fileID: 84928217}
+  - {fileID: 364115223}
   dog: {fileID: 0}
   dogAI: {fileID: 0}
 --- !u!114 &294094560
@@ -15392,8 +15396,8 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2003875188}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 284.5, y: 307, z: 0}
-  m_LocalScale: {x: 0.71125, y: 0.71125, z: 0.71125}
+  m_LocalPosition: {x: 627.5, y: 307.5, z: 0}
+  m_LocalScale: {x: 1.56875, y: 1.56875, z: 1.56875}
   m_Children:
   - {fileID: 1984856489}
   - {fileID: 1446248053}
