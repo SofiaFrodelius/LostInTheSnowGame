@@ -8,7 +8,7 @@
 [LOG] Thread::initThread                       : Init FMOD stream thread. Priority: 2, Stack Size: 65536, Semaphore: No, Sleep Time: 10, Looping: Yes.
 [LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
 [LOG] Thread::initThread                       : Init FMOD mixer thread. Priority: 3, Stack Size: 49152, Semaphore: No, Sleep Time: 0, Looping: Yes.
-[LOG] AsyncManager::init                       : manager 000000006D140A28 isAsync 1 updatePeriod 0.02
+[LOG] AsyncManager::init                       : manager 00000000797D8108 isAsync 1 updatePeriod 0.02
 [LOG] Thread::initThread                       : Init FMOD Studio update thread. Priority: 0, Stack Size: 65536, Semaphore: No, Sleep Time: 1, Looping: No.
 [LOG] AsyncManager::init                       : done
 [LOG] PlaybackSystem::init                     : 
@@ -26,14 +26,14 @@
 [LOG] SystemI::createSoundInternal             : exinfo->length             = 39627616
 [LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 74752
 [LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000004C25F5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000004CAAF5FC
 [LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 000007FEDC74E4B0
-[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 000007FEDC74E480
-[LOG] SystemI::createSoundInternal             : exinfo->userread           = 000007FEDC74E580
-[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 000007FEDC74E640
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000000003F128CB8
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 000007FED213E4B0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 000007FED213E480
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 000007FED213E580
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 000007FED213E640
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000000003BDBC318
 [LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
 [LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
 [LOG] SystemI::createSoundInternal             : Sample 0/1: name='utomhus_lugn_foglar_13', format=2, channels=2, frequency=48000, lengthbytes=91776, lengthpcm=102552, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.660065.
@@ -42,14 +42,14 @@
 [LOG] SystemI::createSoundInternal             : exinfo->length             = 39627616
 [LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 74752
 [LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000004C25F5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000004CAAF5FC
 [LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 000007FEDC74E4B0
-[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 000007FEDC74E480
-[LOG] SystemI::createSoundInternal             : exinfo->userread           = 000007FEDC74E580
-[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 000007FEDC74E640
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000000003F128CB8
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 000007FED213E4B0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 000007FED213E480
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 000007FED213E580
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 000007FED213E640
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000000003BDBC318
 [LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
 [LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
 [LOG] SystemI::createSoundInternal             : Sample 0/1: name='utomhus_lugn_foglar_9', format=2, channels=2, frequency=48000, lengthbytes=153536, lengthpcm=201323, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.465271.
@@ -58,14 +58,14 @@
 [LOG] SystemI::createSoundInternal             : exinfo->length             = 39627616
 [LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 74752
 [LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000004C25F5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000004CAAF5FC
 [LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 000007FEDC74E4B0
-[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 000007FEDC74E480
-[LOG] SystemI::createSoundInternal             : exinfo->userread           = 000007FEDC74E580
-[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 000007FEDC74E640
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000000003F128CB8
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 000007FED213E4B0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 000007FED213E480
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 000007FED213E580
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 000007FED213E640
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000000003BDBC318
 [LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
 [LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
 [LOG] SystemI::createSoundInternal             : Sample 0/1: name='utomhus_lugn_foglar_12', format=2, channels=2, frequency=48000, lengthbytes=93248, lengthpcm=108027, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.567932.
@@ -74,14 +74,14 @@
 [LOG] SystemI::createSoundInternal             : exinfo->length             = 39627616
 [LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 74752
 [LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000004C25F5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000004CAAF5FC
 [LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 000007FEDC74E4B0
-[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 000007FEDC74E480
-[LOG] SystemI::createSoundInternal             : exinfo->userread           = 000007FEDC74E580
-[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 000007FEDC74E640
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000000003F128CB8
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 000007FED213E4B0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 000007FED213E480
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 000007FED213E580
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 000007FED213E640
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000000003BDBC318
 [LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
 [LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
 [LOG] SystemI::createSoundInternal             : Sample 0/1: name='utomhus_lugn_foglar_4', format=2, channels=2, frequency=48000, lengthbytes=42496, lengthpcm=53736, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.432739.
@@ -90,14 +90,14 @@
 [LOG] SystemI::createSoundInternal             : exinfo->length             = 39627616
 [LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 74752
 [LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000004C25F5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000004CAAF5FC
 [LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 000007FEDC74E4B0
-[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 000007FEDC74E480
-[LOG] SystemI::createSoundInternal             : exinfo->userread           = 000007FEDC74E580
-[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 000007FEDC74E640
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000000003F128CB8
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 000007FED213E4B0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 000007FED213E480
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 000007FED213E580
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 000007FED213E640
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000000003BDBC318
 [LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
 [LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
 [LOG] SystemI::createSoundInternal             : Sample 0/1: name='utomhus_lugn_foglar_6', format=2, channels=2, frequency=48000, lengthbytes=130720, lengthpcm=183516, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.513367.
@@ -106,14 +106,14 @@
 [LOG] SystemI::createSoundInternal             : exinfo->length             = 39627616
 [LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 74752
 [LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000004C25F5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000004CAAF5FC
 [LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 000007FEDC74E4B0
-[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 000007FEDC74E480
-[LOG] SystemI::createSoundInternal             : exinfo->userread           = 000007FEDC74E580
-[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 000007FEDC74E640
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000000003F128CB8
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 000007FED213E4B0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 000007FED213E480
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 000007FED213E580
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 000007FED213E640
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000000003BDBC318
 [LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
 [LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
 [LOG] SystemI::createSoundInternal             : Sample 0/1: name='utomhus_lugn_foglar_7', format=2, channels=2, frequency=48000, lengthbytes=221824, lengthpcm=299499, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.500549.
@@ -122,14 +122,14 @@
 [LOG] SystemI::createSoundInternal             : exinfo->length             = 39627616
 [LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 74752
 [LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000004C25F5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000004CAAF5FC
 [LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 000007FEDC74E4B0
-[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 000007FEDC74E480
-[LOG] SystemI::createSoundInternal             : exinfo->userread           = 000007FEDC74E580
-[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 000007FEDC74E640
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000000003F128CB8
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 000007FED213E4B0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 000007FED213E480
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 000007FED213E580
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 000007FED213E640
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000000003BDBC318
 [LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
 [LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
 [LOG] SystemI::createSoundInternal             : Sample 0/1: name='utomhus_lugn_foglar_14', format=2, channels=2, frequency=48000, lengthbytes=174208, lengthpcm=212008, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.589142.
@@ -138,14 +138,14 @@
 [LOG] SystemI::createSoundInternal             : exinfo->length             = 39627616
 [LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 74752
 [LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000004C25F5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000004CAAF5FC
 [LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 000007FEDC74E4B0
-[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 000007FEDC74E480
-[LOG] SystemI::createSoundInternal             : exinfo->userread           = 000007FEDC74E580
-[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 000007FEDC74E640
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000000003F128CB8
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 000007FED213E4B0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 000007FED213E480
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 000007FED213E580
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 000007FED213E640
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000000003BDBC318
 [LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
 [LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
 [LOG] SystemI::createSoundInternal             : Sample 0/1: name='utomhus_lugn_foglar_16', format=2, channels=2, frequency=48000, lengthbytes=219296, lengthpcm=298217, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.458374.
@@ -154,14 +154,14 @@
 [LOG] SystemI::createSoundInternal             : exinfo->length             = 39627616
 [LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 74752
 [LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000004C25F5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000004CAAF5FC
 [LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 000007FEDC74E4B0
-[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 000007FEDC74E480
-[LOG] SystemI::createSoundInternal             : exinfo->userread           = 000007FEDC74E580
-[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 000007FEDC74E640
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000000003F128CB8
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 000007FED213E4B0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 000007FED213E480
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 000007FED213E580
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 000007FED213E640
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000000003BDBC318
 [LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
 [LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
 [LOG] SystemI::createSoundInternal             : Sample 0/1: name='utomhus_lugn_foglar_18', format=2, channels=2, frequency=48000, lengthbytes=201728, lengthpcm=276352, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.394989.
@@ -170,14 +170,14 @@
 [LOG] SystemI::createSoundInternal             : exinfo->length             = 39627616
 [LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 74752
 [LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000004C25F5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000004CAAF5FC
 [LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 000007FEDC74E4B0
-[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 000007FEDC74E480
-[LOG] SystemI::createSoundInternal             : exinfo->userread           = 000007FEDC74E580
-[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 000007FEDC74E640
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000000003F128CB8
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 000007FED213E4B0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 000007FED213E480
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 000007FED213E580
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 000007FED213E640
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000000003BDBC318
 [LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
 [LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
 [LOG] SystemI::createSoundInternal             : Sample 0/1: name='utomhus_lugn_foglar_2', format=2, channels=2, frequency=48000, lengthbytes=228864, lengthpcm=306050, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.621735.
@@ -186,14 +186,14 @@
 [LOG] SystemI::createSoundInternal             : exinfo->length             = 39627616
 [LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 74752
 [LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000004C25F5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000004CAAF5FC
 [LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 000007FEDC74E4B0
-[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 000007FEDC74E480
-[LOG] SystemI::createSoundInternal             : exinfo->userread           = 000007FEDC74E580
-[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 000007FEDC74E640
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000000003F128CB8
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 000007FED213E4B0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 000007FED213E480
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 000007FED213E580
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 000007FED213E640
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000000003BDBC318
 [LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
 [LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
 [LOG] SystemI::createSoundInternal             : Sample 0/1: name='utomhus_lugn_foglar_10', format=2, channels=2, frequency=48000, lengthbytes=145568, lengthpcm=192941, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.548767.
@@ -202,14 +202,14 @@
 [LOG] SystemI::createSoundInternal             : exinfo->length             = 39627616
 [LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 74752
 [LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000004C25F5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000004CAAF5FC
 [LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 000007FEDC74E4B0
-[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 000007FEDC74E480
-[LOG] SystemI::createSoundInternal             : exinfo->userread           = 000007FEDC74E580
-[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 000007FEDC74E640
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000000003F128CB8
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 000007FED213E4B0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 000007FED213E480
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 000007FED213E580
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 000007FED213E640
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000000003BDBC318
 [LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
 [LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
 [LOG] SystemI::createSoundInternal             : Sample 0/1: name='utomhus_lugn_foglar_1', format=2, channels=2, frequency=48000, lengthbytes=188608, lengthpcm=258166, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.349060.
@@ -218,14 +218,14 @@
 [LOG] SystemI::createSoundInternal             : exinfo->length             = 39627616
 [LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 74752
 [LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000004C25F5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000004CAAF5FC
 [LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 000007FEDC74E4B0
-[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 000007FEDC74E480
-[LOG] SystemI::createSoundInternal             : exinfo->userread           = 000007FEDC74E580
-[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 000007FEDC74E640
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000000003F128CB8
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 000007FED213E4B0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 000007FED213E480
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 000007FED213E580
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 000007FED213E640
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000000003BDBC318
 [LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
 [LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
 [LOG] SystemI::createSoundInternal             : Sample 0/1: name='utomhus_lugn_foglar_8', format=2, channels=2, frequency=48000, lengthbytes=129248, lengthpcm=171627, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.576294.
@@ -234,14 +234,14 @@
 [LOG] SystemI::createSoundInternal             : exinfo->length             = 39627616
 [LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 74752
 [LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000004C25F5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000004CAAF5FC
 [LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 000007FEDC74E4B0
-[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 000007FEDC74E480
-[LOG] SystemI::createSoundInternal             : exinfo->userread           = 000007FEDC74E580
-[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 000007FEDC74E640
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000000003F128CB8
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 000007FED213E4B0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 000007FED213E480
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 000007FED213E580
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 000007FED213E640
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000000003BDBC318
 [LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
 [LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
 [LOG] SystemI::createSoundInternal             : Sample 0/1: name='utomhus_lugn_foglar_11', format=2, channels=2, frequency=48000, lengthbytes=97408, lengthpcm=117076, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.647186.
@@ -250,14 +250,14 @@
 [LOG] SystemI::createSoundInternal             : exinfo->length             = 39627616
 [LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 74752
 [LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000004C25F5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000004CAAF5FC
 [LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 000007FEDC74E4B0
-[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 000007FEDC74E480
-[LOG] SystemI::createSoundInternal             : exinfo->userread           = 000007FEDC74E580
-[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 000007FEDC74E640
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000000003F128CB8
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 000007FED213E4B0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 000007FED213E480
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 000007FED213E580
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 000007FED213E640
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000000003BDBC318
 [LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
 [LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
 [LOG] SystemI::createSoundInternal             : Sample 0/1: name='utomhus_lugn_foglar_17', format=2, channels=2, frequency=48000, lengthbytes=147936, lengthpcm=203405, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.388824.
@@ -266,14 +266,14 @@
 [LOG] SystemI::createSoundInternal             : exinfo->length             = 39627616
 [LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 74752
 [LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000004C25F5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000004CAAF5FC
 [LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 000007FEDC74E4B0
-[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 000007FEDC74E480
-[LOG] SystemI::createSoundInternal             : exinfo->userread           = 000007FEDC74E580
-[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 000007FEDC74E640
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000000003F128CB8
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 000007FED213E4B0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 000007FED213E480
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 000007FED213E580
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 000007FED213E640
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000000003BDBC318
 [LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
 [LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
 [LOG] SystemI::createSoundInternal             : Sample 0/1: name='utomhus_lugn_foglar_5', format=2, channels=2, frequency=48000, lengthbytes=136704, lengthpcm=175651, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.458771.
@@ -282,14 +282,14 @@
 [LOG] SystemI::createSoundInternal             : exinfo->length             = 39627616
 [LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 74752
 [LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000004C25F5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000004CAAF5FC
 [LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 000007FEDC74E4B0
-[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 000007FEDC74E480
-[LOG] SystemI::createSoundInternal             : exinfo->userread           = 000007FEDC74E580
-[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 000007FEDC74E640
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000000003F128CB8
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 000007FED213E4B0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 000007FED213E480
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 000007FED213E580
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 000007FED213E640
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000000003BDBC318
 [LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
 [LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
 [LOG] SystemI::createSoundInternal             : Sample 0/1: name='utomhus_lugn_foglar_3', format=2, channels=2, frequency=48000, lengthbytes=147104, lengthpcm=195942, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.550751.
@@ -298,70 +298,70 @@
 [LOG] SystemI::createSoundInternal             : exinfo->length             = 39627616
 [LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 74752
 [LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000004C25F5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000004CAAF5FC
 [LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 000007FEDC74E4B0
-[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 000007FEDC74E480
-[LOG] SystemI::createSoundInternal             : exinfo->userread           = 000007FEDC74E580
-[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 000007FEDC74E640
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000000003F128CB8
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 000007FED213E4B0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 000007FED213E480
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 000007FED213E580
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 000007FED213E640
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000000003BDBC318
 [LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
 [LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
 [LOG] SystemI::createSoundInternal             : Sample 0/1: name='utomhus_lugn_foglar_15', format=2, channels=2, frequency=48000, lengthbytes=153824, lengthpcm=184688, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.607483.
 [LOG] SystemI::createSound                     : filename = Assets\FMODBANKS\Desktop/Master Bank.bank : mode 02010082
 [LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
 [LOG] Thread::initThread                       : Init FMOD nonblocking thread (0). Priority: 1, Stack Size: 81920, Semaphore: Yes, Sleep Time: 0, Looping: Yes.
-[LOG] SystemI::createSound                     : setdata soundi = 00000000556C0128 : node = 000000000F6A7D20
-[LOG] SystemI::createSound                     : add node to async list : head = 000000005565CD38.  list count = 0
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000000556C0128
+[LOG] SystemI::createSound                     : setdata soundi = 000000003D58FEC8 : node = 000000003D6AEED0
+[LOG] SystemI::createSound                     : add node to async list : head = 0000000079589C38.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000003D58FEC8
+[LOG] SystemI::createSound                     :     filename = Assets\FMODBANKS\Desktop/Master Bank.bank : mode 02010082
 [LOG] SystemI::createSoundInternal             :     Create name='Assets\FMODBANKS\Desktop/Master Bank.bank', mode=0x02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
 [LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
+[LOG] SystemI::createSound                     :     setdata soundi = 000000003CEBBBA8 : node = 000000003D6AF020
 [LOG] SystemI::createSoundInternal             :     exinfo->length             = 39627616
+[LOG] SystemI::createSound                     :     add node to async list : head = 0000000079589C38.  list count = 0
 [LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 74752
 [LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSound                     :     filename = Assets\FMODBANKS\Desktop/Master Bank.bank : mode 02010082
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000000000F6A7E38
-[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000000003D6AEFE8
 [LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSound                     :     setdata soundi = 00000000556BFDC8 : node = 000000000F6A7A80
 [LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
-[LOG] SystemI::createSound                     :     add node to async list : head = 000000005565CD38.  list count = 0
 [LOG] SystemI::createSoundInternal             :     Stream 0/1: name='utomhus_lugn_foglar_loop_1', format=2, channels=2, frequency=48000, lengthbytes=4846688, lengthpcm=4973185, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.406097.
 [LOG] Thread::initThread                       :     Init FMOD file thread. Priority: 1, Stack Size: 16384, Semaphore: No, Sleep Time: 10, Looping: Yes.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000000556C0128
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000000556BFDC8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000003D58FEC8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000003CEBBBA8
 [LOG] SystemI::createSoundInternal             :     Create name='Assets\FMODBANKS\Desktop/Master Bank.bank', mode=0x02010082
 [LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
 [LOG] SystemI::createSoundInternal             :     exinfo->length             = 39627616
 [LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 74752
 [LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000000000F6A7B98
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000000003D6AF138
 [LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
 [LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
 [LOG] SystemI::createSoundInternal             :     Stream 0/1: name='utomhus_lugn_vind', format=2, channels=2, frequency=48000, lengthbytes=2970400, lengthpcm=2994231, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.585022.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000000556BFDC8
-[LOG] SoundI::getSubSound                      : sound 00000000556C0128.  Subsound index 0 / 1
-[LOG] SoundI::getSubSound                      : sound 00000000556BFDC8.  Subsound index 0 / 1
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000000556C02D8
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000000556C02D8
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000000557A4548
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000000557A4548
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000003CEBBBA8
+[LOG] SoundI::getSubSound                      : sound 000000003D58FEC8.  Subsound index 0 / 1
+[LOG] SoundI::getSubSound                      : sound 000000003CEBBBA8.  Subsound index 0 / 1
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000003CEBBD58
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000003CEBBD58
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000003CEBC0B8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000003CEBC0B8
 [LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
 [LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
 [LOG] SystemI::createSoundInternal             : exinfo->length             = 39627616
 [LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 74752
 [LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000004C25F5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000004CAAF5FC
 [LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 000007FEDC74E4B0
-[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 000007FEDC74E480
-[LOG] SystemI::createSoundInternal             : exinfo->userread           = 000007FEDC74E580
-[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 000007FEDC74E640
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000000003F6039B8
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 000007FED213E4B0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 000007FED213E480
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 000007FED213E580
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 000007FED213E640
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000000003D8F8668
 [LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
 [LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
 [LOG] SystemI::createSoundInternal             : Sample 0/1: name='fotsteg_sno_7', format=2, channels=2, frequency=48000, lengthbytes=26336, lengthpcm=26795, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.701385.
@@ -370,14 +370,14 @@
 [LOG] SystemI::createSoundInternal             : exinfo->length             = 39627616
 [LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 74752
 [LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000004C25F5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000004CAAF5FC
 [LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 000007FEDC74E4B0
-[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 000007FEDC74E480
-[LOG] SystemI::createSoundInternal             : exinfo->userread           = 000007FEDC74E580
-[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 000007FEDC74E640
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000000003F6039B8
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 000007FED213E4B0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 000007FED213E480
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 000007FED213E580
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 000007FED213E640
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000000003D8F8668
 [LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
 [LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
 [LOG] SystemI::createSoundInternal             : Sample 0/1: name='fotsteg_sno_2', format=2, channels=2, frequency=48000, lengthbytes=32832, lengthpcm=34647, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.656403.
@@ -386,14 +386,14 @@
 [LOG] SystemI::createSoundInternal             : exinfo->length             = 39627616
 [LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 74752
 [LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000004C25F5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000004CAAF5FC
 [LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 000007FEDC74E4B0
-[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 000007FEDC74E480
-[LOG] SystemI::createSoundInternal             : exinfo->userread           = 000007FEDC74E580
-[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 000007FEDC74E640
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000000003F6039B8
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 000007FED213E4B0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 000007FED213E480
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 000007FED213E580
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 000007FED213E640
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000000003D8F8668
 [LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
 [LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
 [LOG] SystemI::createSoundInternal             : Sample 0/1: name='fotsteg_sno_1', format=2, channels=2, frequency=48000, lengthbytes=28128, lengthpcm=29754, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.982513.
@@ -402,14 +402,14 @@
 [LOG] SystemI::createSoundInternal             : exinfo->length             = 39627616
 [LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 74752
 [LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000004C25F5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000004CAAF5FC
 [LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 000007FEDC74E4B0
-[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 000007FEDC74E480
-[LOG] SystemI::createSoundInternal             : exinfo->userread           = 000007FEDC74E580
-[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 000007FEDC74E640
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000000003F6039B8
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 000007FED213E4B0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 000007FED213E480
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 000007FED213E580
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 000007FED213E640
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000000003D8F8668
 [LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
 [LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
 [LOG] SystemI::createSoundInternal             : Sample 0/1: name='fotsteg_sno_5', format=2, channels=2, frequency=48000, lengthbytes=31776, lengthpcm=31919, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.670776.
@@ -418,14 +418,14 @@
 [LOG] SystemI::createSoundInternal             : exinfo->length             = 39627616
 [LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 74752
 [LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000004C25F5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000004CAAF5FC
 [LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 000007FEDC74E4B0
-[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 000007FEDC74E480
-[LOG] SystemI::createSoundInternal             : exinfo->userread           = 000007FEDC74E580
-[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 000007FEDC74E640
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000000003F6039B8
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 000007FED213E4B0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 000007FED213E480
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 000007FED213E580
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 000007FED213E640
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000000003D8F8668
 [LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
 [LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
 [LOG] SystemI::createSoundInternal             : Sample 0/1: name='fotsteg_sno_8', format=2, channels=2, frequency=48000, lengthbytes=36416, lengthpcm=36250, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.572693.
@@ -434,14 +434,14 @@
 [LOG] SystemI::createSoundInternal             : exinfo->length             = 39627616
 [LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 74752
 [LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000004C25F5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000004CAAF5FC
 [LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 000007FEDC74E4B0
-[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 000007FEDC74E480
-[LOG] SystemI::createSoundInternal             : exinfo->userread           = 000007FEDC74E580
-[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 000007FEDC74E640
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000000003F6039B8
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 000007FED213E4B0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 000007FED213E480
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 000007FED213E580
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 000007FED213E640
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000000003D8F8668
 [LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
 [LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
 [LOG] SystemI::createSoundInternal             : Sample 0/1: name='fotsteg_sno_10', format=2, channels=2, frequency=48000, lengthbytes=31168, lengthpcm=32422, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.730133.
@@ -450,14 +450,14 @@
 [LOG] SystemI::createSoundInternal             : exinfo->length             = 39627616
 [LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 74752
 [LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000004C25F5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000004CAAF5FC
 [LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 000007FEDC74E4B0
-[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 000007FEDC74E480
-[LOG] SystemI::createSoundInternal             : exinfo->userread           = 000007FEDC74E580
-[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 000007FEDC74E640
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000000003F6039B8
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 000007FED213E4B0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 000007FED213E480
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 000007FED213E580
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 000007FED213E640
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000000003D8F8668
 [LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
 [LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
 [LOG] SystemI::createSoundInternal             : Sample 0/1: name='fotsteg_sno_4', format=2, channels=2, frequency=48000, lengthbytes=26912, lengthpcm=28190, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.544586.
@@ -466,14 +466,14 @@
 [LOG] SystemI::createSoundInternal             : exinfo->length             = 39627616
 [LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 74752
 [LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000004C25F5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000004CAAF5FC
 [LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 000007FEDC74E4B0
-[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 000007FEDC74E480
-[LOG] SystemI::createSoundInternal             : exinfo->userread           = 000007FEDC74E580
-[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 000007FEDC74E640
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000000003F6039B8
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 000007FED213E4B0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 000007FED213E480
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 000007FED213E580
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 000007FED213E640
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000000003D8F8668
 [LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
 [LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
 [LOG] SystemI::createSoundInternal             : Sample 0/1: name='fotsteg_sno_3', format=2, channels=2, frequency=48000, lengthbytes=37408, lengthpcm=38382, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.438446.
@@ -482,14 +482,14 @@
 [LOG] SystemI::createSoundInternal             : exinfo->length             = 39627616
 [LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 74752
 [LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000004C25F5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000004CAAF5FC
 [LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 000007FEDC74E4B0
-[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 000007FEDC74E480
-[LOG] SystemI::createSoundInternal             : exinfo->userread           = 000007FEDC74E580
-[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 000007FEDC74E640
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000000003F6039B8
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 000007FED213E4B0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 000007FED213E480
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 000007FED213E580
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 000007FED213E640
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000000003D8F8668
 [LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
 [LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
 [LOG] SystemI::createSoundInternal             : Sample 0/1: name='fotsteg_sno_9', format=2, channels=2, frequency=48000, lengthbytes=26816, lengthpcm=26361, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.655426.
@@ -498,151 +498,95 @@
 [LOG] SystemI::createSoundInternal             : exinfo->length             = 39627616
 [LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 74752
 [LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000004C25F5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000004CAAF5FC
 [LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 000007FEDC74E4B0
-[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 000007FEDC74E480
-[LOG] SystemI::createSoundInternal             : exinfo->userread           = 000007FEDC74E580
-[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 000007FEDC74E640
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000000003F6039B8
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 000007FED213E4B0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 000007FED213E480
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 000007FED213E580
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 000007FED213E640
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000000003D8F8668
 [LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
 [LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
 [LOG] SystemI::createSoundInternal             : Sample 0/1: name='fotsteg_sno_6', format=2, channels=2, frequency=48000, lengthbytes=31488, lengthpcm=31091, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.463867.
-[LOG] SoundI::release                          :  (000000006D5F5BC8)
-[LOG] SoundI::release                          :     fotsteg_sno_1 (00000000552BCF18)
-[LOG] SoundI::release                          :  (000000006D5F6018)
-[LOG] SoundI::release                          :     fotsteg_sno_10 (00000000552BD3F8)
-[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
-[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
-[LOG] SystemI::createSoundInternal             : exinfo->length             = 39627616
-[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 74752
-[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000004C25F5FC
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 000007FEDC74E4B0
-[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 000007FEDC74E480
-[LOG] SystemI::createSoundInternal             : exinfo->userread           = 000007FEDC74E580
-[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 000007FEDC74E640
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000000003F6039B8
-[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
-[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
-[LOG] SystemI::createSoundInternal             : Sample 0/1: name='fotsteg_sno_1', format=2, channels=2, frequency=48000, lengthbytes=28128, lengthpcm=29754, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.982513.
-[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
-[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
-[LOG] SystemI::createSoundInternal             : exinfo->length             = 39627616
-[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 74752
-[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000004C25F5FC
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 000007FEDC74E4B0
-[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 000007FEDC74E480
-[LOG] SystemI::createSoundInternal             : exinfo->userread           = 000007FEDC74E580
-[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 000007FEDC74E640
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000000003F6039B8
-[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
-[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
-[LOG] SystemI::createSoundInternal             : Sample 0/1: name='fotsteg_sno_10', format=2, channels=2, frequency=48000, lengthbytes=31168, lengthpcm=32422, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.730133.
-[LOG] SoundI::release                          :  (000000006D5F6018)
-[LOG] SoundI::release                          :     fotsteg_sno_1 (00000000552BD3F8)
-[LOG] SoundI::release                          :  (000000006D5F5BC8)
-[LOG] SoundI::release                          :     fotsteg_sno_10 (00000000552BCF18)
-[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
-[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
-[LOG] SystemI::createSoundInternal             : exinfo->length             = 39627616
-[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 74752
-[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000004C25F5FC
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 000007FEDC74E4B0
-[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 000007FEDC74E480
-[LOG] SystemI::createSoundInternal             : exinfo->userread           = 000007FEDC74E580
-[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 000007FEDC74E640
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000000003F6039B8
-[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
-[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
-[LOG] SystemI::createSoundInternal             : Sample 0/1: name='fotsteg_sno_1', format=2, channels=2, frequency=48000, lengthbytes=28128, lengthpcm=29754, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.982513.
-[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
-[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
-[LOG] SystemI::createSoundInternal             : exinfo->length             = 39627616
-[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 74752
-[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000004C25F5FC
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 000007FEDC74E4B0
-[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 000007FEDC74E480
-[LOG] SystemI::createSoundInternal             : exinfo->userread           = 000007FEDC74E580
-[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 000007FEDC74E640
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000000003F6039B8
-[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
-[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
-[LOG] SystemI::createSoundInternal             : Sample 0/1: name='fotsteg_sno_10', format=2, channels=2, frequency=48000, lengthbytes=31168, lengthpcm=32422, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.730133.
-[LOG] SoundI::release                          :  (000000003F9AB508)
-[LOG] SoundI::release                          :     utomhus_lugn_foglar_1 (000000005565C088)
-[LOG] SoundI::release                          :  (000000003F9ABAC8)
-[LOG] SoundI::release                          :     utomhus_lugn_foglar_10 (000000003EDABCE8)
-[LOG] SoundI::release                          :  (00000000552F7088)
-[LOG] SoundI::release                          :     utomhus_lugn_foglar_11 (000000005565C3C8)
-[LOG] SoundI::release                          :  (00000000557C27B8)
-[LOG] SoundI::release                          :     utomhus_lugn_foglar_12 (000000003EDAAFE8)
-[LOG] SoundI::release                          :  (00000000557C1C38)
-[LOG] SoundI::release                          :     utomhus_lugn_foglar_13 (000000000F650E78)
-[LOG] SoundI::release                          :  (00000000557C2648)
-[LOG] SoundI::release                          :     utomhus_lugn_foglar_14 (000000003EDAB668)
-[LOG] SoundI::release                          :  (00000000552F7C08)
-[LOG] SoundI::release                          :     utomhus_lugn_foglar_15 (000000005565CA48)
-[LOG] SoundI::release                          :  (000000003F9AB678)
-[LOG] SoundI::release                          :     utomhus_lugn_foglar_16 (000000003EDAB808)
-[LOG] SoundI::release                          :  (00000000552F7368)
-[LOG] SoundI::release                          :     utomhus_lugn_foglar_17 (000000005565C568)
-[LOG] SoundI::release                          :  (000000003F9AB228)
-[LOG] SoundI::release                          :     utomhus_lugn_foglar_18 (000000003EDAB9A8)
-[LOG] SoundI::release                          :  (000000003F9AB0B8)
-[LOG] SoundI::release                          :     utomhus_lugn_foglar_2 (000000003EDABB48)
-[LOG] SoundI::release                          :  (00000000552F71F8)
-[LOG] SoundI::release                          :     utomhus_lugn_foglar_3 (000000005565C8A8)
-[LOG] SoundI::release                          :  (00000000557C1F18)
-[LOG] SoundI::release                          :     utomhus_lugn_foglar_4 (000000003EDAB188)
-[LOG] SoundI::release                          :  (00000000552F7928)
-[LOG] SoundI::release                          :     utomhus_lugn_foglar_5 (000000005565C708)
-[LOG] SoundI::release                          :  (00000000557C2088)
-[LOG] SoundI::release                          :     utomhus_lugn_foglar_6 (000000003EDAB328)
-[LOG] SoundI::release                          :  (00000000557C24D8)
-[LOG] SoundI::release                          :     utomhus_lugn_foglar_7 (000000003EDAB4C8)
-[LOG] SoundI::release                          :  (00000000552F7D78)
-[LOG] SoundI::release                          :     utomhus_lugn_foglar_8 (000000005565C228)
-[LOG] SoundI::release                          :  (00000000557C1DA8)
-[LOG] SoundI::release                          :     utomhus_lugn_foglar_9 (000000000F651018)
-[LOG] SoundI::release                          :  (000000006D5F5BC8)
-[LOG] SoundI::release                          :     fotsteg_sno_1 (00000000552BCF18)
-[LOG] SoundI::release                          : utomhus_lugn_vind (00000000556BFDC8)
-[LOG] SoundI::release                          :     utomhus_lugn_vind (00000000552BCA38)
-[LOG] SoundI::release                          :     utomhus_lugn_vind (00000000557A4548)
-[LOG] SoundI::release                          : utomhus_lugn_foglar_loop_1 (00000000556C0128)
-[LOG] SoundI::release                          :     utomhus_lugn_foglar_loop_1 (000000005565CD88)
-[LOG] SoundI::release                          :     utomhus_lugn_foglar_loop_1 (00000000556C02D8)
-[LOG] SoundI::release                          :  (000000006D5F6018)
-[LOG] SoundI::release                          :     fotsteg_sno_10 (00000000552BD3F8)
-[LOG] SoundI::release                          :  (000000006D5F5A58)
-[LOG] SoundI::release                          :     fotsteg_sno_2 (00000000552BCD78)
-[LOG] SoundI::release                          :  (000000006D5F62F8)
-[LOG] SoundI::release                          :     fotsteg_sno_3 (00000000552BD738)
-[LOG] SoundI::release                          :  (000000006D5F6188)
-[LOG] SoundI::release                          :     fotsteg_sno_4 (00000000552BD598)
-[LOG] SoundI::release                          :  (000000006D5F5D38)
-[LOG] SoundI::release                          :     fotsteg_sno_5 (00000000552BD0B8)
-[LOG] SoundI::release                          :  (000000006D5F65D8)
-[LOG] SoundI::release                          :     fotsteg_sno_6 (000000006D5F8BF8)
-[LOG] SoundI::release                          :  (00000000552F7A98)
-[LOG] SoundI::release                          :     fotsteg_sno_7 (00000000552BCBD8)
-[LOG] SoundI::release                          :  (000000006D5F5EA8)
-[LOG] SoundI::release                          :     fotsteg_sno_8 (00000000552BD258)
-[LOG] SoundI::release                          :  (000000006D5F6468)
-[LOG] SoundI::release                          :     fotsteg_sno_9 (000000006D5F8A58)
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000003CEBBD58
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000003CEBBD58
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000003CEBC0B8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000003CEBC0B8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000003CEBBD58
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000003CEBBD58
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000003CEBC0B8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000003CEBC0B8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000003CEBBD58
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000003CEBBD58
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000003CEBC0B8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000003CEBC0B8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000003CEBBD58
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000003CEBBD58
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000003CEBC0B8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000003CEBC0B8
+[LOG] SoundI::release                          :  (0000000079205298)
+[LOG] SoundI::release                          :     utomhus_lugn_foglar_1 (000000003D17EF38)
+[LOG] SoundI::release                          :  (0000000079205128)
+[LOG] SoundI::release                          :     utomhus_lugn_foglar_10 (000000003D17ED98)
+[LOG] SoundI::release                          :  (0000000079205578)
+[LOG] SoundI::release                          :     utomhus_lugn_foglar_11 (000000003D17F278)
+[LOG] SoundI::release                          :  (000000003D592258)
+[LOG] SoundI::release                          :     utomhus_lugn_foglar_12 (000000000F584FA8)
+[LOG] SoundI::release                          :  (000000003D5920E8)
+[LOG] SoundI::release                          :     utomhus_lugn_foglar_13 (000000000F5852E8)
+[LOG] SoundI::release                          :  (0000000079204B68)
+[LOG] SoundI::release                          :     utomhus_lugn_foglar_14 (000000003D17E718)
+[LOG] SoundI::release                          :  (0000000079351878)
+[LOG] SoundI::release                          :     utomhus_lugn_foglar_15 (0000000079589948)
+[LOG] SoundI::release                          :  (0000000079204CD8)
+[LOG] SoundI::release                          :     utomhus_lugn_foglar_16 (000000003D17E8B8)
+[LOG] SoundI::release                          :  (0000000079351428)
+[LOG] SoundI::release                          :     utomhus_lugn_foglar_17 (0000000079589468)
+[LOG] SoundI::release                          :  (0000000079204E48)
+[LOG] SoundI::release                          :     utomhus_lugn_foglar_18 (000000003D17EA58)
+[LOG] SoundI::release                          :  (0000000079204FB8)
+[LOG] SoundI::release                          :     utomhus_lugn_foglar_2 (000000003D17EBF8)
+[LOG] SoundI::release                          :  (0000000079351708)
+[LOG] SoundI::release                          :     utomhus_lugn_foglar_3 (00000000795897A8)
+[LOG] SoundI::release                          :  (000000003D591E08)
+[LOG] SoundI::release                          :     utomhus_lugn_foglar_4 (000000000F584448)
+[LOG] SoundI::release                          :  (0000000079351598)
+[LOG] SoundI::release                          :     utomhus_lugn_foglar_5 (0000000079589608)
+[LOG] SoundI::release                          :  (0000000079204888)
+[LOG] SoundI::release                          :     utomhus_lugn_foglar_6 (000000000F584C68)
+[LOG] SoundI::release                          :  (00000000792049F8)
+[LOG] SoundI::release                          :     utomhus_lugn_foglar_7 (000000003D17E578)
+[LOG] SoundI::release                          :  (0000000079205408)
+[LOG] SoundI::release                          :     utomhus_lugn_foglar_8 (000000003D17F0D8)
+[LOG] SoundI::release                          :  (000000003D5919B8)
+[LOG] SoundI::release                          :     utomhus_lugn_foglar_9 (000000000F584788)
+[LOG] SoundI::release                          :  (0000000079351CC8)
+[LOG] SoundI::release                          :     fotsteg_sno_1 (000000003D219CE8)
+[LOG] SoundI::release                          : utomhus_lugn_vind (000000003CEBBBA8)
+[LOG] SoundI::release                          :     utomhus_lugn_vind (0000000079589E28)
+[LOG] SoundI::release                          :     utomhus_lugn_vind (000000003CEBC0B8)
+[LOG] SoundI::release                          : utomhus_lugn_foglar_loop_1 (000000003D58FEC8)
+[LOG] SoundI::release                          :     utomhus_lugn_foglar_loop_1 (0000000079589C88)
+[LOG] SoundI::release                          :     utomhus_lugn_foglar_loop_1 (000000003CEBBD58)
+[LOG] SoundI::release                          :  (0000000079352118)
+[LOG] SoundI::release                          :     fotsteg_sno_10 (000000003D21A1C8)
+[LOG] SoundI::release                          :  (0000000079351B58)
+[LOG] SoundI::release                          :     fotsteg_sno_2 (000000007958A168)
+[LOG] SoundI::release                          :  (00000000795865D8)
+[LOG] SoundI::release                          :     fotsteg_sno_3 (000000003D21A508)
+[LOG] SoundI::release                          :  (0000000079586468)
+[LOG] SoundI::release                          :     fotsteg_sno_4 (000000003D21A368)
+[LOG] SoundI::release                          :  (0000000079351E38)
+[LOG] SoundI::release                          :     fotsteg_sno_5 (000000003D219E88)
+[LOG] SoundI::release                          :  (00000000795868B8)
+[LOG] SoundI::release                          :     fotsteg_sno_6 (000000003D21A848)
+[LOG] SoundI::release                          :  (00000000793519E8)
+[LOG] SoundI::release                          :     fotsteg_sno_7 (0000000079589FC8)
+[LOG] SoundI::release                          :  (0000000079351FA8)
+[LOG] SoundI::release                          :     fotsteg_sno_8 (000000003D21A028)
+[LOG] SoundI::release                          :  (0000000079586748)
+[LOG] SoundI::release                          :     fotsteg_sno_9 (000000003D21A6A8)
 [LOG] Thread::callback                         : FMOD Studio update thread finished.
 [LOG] Thread::callback                         : FMOD Studio bank load thread finished.
 [LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
