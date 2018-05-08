@@ -11,6 +11,7 @@ public class Tutorial : MonoBehaviour
 
     [SerializeField]
     private Transform dogWaypoint;
+    Coroutine currentCR;
 
     TutorialUI tutorialUI;
     [SerializeField]
@@ -63,6 +64,7 @@ public class Tutorial : MonoBehaviour
 
             case 1:
                 //dog go to waypoint
+
                 dog.StartAction(new GoStraightToPosition(dog.GetComponent<Dog>(), dogWaypoint.position));
                 //tutorial 1 starting
                 break;
@@ -95,7 +97,7 @@ public class Tutorial : MonoBehaviour
                     //Tutorial 0 finished
 
                     //waitForIdleTrigger(activeTutorial+1);
-                    StartCoroutine(waitForIdleTrigger(activeTutorial+1));
+                    currentCR = StartCoroutine(waitForIdleTrigger(activeTutorial+1));
                     break;
                 case 1:
                     //tutorial 1 finished
@@ -117,23 +119,17 @@ public class Tutorial : MonoBehaviour
 
     private IEnumerator waitForIdleTrigger(int id)
     {
-        yield return new WaitForSeconds(0.2f);
-        if (dog.GetComponent<Dog>().IsIdle())
+        while (true)
         {
-            triggerTutorial(id);
-            StopCoroutine("waitForIdleTrigger");
+            if (dog.GetComponent<Dog>().IsIdle())
+            {
+
+                Debug.Log("Triggering: " + id);
+                triggerTutorial(id);
+                StopCoroutine(currentCR);
+            }
+            yield return new WaitForSeconds(0.2f);
         }
-
-
+        
     }
-
-    //private void waitForIdleTrigger(int id)
-    //{
-    //    while(!dog.GetComponent<Dog>().IsIdle())
-    //    {
-
-    //    }
-    //    triggerTutorial(id);
-    //}
-
 }

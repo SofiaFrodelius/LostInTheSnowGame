@@ -21,10 +21,9 @@ public class Fetch : DogAction{
 		actionTimer = actionDelay;
 		actionCount = 0;
 		actions.Clear ();
-		ScanForObject scan = new ScanForObject (dog, 35f,"Stick", true, dog.dogLayerMask);
-		scan.StartAction ();
-		if (scan.GetObject () != null) {
-			item = scan.GetObject ().transform;
+		GameObject stick = ScanForObject.Scan (dog.transform.position, 35f,"Stick", dog.dogLayerMask);
+		if (stick != null) {
+			item = stick.transform;
 			actions.Add (new FollowTarget (dog, item, Vector3.zero, true, 0.2f));
 			actions.Add (new Grab (dog, item.gameObject));
 			actions.Add (new FollowTarget (dog, player,player.forward, true, 0.5f));

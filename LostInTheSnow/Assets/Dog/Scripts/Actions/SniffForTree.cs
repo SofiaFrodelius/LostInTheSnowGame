@@ -15,13 +15,9 @@ public class SniffForTree : DogAction {
 	public override void StartAction(){	
 		isDone = false;
 		actionTimer = actionDelay;
-		ScanForObject scan = new ScanForObject (dog, 55f, "Tree", false, dog.dogLayerMask); 
-		scan.StartAction ();
-		tree = scan.GetObject ();
+		tree = ScanForObject.Scan (dog.transform.position, 55f, "Tree", dog.dogLayerMask); 
 		if (tree != null) {
 			actions.Add (new GotoPosition (dog, tree.transform.position + dog.transform.right));
-			if (Random.Range (0, 2) == 0)
-				actions.Add (new Pee (dog, tree.transform));
 			NextAction ();
 		} else 
 			isDone = true;

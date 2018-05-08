@@ -13,8 +13,10 @@ public class DogAI : MonoBehaviour {
 	private Mood bestMood;
 
 	private Dog dog;
-	void Start(){
+	void Awake(){
 		dog = GetComponent<Dog> ();
+	}
+	void Start(){
 		actions.Add (idleActions);
 		actions.Add (activeActions);
 		actions.Add (interactActions);
@@ -22,7 +24,6 @@ public class DogAI : MonoBehaviour {
 		activeActions.Add(new Fetch (dog, dog.player));
 		//activeActions.Add(new LeadPlayer(dog, dog.player, dog.TestWaypoint.position, 10f));
 		activeActions.Add(new SniffForTree (dog));
-		activeActions.Add(new Walk (dog, dog.player, 15f));
 
 		idleActions.Add(new Sit (dog, 1f));
 		idleActions.Add(new Stare (dog, 1f));

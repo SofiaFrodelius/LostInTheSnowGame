@@ -11,29 +11,48 @@ public class DogLocomotion : MonoBehaviour {
 	public float speedDampTime = 0.1f;
 	[Range(0,1f)]
 	public float angularSpeedDampTime = 0.25f;
+	[Range(0,1f)]
+	public float headLookDampTime = 0.1f;
 
 	private int speedId;
 	private int angularSpeedId;
 	private int directionId;
+	private int lookDirectionId;
 
 	private bool update = true;
 
+	private Dog dog;
 	private NavMeshAgent navAgent;
 	private Animator animator;
 	void Start () {
 		navAgent = GetComponent<NavMeshAgent>();
 		animator = GetComponent<Animator>();
+		dog = GetComponent<Dog> ();
 		navAgent.updateRotation = false;
 
 		//Get Ids of animator parameters.
 		speedId = Animator.StringToHash("Speed");
 		angularSpeedId = Animator.StringToHash("AngularSpeed");
 		directionId = Animator.StringToHash("Direction");
+		lookDirectionId = Animator.StringToHash ("LookDirection");
 	}
 	void Update(){
+		SetupLookDirection ();
 		SetupAgentLocomotion();
 	}
+	void SetupLookDirection(){
+		Vector3 direction = (dog.player.position - dog.transform.position).normalized;
+		float forwardAngle = Mathf.Atan2 (dog.transform.forward.x , dog.transform.forward.z) * Mathf.Rad2Deg;
+		float playerAngle = Mathf.Atan2 (direction.x , direction.z) * Mathf.Rad2Deg;
+		//Debug.Log ("Fw: "+forwardAngle+ "p:" + playerAngle + "angle: " + (playerAngle-forwardAngle));
+		float angle = (playerAngle - forwardAngle);
+		if (angle > 90 || angle < -90)
+			animator.SetFloat (lookDirectionId, 0, headLookDampTime, Time.deltaTime);
+		else
+			animator.SetFloat (lookDirectionId, angle, headLookDampTime, Time.deltaTime);
+	}
 	void SetupAgentLocomotion(){
+		Debug.Log (update);
 		if (NavAgentDone ()) {
 			SetParameters (0, 0);
 		} else {
@@ -42,13 +61,14 @@ public class DogLocomotion : MonoBehaviour {
 			//Hämtar inversen av rotationen mutliplicerat av desiredVelocity
 			Vector3 velocity = Quaternion.Inverse (transform.rotation) * navAgent.desiredVelocity;
 			//Beräknar vinkeln mot velocityn i grader.
-			float angle = Mathf.Atan2 (velocity.x, velocity.z) * 180.0f / 3.14159f;
+			float angle = Mathf.Atan2 (velocity.x, velocity.z) * Mathf.Rad2Deg;
 			//Sets Mecanim Animator Parameters
 			if (update) 
 				SetParameters (speed, angle);
 		}
 	}
 	public void StartIdleTurn(){
+		Debug.Log ("WHEN IS THIS");
 		update = false;
 	}
 	public void StopIdleTurn(){
