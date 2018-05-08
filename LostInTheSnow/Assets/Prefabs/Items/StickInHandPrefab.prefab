@@ -23,9 +23,9 @@ GameObject:
   - component: {fileID: 23417867983477414}
   - component: {fileID: 95767631359177794}
   - component: {fileID: 65565299581859522}
-  - component: {fileID: 114674102313596372}
   - component: {fileID: 54581758639677870}
   - component: {fileID: 114499811033376782}
+  - component: {fileID: 114902211736213646}
   m_Layer: 0
   m_Name: StickInHandPrefab
   m_TagString: Untagged
@@ -143,7 +143,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   throwForce: 20
---- !u!114 &114674102313596372
+--- !u!114 &114902211736213646
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -151,7 +151,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1579897241715744}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ffcaef163d2ed9940b227dae12ab39b5, type: 3}
+  m_Script: {fileID: 11500000, guid: 5ab0bb15fb43b492d9ecdec1adcc9e07, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  throwForce: 20
+  itemType: {fileID: 11400000, guid: 475d8b70b0cb4834ebedfe0687689834, type: 2}

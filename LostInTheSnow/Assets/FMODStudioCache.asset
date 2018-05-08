@@ -51,7 +51,7 @@ MonoBehaviour:
   - {fileID: 114295831781372376}
   MasterBankRef: {fileID: 114056188960620644}
   StringsBankRef: {fileID: 114564954091823856}
-  stringsBankWriteTime: 636613059551224002
+  stringsBankWriteTime: 636613699560660002
   cacheVersion: 2
 --- !u!114 &114006098084990164
 MonoBehaviour:
@@ -141,7 +141,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: C:\LostInTheSnowGame\LostInTheSnowGame\LostInTheSnow\Assets\FMODBANKS\Desktop\Master
     Bank.bank
-  lastModified: 636613059548694002
+  lastModified: 636613699560060002
   LoadResult: 0
   FileSizes:
   - Name: 
@@ -169,6 +169,21 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 32138
+--- !u!114 &114074448782044894
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Voice Line
+  Min: 0
+  Max: 90
+  Default: 0
 --- !u!114 &114089746475848208
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -604,6 +619,21 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 3037
+--- !u!114 &114280528601703922
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Voice Line
+  Min: 0
+  Max: 90
+  Default: 0
 --- !u!114 &114286472005056730
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -711,7 +741,7 @@ MonoBehaviour:
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: 114709105120932642}
+  - {fileID: 114597397501880368}
   MinDistance: 0
   MaxDistance: 0
   Length: 77253
@@ -1092,7 +1122,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Path: Assets\FMODBANKS\Desktop\Master Bank.strings.bank
-  lastModified: 636613059551224002
+  lastModified: 636613699560660002
   LoadResult: 0
   FileSizes:
   - Name: 
@@ -1120,6 +1150,21 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 63889
+--- !u!114 &114597397501880368
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: introloop_to_stingercabin
+  Min: 0
+  Max: 1
+  Default: 0
 --- !u!114 &114598138270500990
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1245,7 +1290,7 @@ MonoBehaviour:
   Is3D: 0
   IsOneShot: 1
   Parameters:
-  - {fileID: 114055725446119150}
+  - {fileID: 114280528601703922}
   MinDistance: 0
   MaxDistance: 0
   Length: 9503
@@ -1601,7 +1646,7 @@ MonoBehaviour:
   Is3D: 0
   IsOneShot: 1
   Parameters:
-  - {fileID: 114141372410534454}
+  - {fileID: 114074448782044894}
   MinDistance: 0
   MaxDistance: 0
   Length: 6375
