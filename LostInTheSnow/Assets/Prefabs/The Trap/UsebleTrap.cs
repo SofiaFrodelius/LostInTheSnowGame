@@ -10,6 +10,7 @@ public class UsebleTrap : MonoBehaviour, IUsable{
     [SerializeField] private GameObject trapToPlace;
     Inventory inventory;
 
+
     private void Start()
     {
         playerCam = Camera.main;
@@ -25,7 +26,7 @@ public class UsebleTrap : MonoBehaviour, IUsable{
             print(hit.transform.gameObject);
             if (hit.transform.name == locationName)
             {
-                GameObject placedTrap = Instantiate(trapToPlace, hit.point, Quaternion.identity);
+				GameObject placedTrap = Instantiate(trapToPlace, hit.point, Quaternion.identity);
                 Destroy(hit.transform.gameObject);
                 inventory.removeHoldableItem(ih.getSelectedItem());
                 Destroy(gameObject);

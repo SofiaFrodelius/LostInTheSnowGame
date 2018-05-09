@@ -15,7 +15,7 @@ public class LeadPlayer : DogAction{
 		this.target = target;
 		this.maxDistance = maxDistance;
 		this.waitForPlayerAtTarget = waitForPlayerAtTarget;
-		importance = Importance.LOW;
+		importance = Importance.HIGH;
 		actionDelay = 1;
 		moodState.ChangeMood (50f, 100f, 0f, 50f);
 		moodEffect.ChangeMood (5f, 10f, 10f, -5f);

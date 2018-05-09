@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-//using UnityEditor;
+using UnityEngine.AI;
 using UnityEngine.Events;
 
 public class DogAI : MonoBehaviour {
@@ -12,9 +12,12 @@ public class DogAI : MonoBehaviour {
 	private enum ActionType{ IDLE, ACTIVE};
 	private Mood bestMood;
 
+	private float acceleration = 2f;
 	private Dog dog;
+	private NavMeshAgent navAgent;
 	void Awake(){
 		dog = GetComponent<Dog> ();
+		navAgent = GetComponent<NavMeshAgent> ();
 	}
 	void Start(){
 		actions.Add (idleActions);
@@ -33,24 +36,23 @@ public class DogAI : MonoBehaviour {
 		bestMood.ChangeMood (100f, 50f, 75f, 0f);
 
 		//dog.currentAction = new RingARound (dog, dog.player, 5f);
-		//dog.currentAction = new Sit(dog, 5f);
+		//dog.currentAction = new Sit(dog, 10f);
 		//dog.currentAction.StartAction ();
 		//StartAction (ActionType.ACTIVE);
 
 	}
 	void Update(){
-		if (Input.GetKeyDown (KeyCode.M))
-			StartAction (new Sit (dog, -1));
 		if (dog.currentAction != null) {
 			if (dog.currentAction.IsDone ()) {
 				EndAction ();
-			} /*else if (!dog.player.GetComponent<CharacterMovement> ().getSprint ()) {//Player.getspeed > walking speed <-- me ny player controller.
-				if (dog.currentAction.GetImportance () != DogAction.Importance.HIGH) {
-					EndAction ();
-					dog.currentAction = activeActions [0];
-					dog.currentAction.StartAction ();
-				}
-			}*/
+			} if (Vector3.Distance (transform.position, dog.player.transform.position) < 5) {
+				if (dog.player.GetComponent<CharacterMovement> ().getSprint ())
+					navAgent.speed = Mathf.Clamp (navAgent.speed + Time.deltaTime * acceleration, 1, 2);
+				else
+					navAgent.speed = Mathf.Clamp (navAgent.speed - Time.deltaTime * acceleration/2, 1, 2);
+			} else {
+				navAgent.speed = Mathf.Clamp (navAgent.speed + Time.deltaTime * acceleration, 1, 2);
+			}
 		}
 	}
 	public void StartAction(DogAction action){

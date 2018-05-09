@@ -22,7 +22,16 @@ public class GotoPosition : DogAction{
 		currentTarget = dog.transform.position;
 	}
 	public override void UpdateAction(){
-		NavMesh.CalculatePath (dog.transform.position, targetPosition, NavMesh.AllAreas, path);//DONT BE FALSE OR i :cryinglaughter::gun:
+		if(NavMesh.CalculatePath (dog.transform.position, targetPosition, NavMesh.AllAreas, path)){//DONT BE FALSE OR i :cryinglaughter::gun:
+		}else{
+			//navAgent.SetDestination (targetPosition);
+			if (path.status == NavMeshPathStatus.PathComplete)
+				Debug.Log ("Path complete");
+			else if (path.status == NavMeshPathStatus.PathInvalid)
+				Debug.Log ("Path invalid");
+			else if (path.status == NavMeshPathStatus.PathPartial)
+				Debug.Log ("Path partial");
+		}
 		for (int i = 0; i < path.corners.Length - 1; i++) {
 			Debug.DrawLine (path.corners [i], path.corners [i + 1], Color.red, 0.1f);	
 		}if (path.corners.Length > 1) {
@@ -46,13 +55,13 @@ public class GotoPosition : DogAction{
 		}
 	}
 	private void GetNewTarget(){
-		float maxForward = 5f;
+		float maxForward = 20f;
 		if (Vector2.Distance (new Vector2 (dog.transform.position.x, dog.transform.position.z), new Vector2 (targetPosition.x, targetPosition.z))< maxForward) {
 			currentTarget = targetPosition;
 			return;
 		}
 		//Temporary values.
-		currentTarget = GetPos (2,5,-3,3,4,"Tree");
+		currentTarget = GetPos (10,20,-10,10,5,"Tree");
 	}
 	Vector3 GetPos(float minForward, float maxForward, float minRight, float maxRight, float radius, string tag){
 		Vector3 pos = Vector3.zero;
@@ -75,7 +84,7 @@ public class GotoPosition : DogAction{
 		}else {
 			pos = path.corners [1];
 		}
-		dog.TestWaypoint.position = (pos);
+		//dog.TestWaypoint.position = (pos);
 		return pos;
 	}
 	private Vector3 GetPerpendicular2DVector(Vector3 v){

@@ -20,7 +20,6 @@ public class DogLocomotion : MonoBehaviour {
 	private int lookDirectionId;
 
 	private bool update = true;
-
 	private Dog dog;
 	private NavMeshAgent navAgent;
 	private Animator animator;
@@ -52,7 +51,6 @@ public class DogLocomotion : MonoBehaviour {
 			animator.SetFloat (lookDirectionId, angle, headLookDampTime, Time.deltaTime);
 	}
 	void SetupAgentLocomotion(){
-		Debug.Log (update);
 		if (NavAgentDone ()) {
 			SetParameters (0, 0);
 		} else {

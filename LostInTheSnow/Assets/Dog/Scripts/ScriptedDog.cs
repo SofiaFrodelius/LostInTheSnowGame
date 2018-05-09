@@ -15,10 +15,7 @@ public class ScriptedDog : MonoBehaviour {
 		dog = GetComponent<Dog> ();
 		dogAI = GetComponent<DogAI> ();
 		for (int i = 0; i < wayPoints.Count; i++) {
-			Vector3 waypoint = new Vector3(wayPoints[i].transform.position.x, 0, wayPoints[i].transform.position.z);
-			if(Terrain.activeTerrain != null)
-				waypoint.y = Terrain.activeTerrain.SampleHeight (new Vector2(waypoint.x, waypoint.z));
-			actions.Add (new LeadPlayer (dog, dog.player, waypoint, maxDistance, false));
+			actions.Add (new LeadPlayer (dog, dog.player, wayPoints[i].transform.position, maxDistance, false));
 		}
 		NextAction ();
 	}
