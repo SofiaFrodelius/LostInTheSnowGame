@@ -98,6 +98,7 @@ GameObject:
   - component: {fileID: 114756805726312168}
   - component: {fileID: 114217975130176314}
   - component: {fileID: 95843455029767410}
+  - component: {fileID: 208773646232210678}
   m_Layer: 8
   m_Name: Playeble Character
   m_TagString: Player
@@ -339,7 +340,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   numOfSlots: 5
   numOfHoldableSlots: 3
-  testItem: {fileID: 0}
+  hands: {fileID: 0}
 --- !u!114 &114245977067720954
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -471,6 +472,7 @@ MonoBehaviour:
   jumpStartSpeed: 4
   fallMultiplier: 2.5
   canJump: 1
+  jumpEmitter: {fileID: 0}
 --- !u!114 &114877400239294074
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4003,3 +4005,18 @@ ParticleSystemRenderer:
   m_Mesh2: {fileID: 0}
   m_Mesh3: {fileID: 0}
   m_MaskInteraction: 0
+--- !u!208 &208773646232210678
+NavMeshObstacle:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1796018197999996}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 0
+  m_Extents: {x: 0.5, y: 1, z: 0.5}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5

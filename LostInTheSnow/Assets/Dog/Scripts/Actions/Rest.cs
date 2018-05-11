@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Lay : DogAction
+public class Rest : DogAction
 {
     DogTimer timer;
-    public Lay(Dog d, float time) : base(d)
+    public Rest(Dog d, float time) : base(d)
     {
         timer = new DogTimer(time);
     }
@@ -14,15 +14,16 @@ public class Lay : DogAction
         actionTimer = actionDelay;
         timer.ResetTimer();
         isDone = false;
-        animator.SetBool("Lay", true);
+
+        animator.SetBool("Rest", true);
     }
     public override void UpdateAction()
     {
-        if (animator.GetBool("Lay") && animator.GetCurrentAnimatorStateInfo(0).IsName("LayIdle"))
+        if (animator.GetBool("Rest") && animator.GetCurrentAnimatorStateInfo(0).IsName("RestIdle"))
         {
-            animator.SetBool("Lay", false);
+            animator.SetBool("Rest", false);
         }
-        if (animator.GetCurrentAnimatorStateInfo(0).IsName("LayIdle"))
+        if (animator.GetCurrentAnimatorStateInfo(0).IsName("RestIdle"))
         {
             if (!isDone)
             {
@@ -34,14 +35,13 @@ public class Lay : DogAction
                 {
                     isDone = true;
                     animator.SetTrigger("StandUp");
-
                 }
             }
         }
     }
     public override void EndAction()
     {
-        animator.SetBool("Lay", false);
+        animator.SetBool("Rest", false);
         dog.AddEffectToMood(moodEffect);
     }
 

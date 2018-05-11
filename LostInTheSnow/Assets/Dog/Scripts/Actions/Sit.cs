@@ -14,24 +14,33 @@ public class Sit : DogAction {
 		actionTimer = actionDelay;
 		timer.ResetTimer ();
 		isDone = false;
-		animator.SetTrigger ("Sit");
+        animator.SetBool("Sit", true);
 	}
 	public override void UpdateAction(){
-        
-        if (!isDone)
-            if (!timer.IsDone())
+        if (animator.GetBool("Sit") && animator.GetCurrentAnimatorStateInfo(0).IsName("SitIdle"))
+        {
+            animator.SetBool("Sit", false);
+        }
+        if (animator.GetCurrentAnimatorStateInfo(0).IsName("SitIdle"))
+        {
+            if (!isDone)
             {
-                timer.AddTime(Time.deltaTime);
+                if (!timer.IsDone())
+                {
+                    timer.AddTime(Time.deltaTime);
+                }
+                else
+                {
+                    isDone = true;
+                    animator.SetTrigger("StandUp");
+                }
             }
-            else
-            {
-                isDone = true;
-                animator.SetTrigger("StandUp");
-            }
+        }
 	}
 	public override void EndAction(){
-		dog.AddEffectToMood (moodEffect);
-	}
+        animator.SetBool("Sit", false);
+        dog.AddEffectToMood (moodEffect);
+    }
 }
 
 

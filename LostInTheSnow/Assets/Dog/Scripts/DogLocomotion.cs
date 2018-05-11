@@ -43,7 +43,6 @@ public class DogLocomotion : MonoBehaviour {
 		Vector3 direction = (dog.player.position - dog.transform.position).normalized;
 		float forwardAngle = Mathf.Atan2 (dog.transform.forward.x , dog.transform.forward.z) * Mathf.Rad2Deg;
 		float playerAngle = Mathf.Atan2 (direction.x , direction.z) * Mathf.Rad2Deg;
-		//Debug.Log ("Fw: "+forwardAngle+ "p:" + playerAngle + "angle: " + (playerAngle-forwardAngle));
 		float angle = (playerAngle - forwardAngle);
 		if (angle > 90 || angle < -90)
 			animator.SetFloat (lookDirectionId, 0, headLookDampTime, Time.deltaTime);
