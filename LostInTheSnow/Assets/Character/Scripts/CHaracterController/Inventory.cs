@@ -8,7 +8,8 @@ public class Inventory : MonoBehaviour
     public static Inventory instance; //singleton
 
 
-    public int numOfSlots = 5;
+    [SerializeField]
+    private int numOfSlots = 5;
     [SerializeField]
     private int numOfHoldableSlots = 1;
     private List<InventorySlot> inventorySlots;
@@ -27,7 +28,7 @@ public class Inventory : MonoBehaviour
 
 
     InventoryHUD inventoryHUD;
-
+    private InventorySaveLoad invSaveLoad;
 
     private void Awake()
     {
@@ -40,7 +41,6 @@ public class Inventory : MonoBehaviour
         }
         instance = this;
 
-
     }
 
 
@@ -50,6 +50,12 @@ public class Inventory : MonoBehaviour
         holdableSlots = new List<InventorySlot>();
         numOfHoldableSlots++;
         addItem(hands);
+
+        invSaveLoad = InventorySaveLoad.instance;
+        if (invSaveLoad && invSaveLoad.getHasSaved())
+        {
+            invSaveLoad.loadInventory();
+        }
     }
 
 
@@ -127,7 +133,7 @@ public class Inventory : MonoBehaviour
                         inventoryChangedCallback.Invoke();
                         return true;
                     }
-					else return false;
+                    else return false;
                 }
             }
 
@@ -212,6 +218,32 @@ public class Inventory : MonoBehaviour
         if (holdableSlots[i].getItem() != null)
             return holdableSlots[i].getItem().getAssociatedGameobject();
         else return null;
+    }
+
+
+    public void loadInventory(List<InventorySlot> HS, List<InventorySlot> NHS, int usedHoldableSlots, int numHoldableSlots, int usedRegularSlots, int numRegularSlots) //HS holdableSlots, NHS nonHoldableSlots
+    {
+        inventorySlots = NHS;
+        holdableSlots = HS;
+        numOfUsedHoldableSlots = usedHoldableSlots;
+        numOfHoldableSlots = numHoldableSlots;
+        numOfUsedSlots = numRegularSlots;
+        numOfSlots = numRegularSlots;
+    }
+
+    public List<InventorySlot> getHoldableSlotsList()
+    {
+        return holdableSlots;
+    }
+
+    public List<InventorySlot> getNonHoldableSlotsList()
+    {
+        return inventorySlots;
+    }
+
+    public void OnDestroy()
+    {
+        invSaveLoad.saveInventory();
     }
 
 }

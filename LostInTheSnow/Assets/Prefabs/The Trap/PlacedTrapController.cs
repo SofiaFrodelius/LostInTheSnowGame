@@ -9,19 +9,16 @@ public class PlacedTrapController : MonoBehaviour {
 	void Start () {
         rb = GetComponent<Rigidbody>();
         anim = GetComponent<Animator>();
+        rb.velocity = new Vector3(0f, -0.01f, 0f);
 	}
 	
-	// Update is called once per frame
-	void Update () {
-        if (anim.GetCurrentAnimatorStateInfo(0).IsName("IsOpen"))
-        {
-            anim.SetBool("ShouldOpen", false);
-        }
-		if(rb.velocity.magnitude == 0 && !rb.isKinematic)
+    private void FixedUpdate()
+    {
+        if (rb.velocity.magnitude == 0 && !rb.isKinematic)
         {
             rb.isKinematic = true;
-            print("hej");
-            anim.SetBool("ShouldOpen", true);
+            anim.SetTrigger("Open");
+			anim.SetBool("ShouldOpen", true);
         }
-	}
+    }
 }

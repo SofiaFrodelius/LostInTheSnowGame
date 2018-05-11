@@ -16,7 +16,7 @@ public class InventoryHUD : MonoBehaviour
     {
         if(instance != null)
         {
-            Debug.LogWarning("More than one instance of class InventoryHUD in scene.");
+            //Debug.LogWarning("More than one instance of class InventoryHUD in scene.");
             return;
         }
         instance = this;

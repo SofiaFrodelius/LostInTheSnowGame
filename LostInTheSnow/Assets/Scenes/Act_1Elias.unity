@@ -2871,7 +2871,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 294094558}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 24a3fd04ec39ee848942c486237ab9e5, type: 3}
   m_Name: 
@@ -3916,7 +3916,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4943296970498666, guid: 99d7ad104ee5de0428b47c8d5a271c87, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 116.19
+      value: 113.39
       objectReference: {fileID: 0}
     - target: {fileID: 4943296970498666, guid: 99d7ad104ee5de0428b47c8d5a271c87, type: 2}
       propertyPath: m_LocalPosition.y
@@ -6960,7 +6960,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &701385215
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6976,6 +6976,7 @@ MonoBehaviour:
   dog: {fileID: 294094560}
   dogWaypoint: {fileID: 50356564}
   tutorialTexts:
+  - 
   - Press 1 to pet Ila.
   - 
   - Press 2 to call Ila.
@@ -12904,7 +12905,7 @@ Prefab:
     - target: {fileID: 114283709054860748, guid: 89ba9e9619a634040b323fa5a7599b02,
         type: 2}
       propertyPath: tutorialToTrigger
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 1185518071405646, guid: 89ba9e9619a634040b323fa5a7599b02, type: 2}
       propertyPath: m_Icon
@@ -14537,13 +14538,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b03de3a524928be4db23a7fe9e65dd3a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  petIlaTutorialID: 0
-  callIlaTutorialID: 2
-  pickUpIlaTutorialID: 3
-  maxInteractLength: 4
+  petIlaTutorialID: 1
+  callIlaTutorialID: 3
+  pickUpIlaTutorialID: 4
+  maxInteractLength: 3
   interactLayerMask:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 4294967295
 --- !u!1001 &1524795834
 Prefab:
   m_ObjectHideFlags: 0
@@ -17098,6 +17099,48 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1812212655}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1001 &1813858168
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4951441450537988, guid: 984bec31daf420d4d971ff6d483deb98, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 286.54965
+      objectReference: {fileID: 0}
+    - target: {fileID: 4951441450537988, guid: 984bec31daf420d4d971ff6d483deb98, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -24.471163
+      objectReference: {fileID: 0}
+    - target: {fileID: 4951441450537988, guid: 984bec31daf420d4d971ff6d483deb98, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 94.86764
+      objectReference: {fileID: 0}
+    - target: {fileID: 4951441450537988, guid: 984bec31daf420d4d971ff6d483deb98, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4951441450537988, guid: 984bec31daf420d4d971ff6d483deb98, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4951441450537988, guid: 984bec31daf420d4d971ff6d483deb98, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4951441450537988, guid: 984bec31daf420d4d971ff6d483deb98, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4951441450537988, guid: 984bec31daf420d4d971ff6d483deb98, type: 2}
+      propertyPath: m_RootOrder
+      value: 31
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 984bec31daf420d4d971ff6d483deb98, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &1819398449
 GameObject:
   m_ObjectHideFlags: 0
@@ -18478,7 +18521,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2003875188}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 577, y: 307, z: 0}
+  m_LocalPosition: {x: 577, y: 314.5, z: 0}
   m_LocalScale: {x: 1.4425, y: 1.4425, z: 1.4425}
   m_Children:
   - {fileID: 1984856489}
@@ -19157,7 +19200,7 @@ Prefab:
     - target: {fileID: 114283709054860748, guid: 89ba9e9619a634040b323fa5a7599b02,
         type: 2}
       propertyPath: tutorialToTrigger
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 114283709054860748, guid: 89ba9e9619a634040b323fa5a7599b02,
         type: 2}

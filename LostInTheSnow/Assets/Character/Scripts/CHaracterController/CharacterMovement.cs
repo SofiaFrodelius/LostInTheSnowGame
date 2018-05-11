@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using FMODUnity;
 public class CharacterMovement : MonoBehaviour {
     [SerializeField] private AnimationCurve moveAccelaration;
     [Range(0f, 10f)]
@@ -14,6 +14,7 @@ public class CharacterMovement : MonoBehaviour {
     [SerializeField] private float fallMultiplier;
 
     [SerializeField] private bool canJump;
+    [SerializeField] private StudioEventEmitter jumpEmitter;
 
     private float inputH, inputV;
     private bool inputSprint, inputJump, allowedToJump;
@@ -25,34 +26,42 @@ public class CharacterMovement : MonoBehaviour {
     private bool toggledMoving = false;
     private Timer accTajmer;
 
-    ScreenFadeScript screenFadeScript;
+    private bool cutsceneLock = false;
+    private Vector3 forcedPosition;
+    private Vector2 forcedLook;
+    private bool forcedMove = false;
+    private float t = 0f;
+    private int forcedTurn;
 
     // Use this for initialization
     void Start () {
         cc = GetComponent<CharacterController>();
         accTajmer = new Timer(0f);
-        screenFadeScript = FindObjectOfType<ScreenFadeScript>();
-        screenFadeScript.SetFade(1);
-        StartCoroutine(Fade());
+        forcedPosition = transform.position;
     }
-	
-    IEnumerator Fade()
+
+    // Update is called once per frame
+    void Update()
     {
-        yield return new WaitForSeconds(1);
-        screenFadeScript.InvertFade();
-        yield return new WaitForSeconds(2);
+        if (!forcedMove)
+        {
+            CheckInputs();
+            CalculateMovement();
+            CalculateCurrentSpeed();
+            CalculateJump();
+            CalculateAirTime();
+            ApplyMovement();
+        }
+        if (forcedMove)
+            Forcing();
     }
 
-	// Update is called once per frame
-	void Update (){
-        CheckInputs();
-        CalculateMovement();
-        CalculateCurrentSpeed();
-        CalculateJump();
-        CalculateAirTime();
-        ApplyMovement();
-
+    public bool CutsceneLock
+    {
+        get { return cutsceneLock; }
+        set { cutsceneLock = value; }
     }
+
     void CalculateAirTime()
     {
         float dt = Time.deltaTime;
@@ -81,6 +90,8 @@ public class CharacterMovement : MonoBehaviour {
     {
         if (inputJump && cc.isGrounded)
         {
+            //Play jumpSound
+            jumpEmitter.Play();
             moveDirection.y = jumpStartSpeed;
         }
     }
@@ -112,12 +123,22 @@ public class CharacterMovement : MonoBehaviour {
     }
     private void CheckInputs()
     {
-        moving = Input.GetButton("Horizontal") == true || Input.GetButton("Vertical") == true ? true : false;
-        inputH = Input.GetAxisRaw("Horizontal");
-        inputV = Input.GetAxisRaw("Vertical");       
-        inputSprint = Input.GetButton("Sprint") ? true : false;
-        if(canJump) inputJump = Input.GetButtonDown("Jump") ? true : false;
-        
+        if (!cutsceneLock)
+        {
+            moving = Input.GetButton("Horizontal") == true || Input.GetButton("Vertical") == true ? true : false;
+            inputH = Input.GetAxisRaw("Horizontal");
+            inputV = Input.GetAxisRaw("Vertical");
+            inputSprint = Input.GetButton("Sprint") ? true : false;
+            if (canJump) inputJump = Input.GetButtonDown("Jump") ? true : false;
+        }
+        else
+        {
+            moving = false;
+            inputH = 0f;
+            inputV = 0f;
+            inputSprint = false;
+            inputJump = false;
+        }
     }
     public bool getSprint()
     {
@@ -137,4 +158,63 @@ public class CharacterMovement : MonoBehaviour {
         else accTajmer.ResetTimer();
     }
 
+    public void ForceMovement(Vector3 targetPosition, Vector2 targetLook)
+    {
+        forcedPosition = targetPosition;
+        forcedLook = targetLook;
+        forcedMove = true;
+        cutsceneLock = true;
+        CameraController camCon = Camera.main.GetComponent<CameraController>();
+        camCon.CutsceneLock = true;
+        float hAngle = targetLook.x - camCon.getLook().x;
+        if (hAngle >= 0)
+        {
+            if (hAngle >= 180)
+                forcedTurn = -1;
+            else
+                forcedTurn = 1;
+        }
+        else
+        {
+            if (hAngle <= -180)
+                forcedTurn = 1;
+            else
+                forcedTurn = -1;
+        }
+        Debug.Log("ForceMovement");
+    }
+
+    private void Forcing()
+    {
+        transform.position = Vector3.MoveTowards(transform.position, forcedPosition, 1.5f);
+        CameraController camCon = Camera.main.GetComponent<CameraController>();
+        Vector2 newLook = camCon.getLook();
+        newLook.y = Mathf.MoveTowards(newLook.y, forcedLook.y, 2);
+        int turnSpeed = 4;
+        newLook.x += forcedTurn * turnSpeed;
+        if (forcedTurn == 1)
+        {
+            if (newLook.x > forcedLook.x)
+                if (newLook.x - forcedLook.x <= turnSpeed)
+                    newLook.x = forcedLook.x;
+        }
+        else
+        {
+            if (newLook.x < forcedLook.x)
+                if (forcedLook.x - newLook.x <= turnSpeed)
+                    newLook.x = forcedLook.x;
+        }
+        camCon.setLook(newLook);
+        if (transform.position == forcedPosition && camCon.getLook() == forcedLook)
+        {
+            forcedMove = false;
+            cutsceneLock = false;
+            camCon.CutsceneLock = false;
+        }
+    }
+
+    public bool GetForcedMove()
+    {
+        return forcedMove;
+    }
 }
