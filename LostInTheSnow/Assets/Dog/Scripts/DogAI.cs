@@ -44,8 +44,10 @@ public class DogAI : MonoBehaviour {
 		if (dog.currentAction != null) {
 			if (dog.currentAction.IsDone ()) {
 				EndAction ();
-			} if (Vector3.Distance (transform.position, dog.player.transform.position) < 5) {
-				if (dog.player.GetComponent<CharacterMovement> ().getSprint ())
+				navAgent.ResetPath ();
+			} 
+			if (Vector3.Distance (dog.transform.position, navAgent.destination) < 5) {
+				if (navAgent.destination == dog.player.position && dog.player.GetComponent<CharacterMovement> ().getSprint ())
 					navAgent.speed = Mathf.Clamp (navAgent.speed + Time.deltaTime * acceleration, 1, 2);
 				else
 					navAgent.speed = Mathf.Clamp (navAgent.speed - Time.deltaTime * acceleration/2, 1, 2);

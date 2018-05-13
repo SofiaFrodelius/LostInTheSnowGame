@@ -99,6 +99,10 @@ public class ItemHand : MonoBehaviour
     {
         return selectedItem;
     }
+	//Emil did this might be wrong
+	public Item GetItemInHand(){
+		return inventory.getItemFromHoldableSlot (selectedItem);
+	}
 
 
 }

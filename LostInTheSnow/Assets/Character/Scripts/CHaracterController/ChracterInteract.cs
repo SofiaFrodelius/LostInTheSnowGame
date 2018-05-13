@@ -38,7 +38,7 @@ public class ChracterInteract : MonoBehaviour
     {
         if (Input.GetButtonDown("CallDog"))
         {
-			dog.Call (transform);
+			dog.Call ();
         }
     }
     void PickUpDog()

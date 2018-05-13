@@ -28,6 +28,7 @@ public class ThrowableItem : MonoBehaviour, IUsable
         rb.transform.GetComponent<Collider>().enabled = true;
         transform.parent = null;
         inventory.removeHoldableItem(ih.getSelectedItem());
+		GameObject.FindGameObjectWithTag ("Dog").GetComponent<Dog> ().Fetch (transform);
         //ih.ActiveItem = null;
     }
     void OnCollisionEnter(Collision collision)

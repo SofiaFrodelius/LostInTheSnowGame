@@ -16,22 +16,29 @@ public class Fetch : DogAction{
 		moodState.ChangeMood (80f, 0f, 100f, 0f);
 		moodEffect.ChangeMood (5f, -5f, 5f, -25f);
     }
+	public Fetch(Dog d, Transform player, Transform stick) : base (d){
+		this.player = player;
+		importance = Importance.MEDIUM;
+		item = stick;
+	}
 	public override void StartAction(){
 		isDone = false;
 		actionTimer = actionDelay;
 		actionCount = 0;
 		actions.Clear ();
-		GameObject stick = ScanForObject.Scan (dog.transform.position, 35f,"Stick", dog.dogLayerMask);
-		if (stick != null) {
-			item = stick.transform;
+		if (item == null) {
+			GameObject stick = ScanForObject.Scan (dog.transform.position, 35f, "Stick", dog.dogLayerMask);
+			if (stick != null) 
+				item = stick.transform;
+		}
+		if(item != null){
 			actions.Add (new FollowTarget (dog, item, Vector3.zero, true, 0.2f));
 			actions.Add (new Grab (dog, item.gameObject));
 			actions.Add (new FollowTarget (dog, player,player.forward, true, 0.5f));
 			actions.Add (new Drop (dog));
 			NextAction();
-		} else {
+		}else
 			isDone = true;
-		}
 	}
 	public override void UpdateAction(){
 		if (!isDone) {

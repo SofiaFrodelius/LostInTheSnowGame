@@ -26,6 +26,7 @@ public class Dog : MonoBehaviour, IInteractible {
 	private Animator animator;
 	private NavMeshAgent navAgent;
 	private const float defaultSpeed = 8f;
+	private ItemHand itemHand;
 
 	void Start () {
 		if (player == null)player = GameObject.FindGameObjectWithTag ("Player").transform;
@@ -34,8 +35,11 @@ public class Dog : MonoBehaviour, IInteractible {
 		ai = GetComponent<DogAI>();
 		animator = GetComponent<Animator>();
 		navAgent = GetComponent<NavMeshAgent> ();
+		itemHand = player.GetComponentInChildren<ItemHand> ();
 	}
 	void Update(){
+		if (itemHand.GetItemInHand ().name == "Stick" && currentAction == null)
+			ai.StartAction (new FollowPlayer (this, player));
 		if (currentAction != null) {
 			currentAction.UpdateAction ();
 			Debug.Log (currentAction.ToString ());
@@ -49,7 +53,13 @@ public class Dog : MonoBehaviour, IInteractible {
 	public bool IsIdle(){
 		return currentAction == null;
 	}
-	public void Call(Transform player){
+	public void Fetch(Transform stick = null) {
+		if (stick != null)
+			ai.StartAction (new Fetch (this, player, stick));
+		else
+			ai.StartAction (new Fetch (this, player));
+	}
+	public void Call(){
 		ai.StartAction (new Call (this, player));
 	}
 	public void Pet(){
