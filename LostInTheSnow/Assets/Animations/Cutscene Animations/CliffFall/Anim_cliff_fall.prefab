@@ -356,7 +356,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   numOfSlots: 5
   numOfHoldableSlots: 3
-  hands: {fileID: 0}
+  testItem: {fileID: 0}
 --- !u!114 &114119700261149146
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -474,7 +474,6 @@ MonoBehaviour:
   jumpStartSpeed: 4
   fallMultiplier: 2.5
   canJump: 1
-  jumpEmitter: {fileID: 0}
 --- !u!114 &114889641558909710
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -547,7 +546,7 @@ PlayableDirector:
   m_Enabled: 1
   serializedVersion: 3
   m_PlayableAsset: {fileID: 11400000, guid: 6c9f3ce4ee2bd284ea0d719caf6c8d77, type: 2}
-  m_InitialState: 0
+  m_InitialState: 1
   m_WrapMode: 2
   m_DirectorUpdateMode: 1
   m_InitialTime: 0
