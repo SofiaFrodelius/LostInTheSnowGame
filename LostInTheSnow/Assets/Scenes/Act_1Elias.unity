@@ -2871,7 +2871,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 294094558}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 24a3fd04ec39ee848942c486237ab9e5, type: 3}
   m_Name: 
@@ -7044,7 +7044,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &701385215
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7065,6 +7065,7 @@ MonoBehaviour:
   - 
   - Press 2 to call Ila.
   - Press 3 to pick up Ila.
+  - 
 --- !u!4 &701385216
 Transform:
   m_ObjectHideFlags: 0
@@ -12977,7 +12978,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000101628212100, guid: 89ba9e9619a634040b323fa5a7599b02, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 114.68603
+      value: 116.57
       objectReference: {fileID: 0}
     - target: {fileID: 4000101628212100, guid: 89ba9e9619a634040b323fa5a7599b02, type: 2}
       propertyPath: m_LocalRotation.x
