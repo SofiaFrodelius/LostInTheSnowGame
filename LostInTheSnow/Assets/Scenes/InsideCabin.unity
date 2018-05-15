@@ -1196,6 +1196,24 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a40497fdad110514b93877e7edf141b1, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &405932986 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1105278455383706, guid: a40497fdad110514b93877e7edf141b1,
+    type: 2}
+  m_PrefabInternal: {fileID: 405932985}
+--- !u!114 &405932987
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 405932986}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c00fb2f278f9bc419b8140b78a015b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneSwitcher: {fileID: 302217905}
+  targetSceneBuildIndex: 0
 --- !u!1 &412145219
 GameObject:
   m_ObjectHideFlags: 0
@@ -7620,8 +7638,8 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2107896860}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 363.5, y: 296, z: 0}
-  m_LocalScale: {x: 0.90875, y: 0.90875, z: 0.90875}
+  m_LocalPosition: {x: 662, y: 319.5, z: 0}
+  m_LocalScale: {x: 1.655, y: 1.655, z: 1.655}
   m_Children:
   - {fileID: 995110227}
   - {fileID: 1101619882}
