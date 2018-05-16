@@ -38,8 +38,15 @@ public class Dog : MonoBehaviour, IInteractible {
 		itemHand = player.GetComponentInChildren<ItemHand> ();
 	}
 	void Update(){
-		if (itemHand.GetItemInHand ().name == "Stick" && currentAction == null)
-			ai.StartAction (new FollowPlayer (this, player));
+		if (itemHand.GetItemInHand () != null && itemHand.GetItemInHand ().name == "Stick") {
+			if (currentAction == null || currentAction.GetImportance () == DogAction.Importance.LOW) {
+				if (Vector3.Distance (transform.position, player.position) < 3) {
+					ai.StartAction (new WaitForFetch (this));
+				} else {
+					ai.StartAction (new FollowPlayer (this, player));
+				}
+			}
+		}
 		if (currentAction != null) {
 			currentAction.UpdateAction ();
 			Debug.Log (currentAction.ToString ());
@@ -49,6 +56,8 @@ public class Dog : MonoBehaviour, IInteractible {
     }
 	public void Interact(){
 		
+	}
+	public void AlternateInteract(){
 	}
 	public bool IsIdle(){
 		return currentAction == null;
@@ -67,7 +76,8 @@ public class Dog : MonoBehaviour, IInteractible {
 			ai.StartAction (new Pet (this));
 	}
 	public void PickupDog(){
-		ai.StartAction (new PickupDog (this));
+		if(currentAction == null || currentAction.GetImportance() != DogAction.Importance.HIGH)
+			ai.StartAction (new PickupDog (this));
 	}
 	public void ParentDog(){
 		transform.parent = player;
