@@ -350,6 +350,63 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 147.695, z: 0}
+--- !u!1 &799973389
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1643254973538334, guid: 4f6ed0aae5fd6aa46bdaa7c366b80c98,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 799973392}
+  - component: {fileID: 799973391}
+  - component: {fileID: 799973390}
+  m_Layer: 0
+  m_Name: SceneSwitch
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &799973390
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 799973389}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63e237fd9a87f49468daa89f278ac733, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneTarget: 0
+--- !u!114 &799973391
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 114470667835846476, guid: 4f6ed0aae5fd6aa46bdaa7c366b80c98,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 799973389}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &799973392
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4306666088748672, guid: 4f6ed0aae5fd6aa46bdaa7c366b80c98,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 799973389}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1227010818}
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &984235325
 GameObject:
   m_ObjectHideFlags: 0
@@ -426,6 +483,63 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!1 &1227010817
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1955433254954074, guid: 4f6ed0aae5fd6aa46bdaa7c366b80c98,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1227010818}
+  - component: {fileID: 1227010820}
+  - component: {fileID: 1227010819}
+  m_Layer: 0
+  m_Name: ScreenFade
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1227010818
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4927853456358792, guid: 4f6ed0aae5fd6aa46bdaa7c366b80c98,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1227010817}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 2.2681773, y: 4.4338355, z: -1.201644}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 799973392}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1227010819
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1227010817}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1c48cc74fb1df148b9fc50dc797f275, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fadeTexture: {fileID: 2800000, guid: 3e521456e50f1974ab6f608eee336e46, type: 3}
+  fadeTime: 1000
+--- !u!114 &1227010820
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 114840569274383772, guid: 4f6ed0aae5fd6aa46bdaa7c366b80c98,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1227010817}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1281777589
 GameObject:
   m_ObjectHideFlags: 0
@@ -797,6 +911,11 @@ Prefab:
       propertyPath: targetSceneBuildIndex
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 114879091337320626, guid: 4df33a1af8d026347866d614d335f200,
+        type: 2}
+      propertyPath: sceneSwitcher
+      value: 
+      objectReference: {fileID: 799973390}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4df33a1af8d026347866d614d335f200, type: 2}
   m_IsPrefabParent: 0
