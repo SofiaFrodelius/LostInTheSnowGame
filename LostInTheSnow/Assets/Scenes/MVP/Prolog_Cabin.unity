@@ -1213,6 +1213,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneSwitcher: {fileID: 302217905}
+  Active: 1
   targetSceneBuildIndex: 3
 --- !u!1 &412145219
 GameObject:
@@ -6078,6 +6079,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneSwitcher: {fileID: 302217905}
+  Active: 0
   targetSceneBuildIndex: 1
 --- !u!64 &1762165584
 MeshCollider:
@@ -7489,6 +7491,10 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1284750051278948, guid: d3ea82478e63b19498990d1cf5a0e5c3, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 65833537290837068, guid: d3ea82478e63b19498990d1cf5a0e5c3, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: d3ea82478e63b19498990d1cf5a0e5c3, type: 2}
@@ -7609,8 +7615,8 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2107896860}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 662, y: 289.5, z: 0}
-  m_LocalScale: {x: 1.655, y: 1.655, z: 1.655}
+  m_LocalPosition: {x: 551.5, y: 289.5, z: 0}
+  m_LocalScale: {x: 1.37875, y: 1.37875, z: 1.37875}
   m_Children:
   - {fileID: 995110227}
   - {fileID: 1101619882}

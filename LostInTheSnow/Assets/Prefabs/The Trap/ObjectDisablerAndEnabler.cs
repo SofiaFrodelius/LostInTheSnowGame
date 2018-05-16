@@ -26,8 +26,18 @@ public class ObjectDisablerAndEnabler : MonoBehaviour {
     
     void DisablerEnabler()
     {
-        objectToDisable.SetActive(false);
-		objectToDisable_2.SetActive(false);
-        objectToEnable.SetActive(true);
+        if (objectToDisable != null)
+        {
+            objectToDisable.SetActive(false);
+        }
+        if (objectToDisable_2 != null)
+        {
+            objectToDisable_2.SetActive(false);
+        }
+        if (objectToEnable != null)
+        {
+            objectToEnable.SetActive(true);
+        }
+        
     }
 }
