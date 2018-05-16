@@ -9431,6 +9431,11 @@ Prefab:
       propertyPath: m_Name
       value: cabin_exterior (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 114879091337320626, guid: 4df33a1af8d026347866d614d335f200,
+        type: 2}
+      propertyPath: targetSceneBuildIndex
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4df33a1af8d026347866d614d335f200, type: 2}
   m_IsPrefabParent: 0
@@ -9754,6 +9759,11 @@ Prefab:
       propertyPath: sceneSwitcher
       value: 
       objectReference: {fileID: 417668181}
+    - target: {fileID: 114879091337320626, guid: 4df33a1af8d026347866d614d335f200,
+        type: 2}
+      propertyPath: targetSceneBuildIndex
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4df33a1af8d026347866d614d335f200, type: 2}
   m_IsPrefabParent: 0
@@ -10835,8 +10845,8 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2003875188}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 619.5, y: 314.5, z: 0}
-  m_LocalScale: {x: 1.54875, y: 1.54875, z: 1.54875}
+  m_LocalPosition: {x: 662, y: 289.5, z: 0}
+  m_LocalScale: {x: 1.655, y: 1.655, z: 1.655}
   m_Children:
   - {fileID: 1984856489}
   - {fileID: 1446248053}

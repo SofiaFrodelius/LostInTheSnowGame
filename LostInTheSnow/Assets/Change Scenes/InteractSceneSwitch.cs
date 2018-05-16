@@ -7,10 +7,16 @@ public class InteractSceneSwitch : MonoBehaviour, IInteractible
     [SerializeField]
     private SceneSwitchScript sceneSwitcher = null;
     [SerializeField]
+    private bool Active = true;
+    [SerializeField]
     private int targetSceneBuildIndex = 0;
 
     public void Interact()
     {
-        sceneSwitcher.ActivateSceneSwitch(targetSceneBuildIndex);
+        if (Active == true)
+        {
+            sceneSwitcher.ActivateSceneSwitch(targetSceneBuildIndex);
+        }
+
     }
 }
