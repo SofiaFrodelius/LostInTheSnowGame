@@ -12,7 +12,6 @@ public class Headbob : MonoBehaviour
     {
         anim = GetComponent<Animator>();
         cc = transform.parent.GetComponent<CharacterController>();
-
     }
 	
 	// Update is called once per frame
@@ -37,6 +36,13 @@ public class Headbob : MonoBehaviour
             {
                 anim.SetBool("IsSprinting", false);
             }
+
+            if((anim.GetBool("IsSprinting") || anim.GetBool("IsWalking")) && transform.parent.GetComponent<CharacterMovement>().CutsceneLock)
+            {
+                anim.SetBool("IsSprinting", false);
+                anim.SetBool("IsWalking", false);
+            }
+
 
             if(Input.GetMouseButtonDown(0))
             {

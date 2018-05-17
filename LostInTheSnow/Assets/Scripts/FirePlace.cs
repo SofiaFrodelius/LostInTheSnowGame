@@ -11,6 +11,8 @@ public class FirePlace : MonoBehaviour, IInteractible
     [SerializeField] private StudioEventEmitter fireSound;
     [SerializeField] private float timeToLightFire;
     [SerializeField] private Item fireStriker;
+    [SerializeField] private Item wood;
+    [SerializeField] private int woodNeeded;
     private bool hasLitten = false;
 
     //sorry johan lägger till lite  här
@@ -27,7 +29,7 @@ public class FirePlace : MonoBehaviour, IInteractible
     public void Interact()
     {
        
-        if(inv && !hasLitten && inv.isItemInInventory(fireStriker))
+        if(inv && !hasLitten && inv.isItemInInventory(fireStriker) && inv.isItemInInventory(wood, woodNeeded))
         {
             ToggleFire();
         }

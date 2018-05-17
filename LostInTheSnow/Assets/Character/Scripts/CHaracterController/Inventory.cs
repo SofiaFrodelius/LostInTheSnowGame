@@ -237,13 +237,15 @@ public class Inventory : MonoBehaviour
         else return null;
     }
 
-    public bool isItemInInventory(Item item)
+    public bool isItemInInventory(Item item, int num = 1)
     {
+        if (num < 1) return true;
+
         if(item.getHoldable())
         {
             for(int i = 0; i < holdableSlots.Count; i++)
             {
-                if (holdableSlots[i].getItem() == item) return true;
+                if (holdableSlots[i].getItem() == item && holdableSlots[i].getItemsInSlot() >= num) return true;
                 else continue;
             }
         }
@@ -252,7 +254,7 @@ public class Inventory : MonoBehaviour
         {
             for (int i = 0; i < inventorySlots.Count; i++)
             {
-                if (inventorySlots[i].getItem() == item) return true;
+                if (inventorySlots[i].getItem() == item && inventorySlots[i].getItemsInSlot() >= num) return true;
                 else continue;
             }
         }
