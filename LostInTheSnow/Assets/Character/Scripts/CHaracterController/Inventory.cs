@@ -172,6 +172,23 @@ public class Inventory : MonoBehaviour
         }
     }
 
+    public void replaceHoldableItem(int slotId, Item item)
+    {
+        if(holdableSlots[slotId].getItemsInSlot() == 1)
+        {
+            holdableSlots[slotId].setItem(item);
+        }
+        else
+        {
+            holdableSlots[slotId].decrementItemsInSlot();
+            addItem(item);
+        }
+
+        if (updateItemInHandCallback != null)
+            updateItemInHandCallback.Invoke();
+    }
+
+
     public void removeNonHoldableItem(Item item)
     {
         for (int i = 0; i < inventorySlots.Count; i++)
@@ -220,6 +237,30 @@ public class Inventory : MonoBehaviour
         else return null;
     }
 
+    public bool isItemInInventory(Item item)
+    {
+        if(item.getHoldable())
+        {
+            for(int i = 0; i < holdableSlots.Count; i++)
+            {
+                if (holdableSlots[i].getItem() == item) return true;
+                else continue;
+            }
+        }
+
+        else if (!item.getHoldable())
+        {
+            for (int i = 0; i < inventorySlots.Count; i++)
+            {
+                if (inventorySlots[i].getItem() == item) return true;
+                else continue;
+            }
+        }
+
+        return false;
+    }
+
+
 
     public void loadInventory(List<InventorySlot> HS, List<InventorySlot> NHS, int usedHoldableSlots, int numHoldableSlots, int usedRegularSlots, int numRegularSlots) //HS holdableSlots, NHS nonHoldableSlots
     {
@@ -243,7 +284,7 @@ public class Inventory : MonoBehaviour
 
     public void OnDestroy()
     {
-        invSaveLoad.saveInventory();
+        if(invSaveLoad != null) invSaveLoad.saveInventory();
     }
 
 }
