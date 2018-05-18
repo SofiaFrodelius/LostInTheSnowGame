@@ -436,7 +436,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   numOfSlots: 5
   numOfHoldableSlots: 3
-  testItem: {fileID: 0}
+  hands: {fileID: 0}
 --- !u!114 &114635806260073942
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -572,5 +572,7 @@ PlayableDirector:
     value: {fileID: 1759992644113880}
   - key: {fileID: 114777009321284848, guid: 8c618b308df03bc4d808146ba890a9b9, type: 2}
     value: {fileID: 1750152719375190}
+  - key: {fileID: 114430986347659852, guid: 8c618b308df03bc4d808146ba890a9b9, type: 2}
+    value: {fileID: 0}
   m_ExposedReferences:
     m_References: []
