@@ -15,9 +15,11 @@ public class DogAI : MonoBehaviour {
 	private float acceleration = 2f;
 	private Dog dog;
 	private NavMeshAgent navAgent;
+	private Animator animator;
 	void Awake(){
 		dog = GetComponent<Dog> ();
 		navAgent = GetComponent<NavMeshAgent> ();
+		animator = GetComponent<Animator> ();
 	}
 	void Start(){
 		actions.Add (idleActions);
@@ -46,13 +48,17 @@ public class DogAI : MonoBehaviour {
 				EndAction ();
 				navAgent.ResetPath ();
 			} 
-			if (Vector3.Distance (dog.transform.position, navAgent.destination) < 5) {
-				if (navAgent.destination == dog.player.position && dog.player.GetComponent<CharacterMovement> ().getSprint ())
-					navAgent.speed = Mathf.Clamp (navAgent.speed + Time.deltaTime * acceleration, 1, 2);
-				else
-					navAgent.speed = Mathf.Clamp (navAgent.speed - Time.deltaTime * acceleration/2, 1, 2);
+			if (animator.GetBool ("isSniffing")) {
+				navAgent.speed = Mathf.Clamp (navAgent.speed - Time.deltaTime * acceleration / 2, 1, 2);
 			} else {
-				navAgent.speed = Mathf.Clamp (navAgent.speed + Time.deltaTime * acceleration, 1, 2);
+				if (Vector3.Distance (dog.transform.position, navAgent.destination) < 5) {
+					if (navAgent.destination == dog.player.position && dog.player.GetComponent<CharacterMovement> ().getSprint ())
+						navAgent.speed = Mathf.Clamp (navAgent.speed + Time.deltaTime * acceleration, 1, 2);
+					else
+						navAgent.speed = Mathf.Clamp (navAgent.speed - Time.deltaTime * acceleration / 2, 1, 2);
+				} else {
+					navAgent.speed = Mathf.Clamp (navAgent.speed + Time.deltaTime * acceleration, 1, 2);
+				}
 			}
 		}
 	}

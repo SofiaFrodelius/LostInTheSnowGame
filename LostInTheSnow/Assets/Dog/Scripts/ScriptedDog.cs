@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class ScriptedDog : MonoBehaviour {
 	public float maxDistance = 10f;
+	public float sitTimer = 5f;
 	public List<GameObject> wayPoints;
 
 	private Dog dog;
@@ -15,7 +16,10 @@ public class ScriptedDog : MonoBehaviour {
 		dog = GetComponent<Dog> ();
 		dogAI = GetComponent<DogAI> ();
 		for (int i = 0; i < wayPoints.Count; i++) {
-			actions.Add (new LeadPlayer (dog, dog.player, wayPoints[i].transform.position, maxDistance, false));
+			if (wayPoints [i] != null)
+				actions.Add (new LeadPlayer (dog, dog.player, wayPoints [i].transform.position, maxDistance, false, wayPoints[wayPoints.Count-1].transform.position));
+			else
+				actions.Add (new Sit (dog, sitTimer)); 
 		}
 		NextAction ();
 	}

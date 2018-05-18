@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 4661005969958182}
   - component: {fileID: 114732004244381522}
   - component: {fileID: 65642296374328364}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: CutsceneTrigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -65,7 +65,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cutsceneToTrigger: {fileID: 0}
-  player: {fileID: 0}
   disableCamera: 0
   disableMovement: 0
   disableInteract: 0

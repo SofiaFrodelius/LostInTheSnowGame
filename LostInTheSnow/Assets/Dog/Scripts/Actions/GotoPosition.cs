@@ -47,6 +47,7 @@ public class GotoPosition : DogAction{
 				navAgent.SetDestination(currentTarget);
 			}
 			else if(Vector2.Distance(dogPos, new Vector2(targetPosition.x, targetPosition.z))> width){
+				dog.isSniffing = false;
 				GetNewTarget ();
 			}else{
 				isDone = true;
@@ -61,7 +62,9 @@ public class GotoPosition : DogAction{
 			return;
 		}
 		//Temporary values.
-		currentTarget = GetPos (10,20,-10,10,5,"Tree");
+		NavMeshHit hit;
+		NavMesh.SamplePosition (GetPos (10, 20, -10, 10, 5, "Tree"), out hit, 2, NavMesh.AllAreas);
+		currentTarget = hit.position;
 	}
 	Vector3 GetPos(float minForward, float maxForward, float minRight, float maxRight, float radius, string tag){
 		Vector3 pos = Vector3.zero;
@@ -73,6 +76,8 @@ public class GotoPosition : DogAction{
 		GameObject obj = ScanForObject.Scan (scanPos, radius, tag, dog.dogLayerMask);
 		if (obj != null) {
 			pos = obj.transform.position;
+			if (Random.Range (0, 2) == 0)
+				dog.isSniffing = true;
 			//Temporary I guess.
 			obj.tag = "Untagged";
 		}else {

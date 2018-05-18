@@ -4,26 +4,29 @@ using UnityEngine;
 
 public class Call : DogAction {
 	Transform player;
-	FollowTarget followTarget;
-	public Call(Dog d, Transform player) : base(d){
+	DogAction currentAction;
+	public Call(Dog d, Transform player, bool staticPlayer = false) : base(d){
 		this.player = player;
 		importance = Importance.HIGH;
-		followTarget = new FollowTarget (dog, player, Vector3.zero, true, 3f);
+		if(!staticPlayer)
+			currentAction = new FollowTarget (dog, player, Vector3.zero, true, 3f);
+		else
+			currentAction = new GotoStaticPosition(dog, player.position, player.forward);
 	}
 	public override void StartAction(){
 		isDone = false;
-		followTarget.StartAction ();
+		currentAction.StartAction ();
 	}
 	public override void UpdateAction(){
 		if (!isDone) {
-			if (!followTarget.IsDone ()) 
-				followTarget.UpdateAction ();
+			if (!currentAction.IsDone ()) 
+				currentAction.UpdateAction ();
 			else
 				isDone = true;
 		}
 	}
 	public override void EndAction(){
-		followTarget.EndAction ();
+		currentAction.EndAction ();
 		isDone = true;
 	}
 }

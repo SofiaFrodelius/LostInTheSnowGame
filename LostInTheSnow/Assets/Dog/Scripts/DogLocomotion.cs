@@ -18,6 +18,7 @@ public class DogLocomotion : MonoBehaviour {
 	private int angularSpeedId;
 	private int directionId;
 	private int lookDirectionId;
+	private int lookUpId;
 
 	private bool update = true;
 	private Dog dog;
@@ -34,20 +35,32 @@ public class DogLocomotion : MonoBehaviour {
 		angularSpeedId = Animator.StringToHash("AngularSpeed");
 		directionId = Animator.StringToHash("Direction");
 		lookDirectionId = Animator.StringToHash ("LookDirection");
+		lookUpId = Animator.StringToHash ("LookUp");
 	}
 	void Update(){
 		SetupLookDirection ();
 		SetupAgentLocomotion();
 	}
 	void SetupLookDirection(){
+		float distanceToPlayer = Vector2.Distance (new Vector2 (dog.transform.position.x, dog.transform.position.z), new Vector2 (dog.player.position.x, dog.player.position.z));
+		float HeightDifferenceToPlayer = dog.player.transform.position.y - dog.transform.position.y;
+		float upAngle = Mathf.Atan2 (HeightDifferenceToPlayer, distanceToPlayer) * Mathf.Rad2Deg;
+
 		Vector3 direction = (dog.player.position - dog.transform.position).normalized;
 		float forwardAngle = Mathf.Atan2 (dog.transform.forward.x , dog.transform.forward.z) * Mathf.Rad2Deg;
 		float playerAngle = Mathf.Atan2 (direction.x , direction.z) * Mathf.Rad2Deg;
 		float angle = (playerAngle - forwardAngle);
-		if (angle > 90 || angle < -90)
+		if (angle > 90 || angle < -90) {
 			animator.SetFloat (lookDirectionId, 0, headLookDampTime, Time.deltaTime);
-		else
+			animator.SetFloat (lookUpId, 0, headLookDampTime, Time.deltaTime);
+		} else {
 			animator.SetFloat (lookDirectionId, angle, headLookDampTime, Time.deltaTime);
+			animator.SetFloat (lookUpId, upAngle, headLookDampTime, Time.deltaTime);
+		}
+		if (dog.isSniffing)
+			animator.SetLayerWeight (3, 1);
+		else
+			animator.SetLayerWeight (3, 0);
 	}
 	void SetupAgentLocomotion(){
 		if (NavAgentDone ()) {
