@@ -16,7 +16,7 @@ public class EyeCast : MonoBehaviour
     {
         if (ci)
         {
-            interactLength = ci.MaxInteractLength;
+            interactLength = 3f;// ci.MaxInteractLength;
             StartCoroutine(cast());
         }
 
