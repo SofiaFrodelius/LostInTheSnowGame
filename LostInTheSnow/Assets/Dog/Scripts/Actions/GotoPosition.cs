@@ -36,7 +36,6 @@ public class GotoPosition : DogAction{
 			Debug.DrawLine (path.corners [i], path.corners [i + 1], Color.red, 0.1f);	
 		}if (path.corners.Length > 1) {
 			direction = (path.corners [1] - dog.transform.position).normalized;
-			//direction.y = dog.transform.position.y;
 		}
 		Vector3 offset = new Vector3 (0, 1, 0);
 		Debug.DrawLine (dog.transform.position+offset, dog.transform.position+direction*4+offset, Color.blue);
@@ -63,7 +62,7 @@ public class GotoPosition : DogAction{
 		}
 		//Temporary values.
 		NavMeshHit hit;
-		NavMesh.SamplePosition (GetPos (10, 20, -10, 10, 5, "Tree"), out hit, 2, NavMesh.AllAreas);
+		NavMesh.SamplePosition (GetPos (20, 30, -10, 10, 5, "Tree"), out hit, 2, NavMesh.AllAreas);
 		currentTarget = hit.position;
 	}
 	Vector3 GetPos(float minForward, float maxForward, float minRight, float maxRight, float radius, string tag){
@@ -76,7 +75,7 @@ public class GotoPosition : DogAction{
 		GameObject obj = ScanForObject.Scan (scanPos, radius, tag, dog.dogLayerMask);
 		if (obj != null) {
 			pos = obj.transform.position;
-			if (Random.Range (0, 2) == 0)
+			if (Random.Range (0, 5) == 0)
 				dog.isSniffing = true;
 			//Temporary I guess.
 			obj.tag = "Untagged";
@@ -84,12 +83,12 @@ public class GotoPosition : DogAction{
 			pos = scanPos;
 		}
 		NavMeshHit hit;
-		if (NavMesh.SamplePosition (pos, out hit, 2.0f, 1)){
+		if (NavMesh.SamplePosition (pos, out hit, 3.0f, 1)){
 			pos = hit.position;
 		}else {
 			pos = path.corners [1];
 		}
-		//dog.TestWaypoint.position = (pos);
+		dog.TestWaypoint.position = (pos);
 		return pos;
 	}
 	private Vector3 GetPerpendicular2DVector(Vector3 v){

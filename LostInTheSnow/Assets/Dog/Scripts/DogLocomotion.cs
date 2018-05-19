@@ -10,8 +10,6 @@ public class DogLocomotion : MonoBehaviour {
 	[Range(0,1f)]
 	public float speedDampTime = 0.1f;
 	[Range(0,1f)]
-	public float angularSpeedDampTime = 0.25f;
-	[Range(0,1f)]
 	public float headLookDampTime = 0.1f;
 
 	private int speedId;
@@ -32,7 +30,6 @@ public class DogLocomotion : MonoBehaviour {
 
 		//Get Ids of animator parameters.
 		speedId = Animator.StringToHash("Speed");
-		angularSpeedId = Animator.StringToHash("AngularSpeed");
 		directionId = Animator.StringToHash("Direction");
 		lookDirectionId = Animator.StringToHash ("LookDirection");
 		lookUpId = Animator.StringToHash ("LookUp");
@@ -40,6 +37,10 @@ public class DogLocomotion : MonoBehaviour {
 	void Update(){
 		SetupLookDirection ();
 		SetupAgentLocomotion();
+		if (dog.isSniffing)
+			animator.SetLayerWeight (3, Mathf.Clamp(animator.GetLayerWeight(3)+ Time.deltaTime,0,1));
+		else
+			animator.SetLayerWeight (3, Mathf.Clamp(animator.GetLayerWeight(3)- Time.deltaTime,0,1));
 	}
 	void SetupLookDirection(){
 		float distanceToPlayer = Vector2.Distance (new Vector2 (dog.transform.position.x, dog.transform.position.z), new Vector2 (dog.player.position.x, dog.player.position.z));
@@ -57,10 +58,6 @@ public class DogLocomotion : MonoBehaviour {
 			animator.SetFloat (lookDirectionId, angle, headLookDampTime, Time.deltaTime);
 			animator.SetFloat (lookUpId, upAngle, headLookDampTime, Time.deltaTime);
 		}
-		if (dog.isSniffing)
-			animator.SetLayerWeight (3, 1);
-		else
-			animator.SetLayerWeight (3, 0);
 	}
 	void SetupAgentLocomotion(){
 		if (NavAgentDone ()) {
@@ -73,12 +70,11 @@ public class DogLocomotion : MonoBehaviour {
 			//Beräknar vinkeln mot velocityn i grader.
 			float angle = Mathf.Atan2 (velocity.x, velocity.z) * Mathf.Rad2Deg;
 			//Sets Mecanim Animator Parameters
-			if (update) 
+			if (update)
 				SetParameters (speed, angle);
 		}
 	}
 	public void StartIdleTurn(){
-		Debug.Log ("WHEN IS THIS");
 		update = false;
 	}
 	public void StopIdleTurn(){
@@ -98,11 +94,7 @@ public class DogLocomotion : MonoBehaviour {
 		//float speedDampTime = inIdle ? 0 : speedDampTime;
 		//float angularSpeedDampTime = inBasicWalk || inTransition ? angularSpeedDampTime : 0;
 		float directionDampTime = inTransition ? 1000000 : 0;
-
-		float angularSpeed = direction / directionResponseTime;
-
 		animator.SetFloat(speedId, speed, inIdle ? speedDampTime : speedDampTime, Time.deltaTime);
-		animator.SetFloat(angularSpeedId, angularSpeed, inBasicWalk || inTransition ? angularSpeedDampTime : 0, Time.deltaTime);
 		animator.SetFloat(directionId, direction, directionDampTime, Time.deltaTime);
 	}
 	bool NavAgentDone(){

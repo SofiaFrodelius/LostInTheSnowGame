@@ -41,6 +41,10 @@ public class Dog : MonoBehaviour, IInteractible {
 		characterMovement = player.GetComponent<CharacterMovement> ();
 	}
 	void Update(){
+		RaycastHit hit;
+		Ray ray = new Ray (transform.position, -Vector3.up);
+		if (Physics.Raycast (ray, out hit))
+			transform.eulerAngles = new Vector3 (Vector3.Angle (Vector3.up, hit.normal), transform.eulerAngles.y, transform.eulerAngles.z);
 		if (itemHand.GetItemInHand () != null && itemHand.GetItemInHand ().name == "Stick") {
 			if (currentAction == null || currentAction.GetImportance () == DogAction.Importance.LOW) {
 				if (Vector3.Distance (transform.position, player.position) < 3) {

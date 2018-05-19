@@ -12,7 +12,7 @@ public class DogAI : MonoBehaviour {
 	private enum ActionType{ IDLE, ACTIVE};
 	private Mood bestMood;
 
-	private float acceleration = 2f;
+	private float acceleration = 1f;
 	private Dog dog;
 	private NavMeshAgent navAgent;
 	private Animator animator;
@@ -48,16 +48,16 @@ public class DogAI : MonoBehaviour {
 				EndAction ();
 				navAgent.ResetPath ();
 			} 
-			if (animator.GetBool ("isSniffing")) {
-				navAgent.speed = Mathf.Clamp (navAgent.speed - Time.deltaTime * acceleration / 2, 1, 2);
+			if (dog.isSniffing) {
+				navAgent.speed = Mathf.Clamp (navAgent.speed - Time.deltaTime * acceleration, 1, 2);
 			} else {
 				if (Vector3.Distance (dog.transform.position, navAgent.destination) < 5) {
 					if (navAgent.destination == dog.player.position && dog.player.GetComponent<CharacterMovement> ().getSprint ())
-						navAgent.speed = Mathf.Clamp (navAgent.speed + Time.deltaTime * acceleration, 1, 2);
+						navAgent.speed = Mathf.Clamp (navAgent.speed + Time.deltaTime * acceleration/2, 1, 2);
 					else
-						navAgent.speed = Mathf.Clamp (navAgent.speed - Time.deltaTime * acceleration / 2, 1, 2);
+						navAgent.speed = Mathf.Clamp (navAgent.speed - Time.deltaTime * acceleration, 1, 2);
 				} else {
-					navAgent.speed = Mathf.Clamp (navAgent.speed + Time.deltaTime * acceleration, 1, 2);
+					navAgent.speed = Mathf.Clamp (navAgent.speed + Time.deltaTime * acceleration/2, 1, 2);
 				}
 			}
 		}
