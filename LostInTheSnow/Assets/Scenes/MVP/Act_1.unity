@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 1040827643}
-  m_IndirectSpecularColor: {r: 0.45143354, g: 0.5007908, b: 0.57161254, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -2303,6 +2303,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxDistance: 10
+  sitTimer: 5
   wayPoints:
   - {fileID: 1446604892}
   - {fileID: 1048187340}
@@ -2333,7 +2334,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   directionResponseTime: 0.2
   speedDampTime: 0.1
-  angularSpeedDampTime: 0.25
   headLookDampTime: 0.1
 --- !u!65 &294094562
 BoxCollider:
@@ -2395,6 +2395,7 @@ MonoBehaviour:
   rightd: 0
   grabbedItem: {fileID: 0}
   itemObject: {fileID: 0}
+  isSniffing: 0
 --- !u!95 &294094565
 Animator:
   serializedVersion: 3
@@ -13176,14 +13177,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Event: event:/Music/Prologue/Prologue
+  Event: event:/Music/Music_Outside/Music_Outside_Day_Night
   PlayEvent: 11
-  StopEvent: 0
+  StopEvent: 2
   CollisionTag: 
   AllowFadeout: 1
   TriggerOnce: 0
   Preload: 0
-  Params: []
+  Params:
+  - Name: Day_Night
+    Value: 0
+  - Name: Distance Dog
+    Value: 0
   OverrideAttenuation: 0
   OverrideMinDistance: 0
   OverrideMaxDistance: 0
@@ -13612,8 +13617,8 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2003875188}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 542.5, y: 289.5, z: 0}
-  m_LocalScale: {x: 1.35625, y: 1.35625, z: 1.35625}
+  m_LocalPosition: {x: 260, y: 241, z: 0}
+  m_LocalScale: {x: 0.65, y: 0.65, z: 0.65}
   m_Children:
   - {fileID: 1984856489}
   - {fileID: 1446248053}
