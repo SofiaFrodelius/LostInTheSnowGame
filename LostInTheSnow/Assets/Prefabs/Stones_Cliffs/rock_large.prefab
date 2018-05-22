@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 33330465625261978}
   - component: {fileID: 23900084804310806}
   - component: {fileID: 95996488222791236}
+  - component: {fileID: 65373830862938108}
   m_Layer: 0
   m_Name: rock_large
   m_TagString: Untagged
@@ -56,7 +57,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 1217e05fa4c5c7546b8deb584bd5078b, type: 2}
+  - {fileID: 2100000, guid: e0601b6d813507a4aa9524e525485cf4, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -83,6 +84,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1348079952345336}
   m_Mesh: {fileID: 4300000, guid: 53ba22eaec3c36640a44667f2a410e24, type: 3}
+--- !u!65 &65373830862938108
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1348079952345336}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.5879612, y: 2.5111172, z: 3.454791}
+  m_Center: {x: 0.00000017881393, y: 0.85061806, z: -0.000000059604645}
 --- !u!95 &95996488222791236
 Animator:
   serializedVersion: 3
