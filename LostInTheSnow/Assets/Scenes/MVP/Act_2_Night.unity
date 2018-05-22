@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 1040827643}
-  m_IndirectSpecularColor: {r: 0.45143354, g: 0.5007908, b: 0.57161254, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -9915,6 +9915,16 @@ Prefab:
         type: 2}
       propertyPath: movementSpeed
       value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 114842960195493138, guid: 01cb98abec9806640b709a5f30da47af,
+        type: 2}
+      propertyPath: moodState
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114428917269092332, guid: 01cb98abec9806640b709a5f30da47af,
+        type: 2}
+      propertyPath: Event
+      value: event:/Sound/Avatar/Footsteps/Footsteps_Snow
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 01cb98abec9806640b709a5f30da47af, type: 2}

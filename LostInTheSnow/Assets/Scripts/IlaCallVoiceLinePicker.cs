@@ -50,7 +50,7 @@ public class IlaCallVoiceLinePicker : MonoBehaviour {
 	}
     public void PlayVoiceLine(float distanceToIla)
     {
-
+        Debug.Log("Borde spela voiceline");
         voiceLineMiscEmitter.Play();
         if (distanceToIla < closeFarThreshold)
         {

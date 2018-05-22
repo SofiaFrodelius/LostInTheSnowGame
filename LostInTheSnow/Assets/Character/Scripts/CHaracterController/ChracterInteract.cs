@@ -14,11 +14,13 @@ public class ChracterInteract : MonoBehaviour
     private bool callDogAllowed = true;
     private bool interactDogAllowed = true;
     private bool pickUpDogAllowed = true;
+    private IlaCallVoiceLinePicker picker;
     // Use this for initialization
     void Start()
     {
         playerCam = Camera.main;
 		dog = GameObject.FindWithTag ("Dog").GetComponent<Dog>();
+        picker = GetComponent<IlaCallVoiceLinePicker>();
     }
 
     // Update is called once per frame
@@ -38,6 +40,10 @@ public class ChracterInteract : MonoBehaviour
     {
         if (Input.GetButtonDown("CallDog"))
         {
+            if (picker)
+            {
+                picker.PlayVoiceLine(Vector3.Distance(dog.transform.position, transform.position));
+            }
 			dog.Call ();
         }
     }
