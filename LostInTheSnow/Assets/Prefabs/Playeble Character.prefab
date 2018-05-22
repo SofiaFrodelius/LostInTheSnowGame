@@ -102,6 +102,7 @@ GameObject:
   - component: {fileID: 208773646232210678}
   - component: {fileID: 114550982783676028}
   - component: {fileID: 114842960195493138}
+  - component: {fileID: 114702778610133820}
   m_Layer: 8
   m_Name: Playeble Character
   m_TagString: Player
@@ -463,6 +464,28 @@ MonoBehaviour:
   interactLayerMask:
     serializedVersion: 2
     m_Bits: 4294967039
+--- !u!114 &114702778610133820
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1796018197999996}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event: event:/Sound/Avatar/Jump
+  PlayEvent: 0
+  StopEvent: 0
+  CollisionTag: 
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 0
+  OverrideMaxDistance: 0
 --- !u!114 &114756805726312168
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -497,7 +520,7 @@ MonoBehaviour:
   jumpStartSpeed: 4
   fallMultiplier: 2.5
   canJump: 1
-  jumpEmitter: {fileID: 0}
+  jumpEmitter: {fileID: 114702778610133820}
 --- !u!114 &114817931860055914
 MonoBehaviour:
   m_ObjectHideFlags: 1

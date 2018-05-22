@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 304907ecc21b46c44981a3ca2cf7323c
-timeCreated: 1526633937
+timeCreated: 1526979902
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
@@ -33,8 +33,18 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: m_stove1
+    second: {fileID: 2100000, guid: 3262cdd01848f9946909933f9c62b108, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: m_stoveglass
     second: {fileID: 2100000, guid: c19057aa504db4c49b80afbf2af71261, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: m_stoveglass1
+    second: {fileID: 2100000, guid: efa6300c613fb1d4f86c71e186699bf5, type: 2}
   materials:
     importMaterials: 1
     materialName: 0

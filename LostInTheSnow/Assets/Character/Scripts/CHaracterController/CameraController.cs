@@ -9,6 +9,7 @@ public class CameraController : MonoBehaviour
     private Transform playerTransform;
 
     private bool cutsceneLock = false;
+    
 
     private void Start()
     {
@@ -20,6 +21,7 @@ public class CameraController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
         if (!cutsceneLock)
         {
             Vector2 move = new Vector2(Input.GetAxisRaw("Mouse X"), Input.GetAxisRaw("Mouse Y"));
@@ -55,7 +57,11 @@ public class CameraController : MonoBehaviour
     public bool CutsceneLock
     {
         get { return cutsceneLock; }
-        set { cutsceneLock = value; }
+        set
+        {
+            look = new Vector2(playerTransform.eulerAngles.y, transform.eulerAngles.x);
+            cutsceneLock = value;
+        }
     }
 
     public Vector2 getLook()
