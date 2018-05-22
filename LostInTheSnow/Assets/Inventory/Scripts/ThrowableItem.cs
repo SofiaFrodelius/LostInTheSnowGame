@@ -26,6 +26,7 @@ public class ThrowableItem : MonoBehaviour, IUsable
         rb.AddRelativeTorque((Vector3.down) * 10);
         rb.collisionDetectionMode = CollisionDetectionMode.Continuous;
         rb.transform.GetComponent<Collider>().enabled = true;
+		rb.gameObject.layer = 0;
         transform.parent = null;
         inventory.removeHoldableItem(ih.getSelectedItem());
 		GameObject.FindGameObjectWithTag ("Dog").GetComponent<Dog> ().Fetch (transform);
