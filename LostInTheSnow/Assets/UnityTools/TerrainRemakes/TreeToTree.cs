@@ -54,6 +54,8 @@ class TreeToTree : EditorWindow
             Vector3 treePos = new Vector3(ti[i].position.x * td.size.x + terrainPos.x, ti[i].position.y * td.size.y + terrainPos.y, ti[i].position.z * td.size.z + + terrainPos.z);
             GameObject tmpTree = Instantiate(tp.prefab, treePos, Quaternion.identity);
             tmpTree.transform.parent = forest.transform;
+            Vector3 newRot = new Vector3(tmpTree.transform.eulerAngles.x + Random.Range(-2f, 2f), Random.Range(0f, 360f), tmpTree.transform.eulerAngles.z + Random.Range(-2f, 2f));
+            tmpTree.transform.eulerAngles = newRot;
         }
     }
 

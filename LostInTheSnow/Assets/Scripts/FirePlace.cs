@@ -14,6 +14,9 @@ public class FirePlace : MonoBehaviour, IInteractible
     [SerializeField] private Item wood;
     [SerializeField] private int woodNeeded;
     private bool hasLitten = false;
+    private Animator anim;
+
+    [SerializeField] private bool suposedToBrake;
 
     //sorry johan lägger till lite  här
     Inventory inv;
@@ -22,19 +25,40 @@ public class FirePlace : MonoBehaviour, IInteractible
 
     public void Start()
     {
+        anim = GetComponent<Animator>();
         inv = Inventory.instance;
     }
 
 
     public void Interact()
     {
-       
-        if(inv && !hasLitten && inv.isItemInInventory(fireStriker) && inv.isItemInInventory(wood, woodNeeded))
+
+        if (inv && !hasLitten && inv.isItemInInventory(fireStriker) && inv.isItemInInventory(wood, woodNeeded))
+        {
+            ToggleFire();
+            if (suposedToBrake)
+            {
+                anim.SetBool("IsBroken", true);
+            }
+            else
+            {
+                anim.SetTrigger("ChangeState");
+                StartCoroutine(doorCloser(timeToLightFire + 2f));
+            }
+            for (int i = 0; i < woodNeeded; i++)
+            {
+                inv.removeNonHoldableItem(wood);
+            }
+        }
+        else if (!hasLitten && !inv)
         {
             ToggleFire();
         }
-        else if(!hasLitten && !inv)
-            ToggleFire();
+        else
+        {
+            
+        }
+        
     }
     void ToggleFire()
     {
@@ -50,5 +74,10 @@ public class FirePlace : MonoBehaviour, IInteractible
         
         GameObject tmpPS = Instantiate(particleSys, particlePos);
         gameObject.GetComponent<FirePlace>().enabled = false;
+    }
+    IEnumerator doorCloser(float time)
+    {
+        yield return new WaitForSeconds(time);
+        anim.SetTrigger("ChangeState");
     }
 }
