@@ -9,6 +9,7 @@ public class FirePlace : MonoBehaviour, IInteractible
     [SerializeField] private GameObject particleSys;
     [SerializeField] private Transform particlePos;
     [SerializeField] private StudioEventEmitter fireSound;
+    [SerializeField] private StudioEventEmitter needMoreWood;
     [SerializeField] private float timeToLightFire;
     [SerializeField] private Item fireStriker;
     [SerializeField] private Item wood;
@@ -16,9 +17,10 @@ public class FirePlace : MonoBehaviour, IInteractible
     private bool hasLitten = false;
     private Animator anim;
 
+    private int[] needMoreWoodId = { 13, 26 }; //Hårdkodade voiceline ids
+
     [SerializeField] private bool suposedToBrake;
 
-    //sorry johan lägger till lite  här
     Inventory inv;
 
 
@@ -50,28 +52,43 @@ public class FirePlace : MonoBehaviour, IInteractible
                 inv.removeNonHoldableItem(wood);
             }
         }
+
+        else if (inv && !hasLitten && inv.isItemInInventory(fireStriker) && !inv.isItemInInventory(wood, woodNeeded))
+        {
+            if (!needMoreWood.IsPlaying())
+            {
+                int i = Random.Range(0, needMoreWoodId.Length);
+
+                needMoreWood.Play();
+                needMoreWood.SetParameter("Voice Line", needMoreWoodId[i]);
+            }
+
+        }
+
+
+
         else if (!hasLitten && !inv)
         {
             ToggleFire();
         }
         else
         {
-            
+
         }
-        
+
     }
     void ToggleFire()
     {
         hasLitten = true;
 
-        fireSound.gameObject.SetActive(true);        
+        fireSound.gameObject.SetActive(true);
         StartCoroutine(fireStarter(timeToLightFire));
     }
 
     IEnumerator fireStarter(float time)
     {
-        yield return new WaitForSeconds( time);
-        
+        yield return new WaitForSeconds(time);
+
         GameObject tmpPS = Instantiate(particleSys, particlePos);
         gameObject.GetComponent<FirePlace>().enabled = false;
     }
@@ -79,5 +96,12 @@ public class FirePlace : MonoBehaviour, IInteractible
     {
         yield return new WaitForSeconds(time);
         anim.SetTrigger("ChangeState");
+    }
+
+    public void AlternateInteract()
+    {
+
+    
+
     }
 }
