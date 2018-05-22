@@ -21,7 +21,10 @@ public class Dog : MonoBehaviour, IInteractible {
     public Item grabbedItem;
     public GameObject itemObject;
 	public DogAction currentAction;
+	public DogAction savedAction;
 	public bool isSniffing = false;
+	public bool isPickedup = false;
+	public bool usingRootMotion = true;
 
 	private DogAI ai;
 	private Animator animator;
@@ -41,10 +44,7 @@ public class Dog : MonoBehaviour, IInteractible {
 		characterMovement = player.GetComponent<CharacterMovement> ();
 	}
 	void Update(){
-		RaycastHit hit;
-		Ray ray = new Ray (transform.position, -Vector3.up);
-		if (Physics.Raycast (ray, out hit))
-			transform.eulerAngles = new Vector3 (Vector3.Angle (Vector3.up, hit.normal), transform.eulerAngles.y, transform.eulerAngles.z);
+		Debug.DrawLine (transform.position, transform.position + transform.forward*3, Color.yellow);
 		if (itemHand.GetItemInHand () != null && itemHand.GetItemInHand ().name == "Stick") {
 			if (currentAction == null || currentAction.GetImportance () == DogAction.Importance.LOW) {
 				if (Vector3.Distance (transform.position, player.position) < 3) {
@@ -56,6 +56,9 @@ public class Dog : MonoBehaviour, IInteractible {
 		}
 		if (currentAction != null) {
 			currentAction.UpdateAction ();
+		} else if (savedAction != null) {
+			currentAction = savedAction;
+			currentAction.StartAction ();
 		}
     }
 	public void Interact(){
@@ -67,12 +70,16 @@ public class Dog : MonoBehaviour, IInteractible {
 		return currentAction == null;
 	}
 	public void Fetch(Transform stick = null) {
+		if (currentAction != null)
+			savedAction = currentAction;
 		if (stick != null)
 			ai.StartAction (new Fetch (this, player, stick));
 		else
 			ai.StartAction (new Fetch (this, player));
 	}
 	public void Call(){
+		if (currentAction != null)
+			savedAction = currentAction;
 		if (characterMovement.CutsceneLock) 
 			ai.StartAction (new Call (this, player, true));
 		else 
@@ -87,12 +94,14 @@ public class Dog : MonoBehaviour, IInteractible {
 			ai.StartAction (new PickupDog (this));
 	}
 	public void ParentDog(){
-		Debug.Log ("YaYAY");
-		transform.parent = player.GetChild(2);
+		if (!isPickedup) {
+			transform.parent = player.GetChild (2);
+			isPickedup = true;
+		}
 	}
 	public void BreakLoose(){
-		Debug.Log ("YaYAYBREAK");
-		transform.parent = null;
+		if(isPickedup)
+			transform.parent = null;
 	}
 	public void AddEffectToMood(Mood effect){
 		currentMood = currentMood + effect;

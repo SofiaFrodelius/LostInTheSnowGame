@@ -19,4 +19,9 @@ public class InteractSceneSwitch : MonoBehaviour, IInteractible
         }
 
     }
+	
+	public void AlternateInteract()
+	{
+		
+	}
 }

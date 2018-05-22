@@ -5,5 +5,5 @@ using UnityEngine.EventSystems;
 
 public interface IInteractible : IEventSystemHandler{
     void Interact();
-
+	void AlternateInteract();
 }
