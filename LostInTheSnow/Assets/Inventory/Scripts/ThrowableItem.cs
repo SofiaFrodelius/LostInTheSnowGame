@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+
 [RequireComponent(typeof(Rigidbody))]
 public class ThrowableItem : MonoBehaviour, IUsable
 {
@@ -23,7 +24,7 @@ public class ThrowableItem : MonoBehaviour, IUsable
         Vector3 throwDirection = Camera.main.transform.forward;
         rb.isKinematic = false;
         rb.AddForce(throwDirection * throwForce, ForceMode.Impulse);
-        rb.AddRelativeTorque((Vector3.down) * 10);
+        rb.AddRelativeTorque((new Vector3(0f, -1f, 0f)) * 10000);
         rb.collisionDetectionMode = CollisionDetectionMode.Continuous;
         rb.transform.GetComponent<Collider>().enabled = true;
 		rb.gameObject.layer = 0;

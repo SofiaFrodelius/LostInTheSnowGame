@@ -42,8 +42,8 @@ MonoBehaviour:
   ambientOcclusion:
     m_Enabled: 1
     m_Settings:
-      intensity: 0.78
-      radius: 0.24
+      intensity: 0.38
+      radius: 1.35
       sampleCount: 10
       downsampling: 0
       forceForwardCompatibility: 0
@@ -71,19 +71,19 @@ MonoBehaviour:
   depthOfField:
     m_Enabled: 0
     m_Settings:
-      focusDistance: 5.06
-      aperture: 14.9
+      focusDistance: 2.5
+      aperture: 6.3
       focalLength: 115
       useCameraFov: 0
       kernelSize: 1
   motionBlur:
-    m_Enabled: 0
+    m_Enabled: 1
     m_Settings:
       shutterAngle: 290
       sampleCount: 26
       frameBlending: 0
   eyeAdaptation:
-    m_Enabled: 0
+    m_Enabled: 1
     m_Settings:
       lowPercent: 1
       highPercent: 51.00001
@@ -92,8 +92,8 @@ MonoBehaviour:
       keyValue: 0.25
       dynamicKeyValue: 0
       adaptationType: 0
-      speedUp: 2
-      speedDown: 1
+      speedUp: 0.3
+      speedDown: 0.3
       logMin: -10
       logMax: 4
   bloom:
@@ -120,12 +120,12 @@ MonoBehaviour:
         neutralWhiteLevel: 5.3
         neutralWhiteClip: 10
       basic:
-        postExposure: 0
+        postExposure: 0.18
         temperature: 0
         tint: 0
         hueShift: 0
-        saturation: 1
-        contrast: 1
+        saturation: 1.17
+        contrast: 0.68
       channelMixer:
         red: {x: 1, y: 0, z: 0}
         green: {x: 0, y: 1, z: 0}
@@ -150,13 +150,13 @@ MonoBehaviour:
               time: 0
               value: 0
               inSlope: 0
-              outSlope: 1.3985349
+              outSlope: 1
               tangentMode: 0
             - serializedVersion: 2
               time: 1
-              value: 0.98717946
-              inSlope: 0.47293428
-              outSlope: 0.47293428
+              value: 1
+              inSlope: 1
+              outSlope: 0
               tangentMode: 0
             m_PreInfinity: 2
             m_PostInfinity: 2
