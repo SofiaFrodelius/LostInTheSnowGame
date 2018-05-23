@@ -30,7 +30,7 @@ public class DogPath : MonoBehaviour {
 			DestroyImmediate(line [0].gameObject.GetComponent<NavMeshModifierVolume> ());
 		}
 	}
-	void OnDrawGizmosSelected(){
+	void OnDrawGizmos(){
 		UpdateLines ();
 		Gizmos.color = new Color(1, 0, 0);
 		foreach (Transform t in positions) {
