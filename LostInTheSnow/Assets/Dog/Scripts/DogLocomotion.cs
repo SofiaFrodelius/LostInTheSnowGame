@@ -33,6 +33,8 @@ public class DogLocomotion : MonoBehaviour {
 		directionId = Animator.StringToHash("Direction");
 		lookDirectionId = Animator.StringToHash ("LookDirection");
 		lookUpId = Animator.StringToHash ("LookUp");
+
+		StartCoroutine (BreathingTimer (10f));
 	}
 	void Update(){
 		SetupSlopeAngleRotation ();
@@ -42,19 +44,35 @@ public class DogLocomotion : MonoBehaviour {
 			animator.SetLayerWeight (3, Mathf.Clamp(animator.GetLayerWeight(3)+ Time.deltaTime,0,1));
 		else
 			animator.SetLayerWeight (3, Mathf.Clamp(animator.GetLayerWeight(3)- Time.deltaTime,0,1));
+		animator.SetBool ("IsBreathing", dog.isBreathing);
+		
+	}
+	IEnumerator BreathingTimer(float time){
+		while(true){
+			if (Random.Range (0, 4) == 0) {
+				dog.isBreathing = true;
+			}else
+				dog.isBreathing = false;
+			yield return new WaitForSeconds(time);
+		}
 	}
 	void SetupSlopeAngleRotation(){
+		Debug.Log("Frame cont incrementer");
 		RaycastHit hit;
-		float angle = 0;
-		Ray forwardRay = new Ray (transform.position, transform.forward);
-		Ray downwardRay = new Ray (transform.position, -Vector3.up);
-		if (Physics.Raycast (forwardRay, out hit,0.5f, dog.dogLayerMask)) {
-			angle = 90 - Vector3.Angle (transform.forward, hit.normal);
-		}else if(Physics.Raycast(downwardRay, out hit, 1f, dog.dogLayerMask)){
-			angle = 90 - Vector3.Angle (transform.forward, hit.normal);
+		float angle = transform.eulerAngles.x;
+		Ray forwardRay = new Ray (transform.position + Vector3.up, transform.forward);
+		Ray downwardRay = new Ray (transform.position + Vector3.up, -Vector3.up);
+		Debug.DrawLine(transform.position + Vector3.up, transform.position + Vector3.up + -Vector3.up, Color.red);
+		if(Physics.Raycast(downwardRay, out hit, 2f, dog.dogLayerMask)){
+			if (hit.transform.tag == "Terrain") {
+				angle = 90 - Vector3.Angle (transform.forward, hit.normal);
+				Debug.Log ("HIT with angle : " + angle);
+				Debug.DrawLine(hit.point, hit.point+hit.normal, Color.green);
+				
+			}
 		}
 		Vector3 angleVector3 = new Vector3 (angle, transform.eulerAngles.y, transform.eulerAngles.z);
-		transform.eulerAngles = angleVector3;//Vector3.Lerp (transform.eulerAngles, angleVector3, Time.deltaTime*10);
+		transform.eulerAngles = Vector3.Lerp (transform.eulerAngles, angleVector3, 0.5f);
 	}
 	void SetupLookDirection(){
 		float distanceToPlayer = Vector2.Distance (new Vector2 (dog.transform.position.x, dog.transform.position.z), new Vector2 (dog.player.position.x, dog.player.position.z));
@@ -95,10 +113,8 @@ public class DogLocomotion : MonoBehaviour {
 		update = true;
 	}
 	void OnAnimatorMove(){
-		if (dog.usingRootMotion) {
-			navAgent.velocity = animator.deltaPosition / Time.deltaTime;
-			transform.rotation = animator.rootRotation;
-		}
+		navAgent.velocity = animator.deltaPosition / Time.deltaTime;
+		transform.eulerAngles = new Vector3(animator.rootRotation.eulerAngles.x, animator.rootRotation.eulerAngles.y, animator.rootRotation.eulerAngles.z);
 	}
 	void SetParameters(float speed, float direction){
 		AnimatorStateInfo state = animator.GetCurrentAnimatorStateInfo(0);

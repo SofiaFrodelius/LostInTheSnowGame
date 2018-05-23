@@ -13,18 +13,13 @@ public class Dog : MonoBehaviour, IInteractible {
 	public Transform itemBone;
 	public Terrain terrain;
 	public Mood currentMood;
-
-	[Header("Debug Tools")]
-	public Transform TestWaypoint;
-	public float forwardd;
-	public float rightd;
-    public Item grabbedItem;
-    public GameObject itemObject;
+	public bool isSniffing = false;
+	public bool isBreathing = false;
 	public DogAction currentAction;
 	public DogAction savedAction;
-	public bool isSniffing = false;
+
+	[Header("Debug Tools")]
 	public bool isPickedup = false;
-	public bool usingRootMotion = true;
 
 	private DogAI ai;
 	private Animator animator;
@@ -32,6 +27,9 @@ public class Dog : MonoBehaviour, IInteractible {
 	private const float defaultSpeed = 8f;
 	private ItemHand itemHand;
 	private CharacterMovement characterMovement;
+	private Item grabbedItem;
+	private GameObject itemObject;
+	public bool isWaitingForFetch = false;
 
 	void Start () {
 		if (player == null)player = GameObject.FindGameObjectWithTag ("Player").transform;
@@ -46,12 +44,14 @@ public class Dog : MonoBehaviour, IInteractible {
 	void Update(){
 		Debug.DrawLine (transform.position, transform.position + transform.forward*3, Color.yellow);
 		if (itemHand.GetItemInHand () != null && itemHand.GetItemInHand ().name == "Stick") {
-			if (currentAction == null || currentAction.GetImportance () == DogAction.Importance.LOW) {
-				if (Vector3.Distance (transform.position, player.position) < 3) {
+			if (currentAction != null && currentAction.GetImportance() == DogAction.Importance.HIGH)
+				savedAction = currentAction;
+			if (Vector3.Distance (transform.position, player.position) < 3) {
+				if (!isWaitingForFetch) {
 					ai.StartAction (new WaitForFetch (this));
-				} else {
-					ai.StartAction (new FollowPlayer (this, player));
 				}
+			} else {
+				ai.StartAction (new FollowPlayer (this, player));
 			}
 		}
 		if (currentAction != null) {

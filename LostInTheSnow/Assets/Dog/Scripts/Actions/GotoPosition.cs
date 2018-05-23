@@ -88,7 +88,7 @@ public class GotoPosition : DogAction{
 		}else {
 			pos = path.corners [1];
 		}
-		dog.TestWaypoint.position = (pos);
+		//dog.TestWaypoint.position = (pos);
 		return pos;
 	}
 	private Vector3 GetPerpendicular2DVector(Vector3 v){

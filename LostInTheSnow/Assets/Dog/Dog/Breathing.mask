@@ -1,0 +1,196 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!319 &31900000
+AvatarMask:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Breathing
+  m_Mask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+  m_Elements:
+  - m_Path: 
+    m_Weight: 1
+  - m_Path: all_CTRL_grp
+    m_Weight: 0
+  - m_Path: all_CTRL_grp/CTRL_grp
+    m_Weight: 0
+  - m_Path: all_CTRL_grp/CTRL_grp/ila_super_mover_CTRL
+    m_Weight: 0
+  - m_Path: all_CTRL_grp/CTRL_grp/ila_super_mover_CTRL/hip_grp
+    m_Weight: 0
+  - m_Path: all_CTRL_grp/CTRL_grp/ila_super_mover_CTRL/hip_grp/hip_CTRL
+    m_Weight: 0
+  - m_Path: all_CTRL_grp/CTRL_grp/ila_super_mover_CTRL/hip_grp/hip_CTRL/pelvis_jnt
+    m_Weight: 0
+  - m_Path: all_CTRL_grp/CTRL_grp/ila_super_mover_CTRL/hip_grp/hip_CTRL/pelvis_jnt/backleg_jnt_L_1
+    m_Weight: 0
+  - m_Path: all_CTRL_grp/CTRL_grp/ila_super_mover_CTRL/hip_grp/hip_CTRL/pelvis_jnt/backleg_jnt_L_1/backleg_jnt_L_2
+    m_Weight: 0
+  - m_Path: all_CTRL_grp/CTRL_grp/ila_super_mover_CTRL/hip_grp/hip_CTRL/pelvis_jnt/backleg_jnt_L_1/backleg_jnt_L_2/backleg_jnt_L_3
+    m_Weight: 0
+  - m_Path: all_CTRL_grp/CTRL_grp/ila_super_mover_CTRL/hip_grp/hip_CTRL/pelvis_jnt/backleg_jnt_L_1/backleg_jnt_L_2/backleg_jnt_L_3/backleg_jnt_L_4
+    m_Weight: 0
+  - m_Path: all_CTRL_grp/CTRL_grp/ila_super_mover_CTRL/hip_grp/hip_CTRL/pelvis_jnt/backleg_jnt_L_1/backleg_jnt_L_2/backleg_jnt_L_3/backleg_jnt_L_4/backleg_jnt_L_5
+    m_Weight: 0
+  - m_Path: all_CTRL_grp/CTRL_grp/ila_super_mover_CTRL/hip_grp/hip_CTRL/pelvis_jnt/backleg_jnt_L_1/backleg_jnt_L_2/backleg_jnt_L_3/backleg_jnt_L_4/backleg_jnt_L_5/backleg_jnt_L_6
+    m_Weight: 0
+  - m_Path: all_CTRL_grp/CTRL_grp/ila_super_mover_CTRL/hip_grp/hip_CTRL/pelvis_jnt/backleg_jnt_L_1/Buttock_jnt_L
+    m_Weight: 0
+  - m_Path: all_CTRL_grp/CTRL_grp/ila_super_mover_CTRL/hip_grp/hip_CTRL/pelvis_jnt/backleg_jnt_R_1
+    m_Weight: 0
+  - m_Path: all_CTRL_grp/CTRL_grp/ila_super_mover_CTRL/hip_grp/hip_CTRL/pelvis_jnt/backleg_jnt_R_1/backleg_jnt_R_2
+    m_Weight: 0
+  - m_Path: all_CTRL_grp/CTRL_grp/ila_super_mover_CTRL/hip_grp/hip_CTRL/pelvis_jnt/backleg_jnt_R_1/backleg_jnt_R_2/backleg_jnt_R_3
+    m_Weight: 0
+  - m_Path: all_CTRL_grp/CTRL_grp/ila_super_mover_CTRL/hip_grp/hip_CTRL/pelvis_jnt/backleg_jnt_R_1/backleg_jnt_R_2/backleg_jnt_R_3/backleg_jnt_R_4
+    m_Weight: 0
+  - m_Path: all_CTRL_grp/CTRL_grp/ila_super_mover_CTRL/hip_grp/hip_CTRL/pelvis_jnt/backleg_jnt_R_1/backleg_jnt_R_2/backleg_jnt_R_3/backleg_jnt_R_4/backleg_jnt_R_5
+    m_Weight: 0
+  - m_Path: all_CTRL_grp/CTRL_grp/ila_super_mover_CTRL/hip_grp/hip_CTRL/pelvis_jnt/backleg_jnt_R_1/backleg_jnt_R_2/backleg_jnt_R_3/backleg_jnt_R_4/backleg_jnt_R_5/backleg_jnt_R_6
+    m_Weight: 0
+  - m_Path: all_CTRL_grp/CTRL_grp/ila_super_mover_CTRL/hip_grp/hip_CTRL/pelvis_jnt/backleg_jnt_R_1/Buttock_jnt_R
+    m_Weight: 0
+  - m_Path: all_CTRL_grp/CTRL_grp/ila_super_mover_CTRL/hip_grp/hip_CTRL/pelvis_jnt/butt_jnt
+    m_Weight: 0
+  - m_Path: all_CTRL_grp/CTRL_grp/ila_super_mover_CTRL/hip_grp/hip_CTRL/pelvis_jnt/spine_jnt_2
+    m_Weight: 0
+  - m_Path: all_CTRL_grp/CTRL_grp/ila_super_mover_CTRL/hip_grp/hip_CTRL/pelvis_jnt/spine_jnt_2/spine_jnt_3
+    m_Weight: 0
+  - m_Path: all_CTRL_grp/CTRL_grp/ila_super_mover_CTRL/hip_grp/hip_CTRL/pelvis_jnt/spine_jnt_2/spine_jnt_3/spine_jnt_4
+    m_Weight: 0
+  - m_Path: all_CTRL_grp/CTRL_grp/ila_super_mover_CTRL/hip_grp/hip_CTRL/pelvis_jnt/spine_jnt_2/spine_jnt_3/spine_jnt_4/spine_jnt_5
+    m_Weight: 0
+  - m_Path: all_CTRL_grp/CTRL_grp/ila_super_mover_CTRL/hip_grp/hip_CTRL/pelvis_jnt/spine_jnt_2/spine_jnt_3/spine_jnt_4/spine_jnt_5/spine_jnt_6
+    m_Weight: 0
+  - m_Path: all_CTRL_grp/CTRL_grp/ila_super_mover_CTRL/hip_grp/hip_CTRL/pelvis_jnt/spine_jnt_2/spine_jnt_3/spine_jnt_4/spine_jnt_5/spine_jnt_6/spine_jnt_7
+    m_Weight: 0
+  - m_Path: all_CTRL_grp/CTRL_grp/ila_super_mover_CTRL/hip_grp/hip_CTRL/pelvis_jnt/spine_jnt_2/spine_jnt_3/spine_jnt_4/spine_jnt_5/spine_jnt_6/spine_jnt_7/spine_jnt_8
+    m_Weight: 0
+  - m_Path: all_CTRL_grp/CTRL_grp/ila_super_mover_CTRL/hip_grp/hip_CTRL/pelvis_jnt/spine_jnt_2/spine_jnt_3/spine_jnt_4/spine_jnt_5/spine_jnt_6/spine_jnt_7/spine_jnt_8/spine_jnt_9
+    m_Weight: 0
+  - m_Path: all_CTRL_grp/CTRL_grp/ila_super_mover_CTRL/hip_grp/hip_CTRL/pelvis_jnt/spine_jnt_2/spine_jnt_3/spine_jnt_4/spine_jnt_5/spine_jnt_6/spine_jnt_7/spine_jnt_8/spine_jnt_9/spine_jnt_10
+    m_Weight: 0
+  - m_Path: all_CTRL_grp/CTRL_grp/ila_super_mover_CTRL/hip_grp/hip_CTRL/pelvis_jnt/spine_jnt_2/spine_jnt_3/spine_jnt_4/spine_jnt_5/spine_jnt_6/spine_jnt_7/spine_jnt_8/spine_jnt_9/spine_jnt_10/spine_jnt_11
+    m_Weight: 0
+  - m_Path: all_CTRL_grp/CTRL_grp/ila_super_mover_CTRL/hip_grp/hip_CTRL/pelvis_jnt/spine_jnt_2/spine_jnt_3/spine_jnt_4/spine_jnt_5/spine_jnt_6/spine_jnt_7/spine_jnt_8/spine_jnt_9/spine_jnt_10/spine_jnt_11/chest_grp
+    m_Weight: 0
+  - m_Path: all_CTRL_grp/CTRL_grp/ila_super_mover_CTRL/hip_grp/hip_CTRL/pelvis_jnt/spine_jnt_2/spine_jnt_3/spine_jnt_4/spine_jnt_5/spine_jnt_6/spine_jnt_7/spine_jnt_8/spine_jnt_9/spine_jnt_10/spine_jnt_11/chest_grp/chest_jnt
+    m_Weight: 0
+  - m_Path: all_CTRL_grp/CTRL_grp/ila_super_mover_CTRL/hip_grp/hip_CTRL/pelvis_jnt/spine_jnt_2/spine_jnt_3/spine_jnt_4/spine_jnt_5/spine_jnt_6/spine_jnt_7/spine_jnt_8/spine_jnt_9/spine_jnt_10/spine_jnt_11/frontleg_jnt_L_1
+    m_Weight: 0
+  - m_Path: all_CTRL_grp/CTRL_grp/ila_super_mover_CTRL/hip_grp/hip_CTRL/pelvis_jnt/spine_jnt_2/spine_jnt_3/spine_jnt_4/spine_jnt_5/spine_jnt_6/spine_jnt_7/spine_jnt_8/spine_jnt_9/spine_jnt_10/spine_jnt_11/frontleg_jnt_L_1/frontleg_jnt_L_2
+    m_Weight: 0
+  - m_Path: all_CTRL_grp/CTRL_grp/ila_super_mover_CTRL/hip_grp/hip_CTRL/pelvis_jnt/spine_jnt_2/spine_jnt_3/spine_jnt_4/spine_jnt_5/spine_jnt_6/spine_jnt_7/spine_jnt_8/spine_jnt_9/spine_jnt_10/spine_jnt_11/frontleg_jnt_L_1/frontleg_jnt_L_2/frontleg_jnt_L_3
+    m_Weight: 0
+  - m_Path: all_CTRL_grp/CTRL_grp/ila_super_mover_CTRL/hip_grp/hip_CTRL/pelvis_jnt/spine_jnt_2/spine_jnt_3/spine_jnt_4/spine_jnt_5/spine_jnt_6/spine_jnt_7/spine_jnt_8/spine_jnt_9/spine_jnt_10/spine_jnt_11/frontleg_jnt_L_1/frontleg_jnt_L_2/frontleg_jnt_L_3/frontleg_jnt_L_4
+    m_Weight: 0
+  - m_Path: all_CTRL_grp/CTRL_grp/ila_super_mover_CTRL/hip_grp/hip_CTRL/pelvis_jnt/spine_jnt_2/spine_jnt_3/spine_jnt_4/spine_jnt_5/spine_jnt_6/spine_jnt_7/spine_jnt_8/spine_jnt_9/spine_jnt_10/spine_jnt_11/frontleg_jnt_L_1/frontleg_jnt_L_2/frontleg_jnt_L_3/frontleg_jnt_L_4/frontleg_jnt_L_5
+    m_Weight: 0
+  - m_Path: all_CTRL_grp/CTRL_grp/ila_super_mover_CTRL/hip_grp/hip_CTRL/pelvis_jnt/spine_jnt_2/spine_jnt_3/spine_jnt_4/spine_jnt_5/spine_jnt_6/spine_jnt_7/spine_jnt_8/spine_jnt_9/spine_jnt_10/spine_jnt_11/frontleg_jnt_L_1/frontleg_jnt_L_2/frontleg_jnt_L_3/frontleg_jnt_L_4/frontleg_jnt_L_5/frontleg_jnt_L_6
+    m_Weight: 0
+  - m_Path: all_CTRL_grp/CTRL_grp/ila_super_mover_CTRL/hip_grp/hip_CTRL/pelvis_jnt/spine_jnt_2/spine_jnt_3/spine_jnt_4/spine_jnt_5/spine_jnt_6/spine_jnt_7/spine_jnt_8/spine_jnt_9/spine_jnt_10/spine_jnt_11/frontleg_jnt_R_1
+    m_Weight: 0
+  - m_Path: all_CTRL_grp/CTRL_grp/ila_super_mover_CTRL/hip_grp/hip_CTRL/pelvis_jnt/spine_jnt_2/spine_jnt_3/spine_jnt_4/spine_jnt_5/spine_jnt_6/spine_jnt_7/spine_jnt_8/spine_jnt_9/spine_jnt_10/spine_jnt_11/frontleg_jnt_R_1/frontleg_jnt_R_2
+    m_Weight: 0
+  - m_Path: all_CTRL_grp/CTRL_grp/ila_super_mover_CTRL/hip_grp/hip_CTRL/pelvis_jnt/spine_jnt_2/spine_jnt_3/spine_jnt_4/spine_jnt_5/spine_jnt_6/spine_jnt_7/spine_jnt_8/spine_jnt_9/spine_jnt_10/spine_jnt_11/frontleg_jnt_R_1/frontleg_jnt_R_2/frontleg_jnt_R_3
+    m_Weight: 0
+  - m_Path: all_CTRL_grp/CTRL_grp/ila_super_mover_CTRL/hip_grp/hip_CTRL/pelvis_jnt/spine_jnt_2/spine_jnt_3/spine_jnt_4/spine_jnt_5/spine_jnt_6/spine_jnt_7/spine_jnt_8/spine_jnt_9/spine_jnt_10/spine_jnt_11/frontleg_jnt_R_1/frontleg_jnt_R_2/frontleg_jnt_R_3/frontleg_jnt_R_4
+    m_Weight: 0
+  - m_Path: all_CTRL_grp/CTRL_grp/ila_super_mover_CTRL/hip_grp/hip_CTRL/pelvis_jnt/spine_jnt_2/spine_jnt_3/spine_jnt_4/spine_jnt_5/spine_jnt_6/spine_jnt_7/spine_jnt_8/spine_jnt_9/spine_jnt_10/spine_jnt_11/frontleg_jnt_R_1/frontleg_jnt_R_2/frontleg_jnt_R_3/frontleg_jnt_R_4/frontleg_jnt_R_5
+    m_Weight: 0
+  - m_Path: all_CTRL_grp/CTRL_grp/ila_super_mover_CTRL/hip_grp/hip_CTRL/pelvis_jnt/spine_jnt_2/spine_jnt_3/spine_jnt_4/spine_jnt_5/spine_jnt_6/spine_jnt_7/spine_jnt_8/spine_jnt_9/spine_jnt_10/spine_jnt_11/frontleg_jnt_R_1/frontleg_jnt_R_2/frontleg_jnt_R_3/frontleg_jnt_R_4/frontleg_jnt_R_5/frontleg_jnt_R_6
+    m_Weight: 0
+  - m_Path: all_CTRL_grp/CTRL_grp/ila_super_mover_CTRL/hip_grp/hip_CTRL/pelvis_jnt/spine_jnt_2/spine_jnt_3/spine_jnt_4/spine_jnt_5/spine_jnt_6/spine_jnt_7/spine_jnt_8/spine_jnt_9/spine_jnt_10/spine_jnt_11/neck_jnt_1
+    m_Weight: 0
+  - m_Path: all_CTRL_grp/CTRL_grp/ila_super_mover_CTRL/hip_grp/hip_CTRL/pelvis_jnt/spine_jnt_2/spine_jnt_3/spine_jnt_4/spine_jnt_5/spine_jnt_6/spine_jnt_7/spine_jnt_8/spine_jnt_9/spine_jnt_10/spine_jnt_11/neck_jnt_1/neck_jnt_2
+    m_Weight: 0
+  - m_Path: all_CTRL_grp/CTRL_grp/ila_super_mover_CTRL/hip_grp/hip_CTRL/pelvis_jnt/spine_jnt_2/spine_jnt_3/spine_jnt_4/spine_jnt_5/spine_jnt_6/spine_jnt_7/spine_jnt_8/spine_jnt_9/spine_jnt_10/spine_jnt_11/neck_jnt_1/neck_jnt_2/neck_jnt_3
+    m_Weight: 0
+  - m_Path: all_CTRL_grp/CTRL_grp/ila_super_mover_CTRL/hip_grp/hip_CTRL/pelvis_jnt/spine_jnt_2/spine_jnt_3/spine_jnt_4/spine_jnt_5/spine_jnt_6/spine_jnt_7/spine_jnt_8/spine_jnt_9/spine_jnt_10/spine_jnt_11/neck_jnt_1/neck_jnt_2/neck_jnt_3/neck_jnt_4
+    m_Weight: 0
+  - m_Path: all_CTRL_grp/CTRL_grp/ila_super_mover_CTRL/hip_grp/hip_CTRL/pelvis_jnt/spine_jnt_2/spine_jnt_3/spine_jnt_4/spine_jnt_5/spine_jnt_6/spine_jnt_7/spine_jnt_8/spine_jnt_9/spine_jnt_10/spine_jnt_11/neck_jnt_1/neck_jnt_2/neck_jnt_3/neck_jnt_4/head_jnt
+    m_Weight: 0
+  - m_Path: all_CTRL_grp/CTRL_grp/ila_super_mover_CTRL/hip_grp/hip_CTRL/pelvis_jnt/spine_jnt_2/spine_jnt_3/spine_jnt_4/spine_jnt_5/spine_jnt_6/spine_jnt_7/spine_jnt_8/spine_jnt_9/spine_jnt_10/spine_jnt_11/neck_jnt_1/neck_jnt_2/neck_jnt_3/neck_jnt_4/head_jnt/cheek_jnt_L
+    m_Weight: 0
+  - m_Path: all_CTRL_grp/CTRL_grp/ila_super_mover_CTRL/hip_grp/hip_CTRL/pelvis_jnt/spine_jnt_2/spine_jnt_3/spine_jnt_4/spine_jnt_5/spine_jnt_6/spine_jnt_7/spine_jnt_8/spine_jnt_9/spine_jnt_10/spine_jnt_11/neck_jnt_1/neck_jnt_2/neck_jnt_3/neck_jnt_4/head_jnt/cheek_jnt_R
+    m_Weight: 0
+  - m_Path: all_CTRL_grp/CTRL_grp/ila_super_mover_CTRL/hip_grp/hip_CTRL/pelvis_jnt/spine_jnt_2/spine_jnt_3/spine_jnt_4/spine_jnt_5/spine_jnt_6/spine_jnt_7/spine_jnt_8/spine_jnt_9/spine_jnt_10/spine_jnt_11/neck_jnt_1/neck_jnt_2/neck_jnt_3/neck_jnt_4/head_jnt/ear_jnt_L_1
+    m_Weight: 0
+  - m_Path: all_CTRL_grp/CTRL_grp/ila_super_mover_CTRL/hip_grp/hip_CTRL/pelvis_jnt/spine_jnt_2/spine_jnt_3/spine_jnt_4/spine_jnt_5/spine_jnt_6/spine_jnt_7/spine_jnt_8/spine_jnt_9/spine_jnt_10/spine_jnt_11/neck_jnt_1/neck_jnt_2/neck_jnt_3/neck_jnt_4/head_jnt/ear_jnt_L_1/ear_jnt_L_2
+    m_Weight: 0
+  - m_Path: all_CTRL_grp/CTRL_grp/ila_super_mover_CTRL/hip_grp/hip_CTRL/pelvis_jnt/spine_jnt_2/spine_jnt_3/spine_jnt_4/spine_jnt_5/spine_jnt_6/spine_jnt_7/spine_jnt_8/spine_jnt_9/spine_jnt_10/spine_jnt_11/neck_jnt_1/neck_jnt_2/neck_jnt_3/neck_jnt_4/head_jnt/ear_jnt_L_1/ear_jnt_L_2/ear_jnt_L_3
+    m_Weight: 0
+  - m_Path: all_CTRL_grp/CTRL_grp/ila_super_mover_CTRL/hip_grp/hip_CTRL/pelvis_jnt/spine_jnt_2/spine_jnt_3/spine_jnt_4/spine_jnt_5/spine_jnt_6/spine_jnt_7/spine_jnt_8/spine_jnt_9/spine_jnt_10/spine_jnt_11/neck_jnt_1/neck_jnt_2/neck_jnt_3/neck_jnt_4/head_jnt/ear_jnt_R_1
+    m_Weight: 0
+  - m_Path: all_CTRL_grp/CTRL_grp/ila_super_mover_CTRL/hip_grp/hip_CTRL/pelvis_jnt/spine_jnt_2/spine_jnt_3/spine_jnt_4/spine_jnt_5/spine_jnt_6/spine_jnt_7/spine_jnt_8/spine_jnt_9/spine_jnt_10/spine_jnt_11/neck_jnt_1/neck_jnt_2/neck_jnt_3/neck_jnt_4/head_jnt/ear_jnt_R_1/ear_jnt_R_2
+    m_Weight: 0
+  - m_Path: all_CTRL_grp/CTRL_grp/ila_super_mover_CTRL/hip_grp/hip_CTRL/pelvis_jnt/spine_jnt_2/spine_jnt_3/spine_jnt_4/spine_jnt_5/spine_jnt_6/spine_jnt_7/spine_jnt_8/spine_jnt_9/spine_jnt_10/spine_jnt_11/neck_jnt_1/neck_jnt_2/neck_jnt_3/neck_jnt_4/head_jnt/ear_jnt_R_1/ear_jnt_R_2/ear_jnt_R_3
+    m_Weight: 0
+  - m_Path: all_CTRL_grp/CTRL_grp/ila_super_mover_CTRL/hip_grp/hip_CTRL/pelvis_jnt/spine_jnt_2/spine_jnt_3/spine_jnt_4/spine_jnt_5/spine_jnt_6/spine_jnt_7/spine_jnt_8/spine_jnt_9/spine_jnt_10/spine_jnt_11/neck_jnt_1/neck_jnt_2/neck_jnt_3/neck_jnt_4/head_jnt/eye_jnt_L
+    m_Weight: 0
+  - m_Path: all_CTRL_grp/CTRL_grp/ila_super_mover_CTRL/hip_grp/hip_CTRL/pelvis_jnt/spine_jnt_2/spine_jnt_3/spine_jnt_4/spine_jnt_5/spine_jnt_6/spine_jnt_7/spine_jnt_8/spine_jnt_9/spine_jnt_10/spine_jnt_11/neck_jnt_1/neck_jnt_2/neck_jnt_3/neck_jnt_4/head_jnt/eye_jnt_R
+    m_Weight: 0
+  - m_Path: all_CTRL_grp/CTRL_grp/ila_super_mover_CTRL/hip_grp/hip_CTRL/pelvis_jnt/spine_jnt_2/spine_jnt_3/spine_jnt_4/spine_jnt_5/spine_jnt_6/spine_jnt_7/spine_jnt_8/spine_jnt_9/spine_jnt_10/spine_jnt_11/neck_jnt_1/neck_jnt_2/neck_jnt_3/neck_jnt_4/head_jnt/eyebrow_jnt_L
+    m_Weight: 1
+  - m_Path: all_CTRL_grp/CTRL_grp/ila_super_mover_CTRL/hip_grp/hip_CTRL/pelvis_jnt/spine_jnt_2/spine_jnt_3/spine_jnt_4/spine_jnt_5/spine_jnt_6/spine_jnt_7/spine_jnt_8/spine_jnt_9/spine_jnt_10/spine_jnt_11/neck_jnt_1/neck_jnt_2/neck_jnt_3/neck_jnt_4/head_jnt/eyebrow_jnt_R
+    m_Weight: 1
+  - m_Path: all_CTRL_grp/CTRL_grp/ila_super_mover_CTRL/hip_grp/hip_CTRL/pelvis_jnt/spine_jnt_2/spine_jnt_3/spine_jnt_4/spine_jnt_5/spine_jnt_6/spine_jnt_7/spine_jnt_8/spine_jnt_9/spine_jnt_10/spine_jnt_11/neck_jnt_1/neck_jnt_2/neck_jnt_3/neck_jnt_4/head_jnt/eyelid_jnt_down_L
+    m_Weight: 0
+  - m_Path: all_CTRL_grp/CTRL_grp/ila_super_mover_CTRL/hip_grp/hip_CTRL/pelvis_jnt/spine_jnt_2/spine_jnt_3/spine_jnt_4/spine_jnt_5/spine_jnt_6/spine_jnt_7/spine_jnt_8/spine_jnt_9/spine_jnt_10/spine_jnt_11/neck_jnt_1/neck_jnt_2/neck_jnt_3/neck_jnt_4/head_jnt/eyelid_jnt_down_R
+    m_Weight: 0
+  - m_Path: all_CTRL_grp/CTRL_grp/ila_super_mover_CTRL/hip_grp/hip_CTRL/pelvis_jnt/spine_jnt_2/spine_jnt_3/spine_jnt_4/spine_jnt_5/spine_jnt_6/spine_jnt_7/spine_jnt_8/spine_jnt_9/spine_jnt_10/spine_jnt_11/neck_jnt_1/neck_jnt_2/neck_jnt_3/neck_jnt_4/head_jnt/eyelid_jnt_left_L
+    m_Weight: 0
+  - m_Path: all_CTRL_grp/CTRL_grp/ila_super_mover_CTRL/hip_grp/hip_CTRL/pelvis_jnt/spine_jnt_2/spine_jnt_3/spine_jnt_4/spine_jnt_5/spine_jnt_6/spine_jnt_7/spine_jnt_8/spine_jnt_9/spine_jnt_10/spine_jnt_11/neck_jnt_1/neck_jnt_2/neck_jnt_3/neck_jnt_4/head_jnt/eyelid_jnt_left_R
+    m_Weight: 0
+  - m_Path: all_CTRL_grp/CTRL_grp/ila_super_mover_CTRL/hip_grp/hip_CTRL/pelvis_jnt/spine_jnt_2/spine_jnt_3/spine_jnt_4/spine_jnt_5/spine_jnt_6/spine_jnt_7/spine_jnt_8/spine_jnt_9/spine_jnt_10/spine_jnt_11/neck_jnt_1/neck_jnt_2/neck_jnt_3/neck_jnt_4/head_jnt/eyelid_jnt_right_L
+    m_Weight: 0
+  - m_Path: all_CTRL_grp/CTRL_grp/ila_super_mover_CTRL/hip_grp/hip_CTRL/pelvis_jnt/spine_jnt_2/spine_jnt_3/spine_jnt_4/spine_jnt_5/spine_jnt_6/spine_jnt_7/spine_jnt_8/spine_jnt_9/spine_jnt_10/spine_jnt_11/neck_jnt_1/neck_jnt_2/neck_jnt_3/neck_jnt_4/head_jnt/eyelid_jnt_right_R
+    m_Weight: 0
+  - m_Path: all_CTRL_grp/CTRL_grp/ila_super_mover_CTRL/hip_grp/hip_CTRL/pelvis_jnt/spine_jnt_2/spine_jnt_3/spine_jnt_4/spine_jnt_5/spine_jnt_6/spine_jnt_7/spine_jnt_8/spine_jnt_9/spine_jnt_10/spine_jnt_11/neck_jnt_1/neck_jnt_2/neck_jnt_3/neck_jnt_4/head_jnt/eyelid_jnt_up_L
+    m_Weight: 0
+  - m_Path: all_CTRL_grp/CTRL_grp/ila_super_mover_CTRL/hip_grp/hip_CTRL/pelvis_jnt/spine_jnt_2/spine_jnt_3/spine_jnt_4/spine_jnt_5/spine_jnt_6/spine_jnt_7/spine_jnt_8/spine_jnt_9/spine_jnt_10/spine_jnt_11/neck_jnt_1/neck_jnt_2/neck_jnt_3/neck_jnt_4/head_jnt/eyelid_jnt_up_R
+    m_Weight: 0
+  - m_Path: all_CTRL_grp/CTRL_grp/ila_super_mover_CTRL/hip_grp/hip_CTRL/pelvis_jnt/spine_jnt_2/spine_jnt_3/spine_jnt_4/spine_jnt_5/spine_jnt_6/spine_jnt_7/spine_jnt_8/spine_jnt_9/spine_jnt_10/spine_jnt_11/neck_jnt_1/neck_jnt_2/neck_jnt_3/neck_jnt_4/head_jnt/jaw_jnt_1
+    m_Weight: 1
+  - m_Path: all_CTRL_grp/CTRL_grp/ila_super_mover_CTRL/hip_grp/hip_CTRL/pelvis_jnt/spine_jnt_2/spine_jnt_3/spine_jnt_4/spine_jnt_5/spine_jnt_6/spine_jnt_7/spine_jnt_8/spine_jnt_9/spine_jnt_10/spine_jnt_11/neck_jnt_1/neck_jnt_2/neck_jnt_3/neck_jnt_4/head_jnt/jaw_jnt_1/jaw_jnt_2
+    m_Weight: 1
+  - m_Path: all_CTRL_grp/CTRL_grp/ila_super_mover_CTRL/hip_grp/hip_CTRL/pelvis_jnt/spine_jnt_2/spine_jnt_3/spine_jnt_4/spine_jnt_5/spine_jnt_6/spine_jnt_7/spine_jnt_8/spine_jnt_9/spine_jnt_10/spine_jnt_11/neck_jnt_1/neck_jnt_2/neck_jnt_3/neck_jnt_4/head_jnt/jaw_jnt_1/jaw_jnt_2/jaw_jnt_3
+    m_Weight: 1
+  - m_Path: all_CTRL_grp/CTRL_grp/ila_super_mover_CTRL/hip_grp/hip_CTRL/pelvis_jnt/spine_jnt_2/spine_jnt_3/spine_jnt_4/spine_jnt_5/spine_jnt_6/spine_jnt_7/spine_jnt_8/spine_jnt_9/spine_jnt_10/spine_jnt_11/neck_jnt_1/neck_jnt_2/neck_jnt_3/neck_jnt_4/head_jnt/jaw_jnt_1/jaw_jnt_2/jaw_jnt_3/jaw_jnt_4
+    m_Weight: 1
+  - m_Path: all_CTRL_grp/CTRL_grp/ila_super_mover_CTRL/hip_grp/hip_CTRL/pelvis_jnt/spine_jnt_2/spine_jnt_3/spine_jnt_4/spine_jnt_5/spine_jnt_6/spine_jnt_7/spine_jnt_8/spine_jnt_9/spine_jnt_10/spine_jnt_11/neck_jnt_1/neck_jnt_2/neck_jnt_3/neck_jnt_4/head_jnt/jaw_jnt_1/tongue_jnt_1
+    m_Weight: 1
+  - m_Path: all_CTRL_grp/CTRL_grp/ila_super_mover_CTRL/hip_grp/hip_CTRL/pelvis_jnt/spine_jnt_2/spine_jnt_3/spine_jnt_4/spine_jnt_5/spine_jnt_6/spine_jnt_7/spine_jnt_8/spine_jnt_9/spine_jnt_10/spine_jnt_11/neck_jnt_1/neck_jnt_2/neck_jnt_3/neck_jnt_4/head_jnt/jaw_jnt_1/tongue_jnt_1/tongue_jnt_2
+    m_Weight: 1
+  - m_Path: all_CTRL_grp/CTRL_grp/ila_super_mover_CTRL/hip_grp/hip_CTRL/pelvis_jnt/spine_jnt_2/spine_jnt_3/spine_jnt_4/spine_jnt_5/spine_jnt_6/spine_jnt_7/spine_jnt_8/spine_jnt_9/spine_jnt_10/spine_jnt_11/neck_jnt_1/neck_jnt_2/neck_jnt_3/neck_jnt_4/head_jnt/jaw_jnt_1/tongue_jnt_1/tongue_jnt_2/tongue_jnt_3
+    m_Weight: 1
+  - m_Path: all_CTRL_grp/CTRL_grp/ila_super_mover_CTRL/hip_grp/hip_CTRL/pelvis_jnt/spine_jnt_2/spine_jnt_3/spine_jnt_4/spine_jnt_5/spine_jnt_6/spine_jnt_7/spine_jnt_8/spine_jnt_9/spine_jnt_10/spine_jnt_11/neck_jnt_1/neck_jnt_2/neck_jnt_3/neck_jnt_4/head_jnt/jaw_jnt_1/tongue_jnt_1/tongue_jnt_2/tongue_jnt_3/tongue_jnt_4
+    m_Weight: 1
+  - m_Path: all_CTRL_grp/CTRL_grp/ila_super_mover_CTRL/hip_grp/hip_CTRL/pelvis_jnt/spine_jnt_2/spine_jnt_3/spine_jnt_4/spine_jnt_5/spine_jnt_6/spine_jnt_7/spine_jnt_8/spine_jnt_9/spine_jnt_10/spine_jnt_11/neck_jnt_1/neck_jnt_2/neck_jnt_3/neck_jnt_4/head_jnt/mouth_corner_jnt_L
+    m_Weight: 1
+  - m_Path: all_CTRL_grp/CTRL_grp/ila_super_mover_CTRL/hip_grp/hip_CTRL/pelvis_jnt/spine_jnt_2/spine_jnt_3/spine_jnt_4/spine_jnt_5/spine_jnt_6/spine_jnt_7/spine_jnt_8/spine_jnt_9/spine_jnt_10/spine_jnt_11/neck_jnt_1/neck_jnt_2/neck_jnt_3/neck_jnt_4/head_jnt/mouth_corner_jnt_R
+    m_Weight: 1
+  - m_Path: all_CTRL_grp/CTRL_grp/ila_super_mover_CTRL/hip_grp/hip_CTRL/pelvis_jnt/spine_jnt_2/spine_jnt_3/spine_jnt_4/spine_jnt_5/spine_jnt_6/spine_jnt_7/spine_jnt_8/spine_jnt_9/spine_jnt_10/spine_jnt_11/neck_jnt_1/neck_jnt_2/neck_jnt_3/neck_jnt_4/head_jnt/nose_jnt
+    m_Weight: 0
+  - m_Path: all_CTRL_grp/CTRL_grp/ila_super_mover_CTRL/hip_grp/hip_CTRL/tail_jnt
+    m_Weight: 0
+  - m_Path: all_CTRL_grp/CTRL_grp/ila_super_mover_CTRL/hip_grp/hip_CTRL/tail_jnt/tail_jnt_1
+    m_Weight: 0
+  - m_Path: all_CTRL_grp/CTRL_grp/ila_super_mover_CTRL/hip_grp/hip_CTRL/tail_jnt/tail_jnt_1/tail_jnt_2
+    m_Weight: 0
+  - m_Path: all_CTRL_grp/CTRL_grp/ila_super_mover_CTRL/hip_grp/hip_CTRL/tail_jnt/tail_jnt_1/tail_jnt_2/tail_jnt_3
+    m_Weight: 0
+  - m_Path: all_CTRL_grp/CTRL_grp/ila_super_mover_CTRL/hip_grp/hip_CTRL/tail_jnt/tail_jnt_1/tail_jnt_2/tail_jnt_3/tail_jnt_4
+    m_Weight: 0
+  - m_Path: all_CTRL_grp/CTRL_grp/ila_super_mover_CTRL/hip_grp/hip_CTRL/tail_jnt/tail_jnt_1/tail_jnt_2/tail_jnt_3/tail_jnt_4/tail_jnt_5
+    m_Weight: 0
+  - m_Path: all_CTRL_grp/CTRL_grp/ila_super_mover_CTRL/hip_grp/hip_CTRL/tail_jnt/tail_jnt_1/tail_jnt_2/tail_jnt_3/tail_jnt_4/tail_jnt_5/tail_jnt_6
+    m_Weight: 0
+  - m_Path: all_CTRL_grp/CTRL_grp/ila_super_mover_CTRL/hip_grp/hip_CTRL/tail_jnt/tail_jnt_1/tail_jnt_2/tail_jnt_3/tail_jnt_4/tail_jnt_5/tail_jnt_6/tail_jnt_7
+    m_Weight: 0
+  - m_Path: all_CTRL_grp/CTRL_grp/ila_super_mover_CTRL/hip_grp/hip_CTRL/tail_jnt/tail_jnt_1/tail_jnt_2/tail_jnt_3/tail_jnt_4/tail_jnt_5/tail_jnt_6/tail_jnt_7/tail_jnt_8
+    m_Weight: 0
+  - m_Path: ila_grp
+    m_Weight: 0
+  - m_Path: ila_grp/char_ila
+    m_Weight: 0

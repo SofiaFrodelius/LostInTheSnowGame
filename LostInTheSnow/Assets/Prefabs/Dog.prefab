@@ -2270,8 +2270,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1923277274761688}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 55.705975, y: 0.25, z: 12.254745}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
+  m_LocalPosition: {x: 76.90846, y: 36.48, z: 115.734}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4721513856697968}
@@ -2279,7 +2279,7 @@ Transform:
   - {fileID: 4255700738699892}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!4 &4683391528541978
 Transform:
   m_ObjectHideFlags: 1
@@ -2824,7 +2824,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   directionResponseTime: 0.2
   speedDampTime: 0.1
-  angularSpeedDampTime: 0.25
   headLookDampTime: 0.1
 --- !u!114 &114545995000347088
 MonoBehaviour:
@@ -2850,21 +2849,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dogLayerMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 1
   player: {fileID: 0}
-  itemBone: {fileID: 4673857324139350}
+  itemBone: {fileID: 4312746293077906}
   terrain: {fileID: 0}
   currentMood:
     happy: 0
     inspired: 0
     playful: 0
     scared: 0
-  TestWaypoint: {fileID: 0}
-  forwardd: 0
-  rightd: 0
-  grabbedItem: {fileID: 0}
-  itemObject: {fileID: 0}
   isSniffing: 0
+  isBreathing: 0
+  isPickedup: 0
+  isWaitingForFetch: 0
 --- !u!137 &137979368563973582
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1
@@ -3013,6 +3010,6 @@ NavMeshAgent:
   m_AutoBraking: 1
   m_AutoRepath: 1
   m_Height: 1
-  m_BaseOffset: 0
+  m_BaseOffset: -0.15
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
