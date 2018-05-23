@@ -14,7 +14,7 @@ OcclusionCullingSettings:
 RenderSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 8
-  m_Fog: 1
+  m_Fog: 0
   m_FogColor: {r: 0.9264706, g: 0.9264706, b: 0.9264706, a: 1}
   m_FogMode: 1
   m_FogDensity: 0.01
@@ -608,6 +608,8 @@ MonoBehaviour:
   grabbedItem: {fileID: 0}
   itemObject: {fileID: 0}
   isSniffing: 0
+  isPickedup: 0
+  usingRootMotion: 1
 --- !u!195 &115184845
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -6847,6 +6849,60 @@ Transform:
   m_Father: {fileID: 917986644}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1653686337
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1822941399}
+    m_Modifications:
+    - target: {fileID: 400000, guid: 6c5f416b6f7b68e4e909ace33ecd294e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.909
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 6c5f416b6f7b68e4e909ace33ecd294e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 4.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 6c5f416b6f7b68e4e909ace33ecd294e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1.847
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 6c5f416b6f7b68e4e909ace33ecd294e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 6c5f416b6f7b68e4e909ace33ecd294e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.9504169
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 6c5f416b6f7b68e4e909ace33ecd294e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 6c5f416b6f7b68e4e909ace33ecd294e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.31097862
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 6c5f416b6f7b68e4e909ace33ecd294e, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 6c5f416b6f7b68e4e909ace33ecd294e, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 6c5f416b6f7b68e4e909ace33ecd294e, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 6c5f416b6f7b68e4e909ace33ecd294e, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 49af722264d47794a8bbdcff5f1f9ba7, type: 2}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 6c5f416b6f7b68e4e909ace33ecd294e, type: 3}
+  m_IsPrefabParent: 0
 --- !u!1 &1658326904
 GameObject:
   m_ObjectHideFlags: 0
@@ -7434,6 +7490,11 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4df33a1af8d026347866d614d335f200, type: 2}
   m_IsPrefabParent: 0
+--- !u!4 &1822941399 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4581605558069290, guid: 4df33a1af8d026347866d614d335f200,
+    type: 2}
+  m_PrefabInternal: {fileID: 1822941398}
 --- !u!1 &1823635522
 GameObject:
   m_ObjectHideFlags: 0
@@ -7532,6 +7593,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1879238758}
   - component: {fileID: 1879238757}
+  - component: {fileID: 1879238759}
   m_Layer: 0
   m_Name: music_player
   m_TagString: Untagged
@@ -7574,6 +7636,28 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1879238759
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1879238756}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event: event:/Sound/Storm Wind
+  PlayEvent: 1
+  StopEvent: 2
+  CollisionTag: 
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 0
+  OverrideMaxDistance: 0
 --- !u!1 &1880913599
 GameObject:
   m_ObjectHideFlags: 0
