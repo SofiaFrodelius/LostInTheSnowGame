@@ -12,9 +12,8 @@ public class DoorInteract : MonoBehaviour, IInteractible
     [SerializeField] private bool knockEnabled;
     [SerializeField] private StudioEventEmitter knockSound;
     [SerializeField] private StudioEventEmitter enterSound;
-    [SerializeField] private StudioEventEmitter needMoreWood;
-    [SerializeField] private Item wood;
-    [SerializeField] private int woodNeeded;
+    [SerializeField] private StudioEventEmitter denialVoiceLine;
+    [SerializeField] private int[] denialVoiceLineAlternatives;
 
     [SerializeField]
     private SceneSwitchScript sceneSwitcher = null;
@@ -23,11 +22,9 @@ public class DoorInteract : MonoBehaviour, IInteractible
 
 
     private int[] needMoreWoodId = { 9, 13, 26 }; //Hårdkodade voiceline ids
-    Inventory inv;
 
     private void Start()
     {
-        inv = Inventory.instance;
     }
 
 
@@ -54,21 +51,30 @@ public class DoorInteract : MonoBehaviour, IInteractible
 
     public void Interact()
     {
-        if (inv && !inv.isItemInInventory(wood, woodNeeded))
+        ItemDependencies id = gameObject.GetComponent<ItemDependencies>();
+        if (id)
         {
-            if (!needMoreWood.IsPlaying())
+            if (id.CheckDependency(Inventory.instance))
             {
-                int i = Random.Range(0, needMoreWoodId.Length);
-
-                needMoreWood.Play();
-                needMoreWood.SetParameter("Voice Line", needMoreWoodId[i]);
+                sceneSwitcher.ActivateSceneSwitch(targetSceneBuildIndex);
             }
+            else
+            {
+                if(denialVoiceLineAlternatives.Length > 0 && !denialVoiceLine.IsPlaying())
+                {
+                    int i = Random.Range(0, denialVoiceLineAlternatives.Length);
 
+                    denialVoiceLine.Play();
+                    denialVoiceLine.SetParameter("Voice Line", denialVoiceLineAlternatives[i]);
+                }
+            }
         }
+
         else
         {
             sceneSwitcher.ActivateSceneSwitch(targetSceneBuildIndex);
-            enterSound.Play();
+            if(enterSound)
+                enterSound.Play();
         }
 
     }

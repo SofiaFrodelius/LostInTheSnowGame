@@ -9,6 +9,7 @@ public class GrabableObject : MonoBehaviour, IGrabable {
     public Item getItemOnPickup()
     {
         return itemType;
+        
     }
 
     public void Drop()
