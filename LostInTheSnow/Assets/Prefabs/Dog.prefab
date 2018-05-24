@@ -2271,7 +2271,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1923277274761688}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: 329.19098, y: 2.2667298, z: 291.30826}
+  m_LocalPosition: {x: 76.99, y: 37.078026, z: 110.91}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4721513856697968}
@@ -2802,14 +2802,18 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1923277274761688}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 24a3fd04ec39ee848942c486237ab9e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxDistance: 10
+  maxDistance: 20
   sitTimer: 5
   wayPoints:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 0}
 --- !u!114 &114460768212799012
 MonoBehaviour:
@@ -2849,7 +2853,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dogLayerMask:
     serializedVersion: 2
-    m_Bits: 1
+    m_Bits: 4097
   player: {fileID: 0}
   itemBone: {fileID: 4312746293077906}
   terrain: {fileID: 0}
@@ -3010,6 +3014,6 @@ NavMeshAgent:
   m_AutoBraking: 1
   m_AutoRepath: 1
   m_Height: 1
-  m_BaseOffset: -0.15
+  m_BaseOffset: -0.08
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4

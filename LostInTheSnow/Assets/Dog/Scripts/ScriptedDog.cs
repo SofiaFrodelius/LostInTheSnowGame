@@ -24,7 +24,7 @@ public class ScriptedDog : MonoBehaviour {
 		NextAction ();
 	}
 	void Update () {
-		if (dog.currentAction != null) {
+		if (dog.currentAction != null && dog.savedAction == null) {
 			if (dog.currentAction.IsDone ()) {
 				if (actionCount < wayPoints.Count)
 					NextAction ();
@@ -32,7 +32,7 @@ public class ScriptedDog : MonoBehaviour {
 					Destroy (this);
 				}
 			}
-		} else {
+		} else if(dog.savedAction == null){
 			if (actionCount < wayPoints.Count)
 				NextAction ();
 			else {
