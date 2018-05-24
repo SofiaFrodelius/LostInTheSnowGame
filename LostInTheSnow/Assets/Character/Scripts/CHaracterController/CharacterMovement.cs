@@ -33,6 +33,30 @@ public class CharacterMovement : MonoBehaviour {
     private float t = 0f;
     private int forcedTurn;
 
+    public float MovementSpeed
+    {
+        get
+        {
+            return movementSpeed;
+        }
+        set
+        {
+            movementSpeed = value;
+        }
+    }
+    public float SprintMultiplier
+    {
+        get
+        {
+            return movementSpeed;
+        }
+        set
+        {
+            sprintMultiplier = value;
+        }
+    }
+
+
     // Use this for initialization
     void Start () {
         cc = GetComponent<CharacterController>();
