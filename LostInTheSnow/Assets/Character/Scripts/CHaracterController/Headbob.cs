@@ -7,6 +7,9 @@ public class Headbob : MonoBehaviour
     private Animator anim;
     private CharacterController cc;
     private int bobIsOn;
+
+
+
 	// Use this for initialization
 	void Start ()
     {
@@ -18,7 +21,8 @@ public class Headbob : MonoBehaviour
 	void Update ()
     {
         bobIsOn = 1;// PlayerPrefs.GetInt("Headbob");
-        if (bobIsOn == 1) { 
+        if (bobIsOn == 1)
+        {
             if (cc.velocity.x != 0 && cc.isGrounded || cc.velocity.z != 0 && cc.isGrounded)
             {
                  anim.SetBool("IsWalking", true);
@@ -42,17 +46,35 @@ public class Headbob : MonoBehaviour
                 anim.SetBool("IsSprinting", false);
                 anim.SetBool("IsWalking", false);
             }
+        }
 
-
-            if(Input.GetMouseButtonDown(0))
+        else
+        {
+            if (cc.velocity.x != 0 && cc.isGrounded || cc.velocity.z != 0 && cc.isGrounded)
             {
-                anim.SetBool("IsChopping", true);
+                anim.SetBool("IsWalkingNoAnim", true);
             }
-            if(Input.GetMouseButtonUp(0))
+            else
             {
-                anim.SetBool("IsChopping", false);
+                anim.SetBool("IsWalkingNoAnim", false);
+            }
+
+            if (transform.parent.GetComponent<CharacterMovement>().getSprint() && cc.isGrounded)
+            {
+                anim.SetBool("IsSprintingNoAnim", true);
+            }
+            else
+            {
+                anim.SetBool("IsSprintingNoAnim", false);
+            }
+
+            if ((anim.GetBool("IsSprintingNoAnim") || anim.GetBool("IsWalkingNoAnim")) && transform.parent.GetComponent<CharacterMovement>().CutsceneLock)
+            {
+                anim.SetBool("IsSprintingNoAnim", false);
+                anim.SetBool("IsWalkingNoAnim", false);
             }
         }
+
     }
 
     public Animator getAnimator()

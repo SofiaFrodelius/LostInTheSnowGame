@@ -11,6 +11,8 @@ public class ItemHand : MonoBehaviour
     Inventory inventory;
     [SerializeField]
     private int currentItemLayerValue;
+    private float t = 0;
+    [SerializeField] private float timeToSwítch;
 
     public void Start()
     {
@@ -23,9 +25,36 @@ public class ItemHand : MonoBehaviour
 
     public void Update()
     {
-        if (Input.GetAxis("Scroll") > 0.1) scroll = 1; //change to input based on keybind settings
-        else if (Input.GetAxis("Scroll") < -0.1) scroll = -1; //change to input based on keybind settings
+        //tempkod. i hope.
+        if (timeToSwítch <= Time.time - t)
+        {
+            if (Input.GetAxis("Scroll") > 0.1)
+            {
+                scroll = 1;
+                t = Time.time;
+            }
+            else if (Input.GetAxis("Scroll") < -0.1)
+            {
+                scroll = -1;
+                t = Time.time;
+            }
+            else if(Input.GetButtonDown("NextItem"))
+            {
+                scroll = 1;
+                t = Time.time;
+            }
+            else if (Input.GetButtonDown("PreviousItem"))
+            {
+                scroll = -1;
+                t = Time.time;
+            }
+
+        }
+
         else scroll = 0;
+        //------------------
+
+
 
         if (scroll != 0 && inventory != null && inventory.getNumOfUsedHoldableSlots() > 1)
         {
@@ -103,6 +132,10 @@ public class ItemHand : MonoBehaviour
 	public Item GetItemInHand(){
 		return inventory.getItemFromHoldableSlot (selectedItem);
 	}
+    public void IncrementSelectedItem()
+    {
+        selectedItem++;
+    }
 
 
 }
