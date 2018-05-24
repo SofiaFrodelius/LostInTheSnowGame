@@ -20,7 +20,7 @@ public class Headbob : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
     {
-        bobIsOn = 1;// PlayerPrefs.GetInt("Headbob");
+        bobIsOn = PlayerPrefs.GetInt("Headbob"); //this should only happen once when setting is changed in options, not every frame
         if (bobIsOn == 1)
         {
             if (cc.velocity.x != 0 && cc.isGrounded || cc.velocity.z != 0 && cc.isGrounded)
