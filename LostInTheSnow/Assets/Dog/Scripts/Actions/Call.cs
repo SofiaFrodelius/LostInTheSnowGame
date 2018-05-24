@@ -7,7 +7,7 @@ public class Call : DogAction {
 	DogAction currentAction;
 	public Call(Dog d, Transform player, bool staticPlayer = false) : base(d){
 		this.player = player;
-		importance = Importance.HIGH;
+		importance = Importance.MEDIUM;
 		if(!staticPlayer)
 			currentAction = new FollowTarget (dog, player, Vector3.zero, true, 3f);
 		else
