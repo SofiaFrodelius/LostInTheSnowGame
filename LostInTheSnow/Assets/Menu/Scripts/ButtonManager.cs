@@ -4,12 +4,17 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class ButtonManager : MonoBehaviour {
+public class ButtonManager : MonoBehaviour
+{
 
     ScreenFadeScript screenFadeScript;
+    FMOD.Studio.Bus masterBus;
+    string masterBusString = "Bus:/";
 
     void Awake()
     {
+        masterBus = FMODUnity.RuntimeManager.GetBus(masterBusString);
+        masterBus.setVolume(PlayerPrefs.GetFloat("Music"));
         screenFadeScript = FindObjectOfType<ScreenFadeScript>();
     }
 
@@ -24,6 +29,11 @@ public class ButtonManager : MonoBehaviour {
         screenFadeScript.InvertFade();
         yield return new WaitForSeconds(1);
         SceneManager.LoadScene(1);
+    }
+
+    public void LoadBtn(string SceneName)
+    {
+        //SaveLoad.saveLoad.Load();
     }
 
     public void Day1Btn(string SceneName)
@@ -66,14 +76,6 @@ public class ButtonManager : MonoBehaviour {
         {
             PlayerPrefs.SetInt("Headbob", 0);
         }
-        
-    }
-
-    public void SoundBtn()
-    {
-        Slider Soundslider;
-        Soundslider = GameObject.Find("SoundVolume").GetComponent<UnityEngine.UI.Slider>();
-        PlayerPrefs.SetFloat("Sound", Soundslider.value);
 
     }
 
@@ -82,12 +84,12 @@ public class ButtonManager : MonoBehaviour {
         Slider Musicslider;
         Musicslider = GameObject.Find("MusicVolume").GetComponent<UnityEngine.UI.Slider>();
         PlayerPrefs.SetFloat("Music", Musicslider.value);
-
+        masterBus = FMODUnity.RuntimeManager.GetBus(masterBusString);
+        masterBus.setVolume(PlayerPrefs.GetFloat("Music"));
     }
 
     public void ExitBtn()
     {
-//        UnityEditor.EditorApplication.isPlaying = false;
         Application.Quit();
     }
 
@@ -103,21 +105,22 @@ public class ButtonManager : MonoBehaviour {
         {
             Bobtoggle.GetComponent<UnityEngine.UI.Toggle>().isOn = false;
         }
-        GameObject.Find("SoundVolume").GetComponent<UnityEngine.UI.Slider>().value = PlayerPrefs.GetFloat("Sound");
         GameObject.Find("MusicVolume").GetComponent<UnityEngine.UI.Slider>().value = PlayerPrefs.GetFloat("Music");
     }
 
 
 
     // Use this for initialization
-    void Start () {
+    void Start()
+    {
         PlayerPrefs.SetInt("Cleared1", 0);
         PlayerPrefs.SetInt("Cleared2", 0);
         PlayerPrefs.SetInt("Cleared3", 0);
     }
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+
+    // Update is called once per frame
+    void Update()
+    {
+
+    }
 }

@@ -56,6 +56,7 @@ public class PauseMenu : MonoBehaviour {
             }
         }	
 	}
+
     void PauseGame()
     {
         camLooks = camCon.getLook();
@@ -67,14 +68,14 @@ public class PauseMenu : MonoBehaviour {
         charMov.CutsceneLock = isPaused;
         pauseMenuMain.SetActive(isPaused);
         Time.timeScale = 0;
-        foreach(GameObject g in uiToHide)
+        foreach (GameObject g in uiToHide)
         {
             g.SetActive(!isPaused);
         }
     }
+
     public void UnPauseGame()
     {
-
         Cursor.lockState = CursorLockMode.Locked;
         isPaused = false;
         camCon.CutsceneLock = inCameraLockSinceBefore;
@@ -87,16 +88,19 @@ public class PauseMenu : MonoBehaviour {
         }
         camCon.setLook(camLooks);
     }
+
     public void OptionsToggle(bool showOptions)
     {
         pauseMenuMain.SetActive(!showOptions);
         optionsMenu.SetActive(showOptions);
     }
+
     public void ExitGameToggle(bool showExit)
     {
         pauseMenuMain.SetActive(!showExit);
         exitMenu.SetActive(showExit);
     }
+
     public void ExitGame()
     {
         SceneHandler.ChangeScene(0);
