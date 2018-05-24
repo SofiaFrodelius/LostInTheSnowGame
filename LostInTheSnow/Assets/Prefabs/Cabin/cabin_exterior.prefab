@@ -151,7 +151,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: bd41b72d160dca044ad361a8e2805c46, type: 2}
+  - {fileID: 2100000, guid: 2974fc5915b6f8f48aedacbbf23dbfdb, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -186,7 +186,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_Materials:
   - {fileID: 2100000, guid: 0a238e4926ee0eb438b17292f1ef8a36, type: 2}
-  - {fileID: 2100000, guid: bd41b72d160dca044ad361a8e2805c46, type: 2}
+  - {fileID: 2100000, guid: 2974fc5915b6f8f48aedacbbf23dbfdb, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -220,7 +220,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: bd41b72d160dca044ad361a8e2805c46, type: 2}
+  - {fileID: 2100000, guid: 2974fc5915b6f8f48aedacbbf23dbfdb, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -332,4 +332,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneSwitcher: {fileID: 0}
+  Active: 1
   targetSceneBuildIndex: 2
