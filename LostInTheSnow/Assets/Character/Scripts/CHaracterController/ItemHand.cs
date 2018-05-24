@@ -12,7 +12,7 @@ public class ItemHand : MonoBehaviour
     [SerializeField]
     private int currentItemLayerValue;
     private float t = 0;
-    [SerializeField] private float timeToSwítch;
+    [SerializeField] private float timeToSwitch;
 
     public void Start()
     {
@@ -26,7 +26,7 @@ public class ItemHand : MonoBehaviour
     public void Update()
     {
         //tempkod. i hope.
-        if (timeToSwítch <= Time.time - t)
+        if (timeToSwitch <= Time.time - t)
         {
             if (Input.GetAxis("Scroll") > 0.1)
             {
@@ -38,7 +38,7 @@ public class ItemHand : MonoBehaviour
                 scroll = -1;
                 t = Time.time;
             }
-            else if(Input.GetButtonDown("NextItem"))
+            else if (Input.GetButtonDown("NextItem"))
             {
                 scroll = 1;
                 t = Time.time;
@@ -48,6 +48,8 @@ public class ItemHand : MonoBehaviour
                 scroll = -1;
                 t = Time.time;
             }
+            else scroll = 0;
+
 
         }
 

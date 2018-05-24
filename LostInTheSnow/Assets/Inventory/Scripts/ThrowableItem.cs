@@ -13,13 +13,9 @@ public class ThrowableItem : MonoBehaviour, IUsable
         rb = GetComponent<Rigidbody>();
     }
 
-    public void Start()
-    {
-        inventory = Inventory.instance;
-    }
-
     public void Use(ItemHand ih)
     {
+        inventory = Inventory.instance;
         //Debug.Log(ih.ActiveItem);
         Vector3 throwDirection = Camera.main.transform.forward;
         rb.isKinematic = false;
