@@ -1075,7 +1075,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63e237fd9a87f49468daa89f278ac733, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneTarget: 1
+  sceneTarget: 11
 --- !u!114 &302217906
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1196,6 +1196,44 @@ MonoBehaviour:
   sceneSwitcher: {fileID: 302217905}
   Active: 1
   targetSceneBuildIndex: 11
+--- !u!114 &405932988
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 405932986}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event: event:/Sound/Avatar/Voice Acting Misc.
+  PlayEvent: 11
+  StopEvent: 0
+  CollisionTag: 
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 0
+  OverrideMaxDistance: 0
+--- !u!114 &405932989
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 405932986}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef4e330e931542f4195008f31426d668, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cutsceneToTrigger: {fileID: 1354870035}
+  player: {fileID: 795962342}
+  see: {fileID: 405932988}
+  voiceLineIds: 0b0000000c00000010000000
+  fireplace: {fileID: 1342902222}
 --- !u!1 &412145219
 GameObject:
   m_ObjectHideFlags: 0
@@ -2889,6 +2927,11 @@ Transform:
   m_PrefabParentObject: {fileID: 4148295311391496, guid: 4dc959968ef87484bbfb980d75653cec,
     type: 2}
   m_PrefabInternal: {fileID: 1608225061}
+--- !u!1 &795962342 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1796018197999996, guid: 01cb98abec9806640b709a5f30da47af,
+    type: 2}
+  m_PrefabInternal: {fileID: 883486001}
 --- !u!1 &798903069
 GameObject:
   m_ObjectHideFlags: 0
@@ -3333,6 +3376,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Resolution: 0
   DefaultSpotCookie: {fileID: 0}
+--- !u!95 &883486004
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 883486002}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!1 &886931150
 GameObject:
   m_ObjectHideFlags: 0
@@ -4814,6 +4874,86 @@ Transform:
   m_PrefabParentObject: {fileID: 4306185156920914, guid: 2110e214ca7aff24f8754cda02738c99,
     type: 2}
   m_PrefabInternal: {fileID: 46684969}
+--- !u!114 &1342902222 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114384559290270360, guid: 6fca17da85912224d9aea09f159564b1,
+    type: 2}
+  m_PrefabInternal: {fileID: 1128219990}
+  m_Script: {fileID: 11500000, guid: 076936d509e635c4191a582c70e1de18, type: 3}
+--- !u!1 &1354870035
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1354870038}
+  - component: {fileID: 1354870037}
+  - component: {fileID: 1354870036}
+  m_Layer: 0
+  m_Name: anim_gotobed
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!95 &1354870036
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1354870035}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+--- !u!320 &1354870037
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1354870035}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 11400000, guid: 8c618b308df03bc4d808146ba890a9b9, type: 2}
+  m_InitialState: 1
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings:
+  - key: {fileID: 114584926449054820, guid: 8c618b308df03bc4d808146ba890a9b9, type: 2}
+    value: {fileID: 1354870035}
+  - key: {fileID: 114777009321284848, guid: 8c618b308df03bc4d808146ba890a9b9, type: 2}
+    value: {fileID: 795962342}
+  - key: {fileID: 114953896511022680, guid: 8c618b308df03bc4d808146ba890a9b9, type: 2}
+    value: {fileID: 883486002}
+  - key: {fileID: 114430986347659852, guid: 8c618b308df03bc4d808146ba890a9b9, type: 2}
+    value: {fileID: 2004698526}
+  - key: {fileID: 114891906237069334, guid: 8c618b308df03bc4d808146ba890a9b9, type: 2}
+    value: {fileID: 1795186774}
+  m_ExposedReferences:
+    m_References: []
+--- !u!4 &1354870038
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1354870035}
+  m_LocalRotation: {x: 0, y: 0.99957734, z: 0, w: 0.029073095}
+  m_LocalPosition: {x: 329.14868, y: 3.51628, z: 302.11832}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 2004698528}
+  m_Father: {fileID: 0}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 176.66801, z: 0}
 --- !u!1 &1367774927
 GameObject:
   m_ObjectHideFlags: 0
@@ -6289,6 +6429,48 @@ Transform:
   m_Father: {fileID: 1317042862}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1795186774
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1795186776}
+  - component: {fileID: 1795186775}
+  m_Layer: 0
+  m_Name: sceneswitcher
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!114 &1795186775
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1795186774}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9617917e5f3c79447818b3b058c4d638, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneSwitcher: {fileID: 302217905}
+  sceneIndex: 11
+--- !u!4 &1795186776
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1795186774}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 328.36255, y: -0.4422565, z: 288.07306}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1798120946
 GameObject:
   m_ObjectHideFlags: 0
@@ -6377,14 +6559,10 @@ MonoBehaviour:
     inspired: 0
     playful: 0
     scared: 0
-  TestWaypoint: {fileID: 0}
-  forwardd: 0
-  rightd: 0
-  grabbedItem: {fileID: 0}
-  itemObject: {fileID: 0}
   isSniffing: 0
+  isBreathing: 0
   isPickedup: 0
-  usingRootMotion: 1
+  isWaitingForFetch: 0
 --- !u!195 &1798120951
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -7213,6 +7391,59 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!1 &2004698526
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 2004698528}
+  - component: {fileID: 2004698527}
+  m_Layer: 0
+  m_Name: voiceline6_goodnightila
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!114 &2004698527
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2004698526}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event: event:/Sound/Avatar/Vocie Acting
+  PlayEvent: 11
+  StopEvent: 0
+  CollisionTag: 
+  AllowFadeout: 1
+  TriggerOnce: 1
+  Preload: 0
+  Params:
+  - Name: Voice Line
+    Value: 6
+  OverrideAttenuation: 0
+  OverrideMinDistance: 0
+  OverrideMaxDistance: 0
+--- !u!4 &2004698528
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2004698526}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1354870038}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2012592188
 GameObject:
   m_ObjectHideFlags: 0
@@ -7530,8 +7761,8 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2107896860}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 608.5, y: 251.5, z: 0}
-  m_LocalScale: {x: 1.52125, y: 1.52125, z: 1.52125}
+  m_LocalPosition: {x: 260, y: 257.5, z: 0}
+  m_LocalScale: {x: 0.65, y: 0.65, z: 0.65}
   m_Children:
   - {fileID: 995110227}
   - {fileID: 1101619882}

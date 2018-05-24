@@ -1039,7 +1039,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63e237fd9a87f49468daa89f278ac733, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneTarget: 1
+  sceneTarget: 6
 --- !u!114 &302217906
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1838,6 +1838,7 @@ GameObject:
   - component: {fileID: 491306756}
   - component: {fileID: 491306755}
   - component: {fileID: 491306754}
+  - component: {fileID: 491306757}
   m_Layer: 0
   m_Name: anim_gotobed
   m_TagString: Untagged
@@ -1905,6 +1906,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+--- !u!114 &491306757
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 491306753}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59c2fe9bedad353488be2a3fa1ead07c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &502585047
 GameObject:
   m_ObjectHideFlags: 0
@@ -4548,7 +4560,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1219984382}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a2f5e529e842af6448f4cc58945a33e1, type: 3}
+  m_Script: {fileID: 11500000, guid: 9617917e5f3c79447818b3b058c4d638, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   sceneSwitcher: {fileID: 302217905}
