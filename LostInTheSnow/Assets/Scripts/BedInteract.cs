@@ -28,8 +28,6 @@ public class BedInteract : MonoBehaviour, IInteractible
             Camera.main.gameObject.GetComponent<CameraController>().CutsceneLock = true;
             player.GetComponent<CharacterMovement>().CutsceneLock = true;
             GameObject temp = Instantiate(cutsceneToTrigger);
-            temp.transform.position = player.transform.position;
-            temp.transform.rotation = player.transform.rotation;
             player.transform.parent = temp.transform;
             temp.SetActive(true);
         }
