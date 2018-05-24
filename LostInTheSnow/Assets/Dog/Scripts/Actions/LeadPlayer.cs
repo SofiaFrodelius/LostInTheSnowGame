@@ -39,7 +39,7 @@ public class LeadPlayer : DogAction{
 				isDone = true;
 			}
 		}
-		if (ShouldWait()) {
+		if (!ShouldWait()) {
 			if (isWaiting) {
 				if (currentAction.IsDone ()) {
 					currentAction.EndAction ();
@@ -60,12 +60,15 @@ public class LeadPlayer : DogAction{
 	private bool ShouldWait(){
 		Vector2 playerPos = new Vector2 (player.position.x, player.position.z);
 		Vector2 targetPos = new Vector2 (target.x, target.z);
-		Vector2 endTargetPos;
+		Vector2 endTargetPos = Vector2.zero;
 		if(endTarget != null)
 			endTargetPos = new Vector2 (endTarget.x, endTarget.z);
 		Vector2 dogPos = new Vector2 (dog.transform.position.x, dog.transform.position.z);
-		return Vector2.Distance (playerPos, dogPos) < maxDistance || Vector2.Distance (playerPos, targetPos) < Vector2.Distance (dogPos, targetPos) ||
-			   endTarget != null && Vector2.Distance (playerPos, endTargetPos) < Vector2.Distance (dogPos, endTargetPos);
+        bool shouldWait = Vector2.Distance(playerPos, dogPos) > maxDistance && Vector2.Distance(playerPos, targetPos) > Vector2.Distance(dogPos, targetPos);
+        if(shouldWait)
+            shouldWait = (Vector2.Distance (playerPos, endTargetPos) > Vector2.Distance (dogPos, endTargetPos));
+        Debug.Log("Should wiat " + shouldWait);
+        return shouldWait;
 	}
 	public override void EndAction(){
 		dog.AddEffectToMood (moodEffect);

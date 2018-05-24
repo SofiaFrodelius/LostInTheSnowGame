@@ -54,7 +54,7 @@ public class DogAI : MonoBehaviour {
 				EndAction ();
 				navAgent.ResetPath ();
 			} 
-			if (animator.GetBool ("isSniffing")) {
+			if (dog.isSniffing) {
 				navAgent.speed = Mathf.Clamp (navAgent.speed - Time.deltaTime * acceleration / 2, 1, 2);
 			} else {
 				if (Vector3.Distance (dog.transform.position, navAgent.destination) < 5) {

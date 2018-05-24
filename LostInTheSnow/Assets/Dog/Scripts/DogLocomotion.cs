@@ -57,18 +57,13 @@ public class DogLocomotion : MonoBehaviour {
 		}
 	}
 	void SetupSlopeAngleRotation(){
-		Debug.Log("Frame cont incrementer");
 		RaycastHit hit;
 		float angle = transform.eulerAngles.x;
 		Ray forwardRay = new Ray (transform.position + Vector3.up, transform.forward);
 		Ray downwardRay = new Ray (transform.position + Vector3.up, -Vector3.up);
-		Debug.DrawLine(transform.position + Vector3.up, transform.position + Vector3.up + -Vector3.up, Color.red);
 		if(Physics.Raycast(downwardRay, out hit, 2f, dog.dogLayerMask)){
 			if (hit.transform.tag == "Terrain") {
-				angle = 90 - Vector3.Angle (transform.forward, hit.normal);
-				Debug.Log ("HIT with angle : " + angle);
-				Debug.DrawLine(hit.point, hit.point+hit.normal, Color.green);
-				
+				angle = 90 - Vector3.Angle (transform.forward, hit.normal);			
 			}
 		}
 		Vector3 angleVector3 = new Vector3 (angle, transform.eulerAngles.y, transform.eulerAngles.z);
@@ -82,14 +77,16 @@ public class DogLocomotion : MonoBehaviour {
 		Vector3 direction = (dog.player.position - dog.transform.position).normalized;
 		float forwardAngle = Mathf.Atan2 (dog.transform.forward.x , dog.transform.forward.z) * Mathf.Rad2Deg;
 		float playerAngle = Mathf.Atan2 (direction.x , direction.z) * Mathf.Rad2Deg;
-		float angle = (playerAngle - forwardAngle);
-		if (angle > 90 || angle < -90) {
-			animator.SetFloat (lookDirectionId, 0, headLookDampTime, Time.deltaTime);
-			animator.SetFloat (lookUpId, 0, headLookDampTime, Time.deltaTime);
+		float angle = ((playerAngle - forwardAngle)+360)%360;
+        if (angle > 180)
+            angle -= 360;
+		if (angle < 90 && angle > -90) {
+            animator.SetFloat(lookDirectionId, angle, headLookDampTime, Time.deltaTime);
+            animator.SetFloat(lookUpId, upAngle, headLookDampTime, Time.deltaTime);
 		} else {
-			animator.SetFloat (lookDirectionId, angle, headLookDampTime, Time.deltaTime);
-			animator.SetFloat (lookUpId, upAngle, headLookDampTime, Time.deltaTime);
-		}
+            animator.SetFloat(lookDirectionId, 0, headLookDampTime, Time.deltaTime);
+            animator.SetFloat(lookUpId, 0, headLookDampTime, Time.deltaTime);
+        }
 	}
 	void SetupAgentLocomotion(){
 		if (NavAgentDone ()) {
