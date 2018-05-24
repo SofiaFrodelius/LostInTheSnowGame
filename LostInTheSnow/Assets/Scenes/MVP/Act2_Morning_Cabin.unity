@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 0.5258056, g: 0.48997915, b: 0.5075323, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -1355,7 +1355,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneSwitcher: {fileID: 302217905}
-  Active: 0
+  active: 1
   targetSceneBuildIndex: 0
 --- !u!114 &405932988
 MonoBehaviour:
@@ -6378,7 +6378,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneSwitcher: {fileID: 302217905}
-  Active: 1
+  active: 1
   targetSceneBuildIndex: 8
 --- !u!64 &1762165584
 MeshCollider:
@@ -7850,8 +7850,8 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2107896860}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 257.5, y: 253, z: 0}
-  m_LocalScale: {x: 0.64375, y: 0.64375, z: 0.64375}
+  m_LocalPosition: {x: 485.5, y: 234.5, z: 0}
+  m_LocalScale: {x: 1.21375, y: 1.21375, z: 1.21375}
   m_Children:
   - {fileID: 995110227}
   - {fileID: 1101619882}

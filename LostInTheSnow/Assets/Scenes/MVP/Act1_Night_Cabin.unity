@@ -588,7 +588,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!154 &145185997
 TerrainCollider:
   m_ObjectHideFlags: 0
@@ -1328,7 +1328,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneSwitcher: {fileID: 302217905}
-  Active: 1
+  active: 1
   targetSceneBuildIndex: 7
 --- !u!1 &412145219
 GameObject:
@@ -3364,7 +3364,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4581192634655566, guid: 01cb98abec9806640b709a5f30da47af, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4581192634655566, guid: 01cb98abec9806640b709a5f30da47af, type: 2}
       propertyPath: m_LocalPosition.y
@@ -3372,19 +3372,19 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4581192634655566, guid: 01cb98abec9806640b709a5f30da47af, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 2.1570132
       objectReference: {fileID: 0}
     - target: {fileID: 4581192634655566, guid: 01cb98abec9806640b709a5f30da47af, type: 2}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4581192634655566, guid: 01cb98abec9806640b709a5f30da47af, type: 2}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4581192634655566, guid: 01cb98abec9806640b709a5f30da47af, type: 2}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4581192634655566, guid: 01cb98abec9806640b709a5f30da47af, type: 2}
       propertyPath: m_LocalRotation.w
@@ -3409,7 +3409,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4581192634655566, guid: 01cb98abec9806640b709a5f30da47af, type: 2}
       propertyPath: m_LocalScale.x
-      value: 0.9000019
+      value: 0.90000284
       objectReference: {fileID: 0}
     - target: {fileID: 4581192634655566, guid: 01cb98abec9806640b709a5f30da47af, type: 2}
       propertyPath: m_LocalScale.y
@@ -3417,7 +3417,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4581192634655566, guid: 01cb98abec9806640b709a5f30da47af, type: 2}
       propertyPath: m_LocalScale.z
-      value: 0.9000019
+      value: 0.90000284
       objectReference: {fileID: 0}
     - target: {fileID: 114428917269092332, guid: 01cb98abec9806640b709a5f30da47af,
         type: 2}
@@ -3457,14 +3457,26 @@ Prefab:
     - target: {fileID: 198077889562031868, guid: 01cb98abec9806640b709a5f30da47af,
         type: 2}
       propertyPath: InitialModule.startColor.maxColor.a
-      value: 0.247
+      value: 0.134
       objectReference: {fileID: 0}
     - target: {fileID: 198077889562031868, guid: 01cb98abec9806640b709a5f30da47af,
         type: 2}
       propertyPath: randomSeed
       value: 288241432
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 114433927477578646, guid: 01cb98abec9806640b709a5f30da47af,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114433927477578646, guid: 01cb98abec9806640b709a5f30da47af,
+        type: 2}
+      propertyPath: profile
+      value: 
+      objectReference: {fileID: 11400000, guid: a11ac53d7b329d249991bfa586bb084f,
+        type: 2}
+    m_RemovedComponents:
+    - {fileID: 114277141471394336, guid: 01cb98abec9806640b709a5f30da47af, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 01cb98abec9806640b709a5f30da47af, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &886931150
@@ -6367,7 +6379,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneSwitcher: {fileID: 302217905}
-  Active: 0
+  active: 1
   targetSceneBuildIndex: 1
 --- !u!64 &1762165584
 MeshCollider:
@@ -7765,8 +7777,8 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2107896860}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 260, y: 257.5, z: 0}
-  m_LocalScale: {x: 0.65, y: 0.65, z: 0.65}
+  m_LocalPosition: {x: 485.5, y: 234.5, z: 0}
+  m_LocalScale: {x: 1.21375, y: 1.21375, z: 1.21375}
   m_Children:
   - {fileID: 995110227}
   - {fileID: 1101619882}
