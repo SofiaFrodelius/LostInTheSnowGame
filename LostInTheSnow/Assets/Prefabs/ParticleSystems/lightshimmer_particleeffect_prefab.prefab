@@ -34,13 +34,13 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1072885405144508}
-  m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -0.08, y: 1.24, z: -2.071}
+  m_LocalRotation: {x: -0, y: 0.27866113, z: -0, w: 0.9603895}
+  m_LocalPosition: {x: 270.576, y: 2.974, z: 247.972}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 32.361, z: 0}
 --- !u!198 &198943652231252642
 ParticleSystem:
   m_ObjectHideFlags: 1
@@ -101,7 +101,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: 1808394251
+  randomSeed: -920553835
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -190,8 +190,8 @@ ParticleSystem:
     startColor:
       serializedVersion: 2
       minMaxState: 2
-      minColor: {r: 1, g: 0.99863595, b: 0.65900004, a: 1}
-      maxColor: {r: 1, g: 1, b: 1, a: 1}
+      minColor: {r: 1, g: 1, b: 1, a: 0.459}
+      maxColor: {r: 1, g: 1, b: 1, a: 0.484}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}
@@ -253,8 +253,8 @@ ParticleSystem:
     startSize:
       serializedVersion: 2
       minMaxState: 3
-      scalar: 0.05
-      minScalar: 0.001
+      scalar: 0.02
+      minScalar: 0.007
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -497,7 +497,7 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     randomizeRotationDirection: 0
-    maxNumParticles: 6
+    maxNumParticles: 1000
     size3D: 0
     rotation3D: 0
     gravityModifier:
@@ -661,7 +661,7 @@ ParticleSystem:
     rateOverTime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 1
+      scalar: 100
       minScalar: 10
       maxCurve:
         serializedVersion: 2
@@ -1004,8 +1004,8 @@ ParticleSystem:
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 0}
-        key1: {r: 1, g: 1, b: 1, a: 1}
-        key2: {r: 0, g: 0, b: 0, a: 1}
+        key1: {r: 1, g: 1, b: 1, a: 0.627451}
+        key2: {r: 0, g: 0, b: 0, a: 0.6784314}
         key3: {r: 0, g: 0, b: 0, a: 0}
         key4: {r: 0, g: 0, b: 0, a: 0}
         key5: {r: 0, g: 0, b: 0, a: 0}
@@ -3396,8 +3396,8 @@ ParticleSystemRenderer:
   m_SortingOrder: 0
   m_RenderMode: 0
   m_SortMode: 0
-  m_MinParticleSize: 0
-  m_MaxParticleSize: 0.03
+  m_MinParticleSize: 0.001
+  m_MaxParticleSize: 0.01
   m_CameraVelocityScale: 0
   m_VelocityScale: 0
   m_LengthScale: 2
