@@ -15,8 +15,9 @@ public class DogPath : MonoBehaviour {
 				vol = line [0].gameObject.AddComponent<NavMeshModifierVolume> ();
 			else
 				vol = line [0].gameObject.GetComponent<NavMeshModifierVolume> ();
+            float distance = Vector3.Distance(line[0].position, line[1].position);
 			vol.area = 3;
-			vol.size = new Vector3 (5, 20, line [1].position.z - line [0].position.z+1.5f);
+			vol.size = new Vector3 (5, 20, (distance+1.5f)/2);
 			vol.center = new Vector3 (0, -10, vol.size.z / 2);
 			float angle = 180 + Mathf.Atan2 (line [0].position.x - line [1].position.x, line [0].position.z - line [1].position.z) * Mathf.Rad2Deg;
 			line [0].eulerAngles = new Vector3 (0, angle, 0);
