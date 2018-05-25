@@ -17,8 +17,9 @@ public class InteractCutscene : MonoBehaviour, IInteractible
     {
         Camera.main.gameObject.GetComponent<CameraController>().CutsceneLock = true;
         player.GetComponent<CharacterMovement>().CutsceneLock = true;
-        GameObject temp = Instantiate(cutsceneToTrigger);
-        player.transform.parent = temp.transform;
-        temp.SetActive(true);
+        //GameObject temp = Instantiate(cutsceneToTrigger);
+        cutsceneToTrigger.SetActive(true);
+        //player.transform.parent = temp.transform;
+        //temp.SetActive(true);
     }
 }
