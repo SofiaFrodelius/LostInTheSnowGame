@@ -17,6 +17,7 @@ public class FirePlace : MonoBehaviour, IInteractible
     private Animator anim;
 
     [SerializeField] private bool suposedToBrake;
+    [SerializeField] private bool isBroken;
 
     //sorry johan lägger till lite  här
     Inventory inv;
@@ -27,6 +28,9 @@ public class FirePlace : MonoBehaviour, IInteractible
     {
         anim = GetComponent<Animator>();
         inv = Inventory.instance;
+if(isBroken){
+anim.SetBool("FullyBroken", true);
+	}
     }
 
 
