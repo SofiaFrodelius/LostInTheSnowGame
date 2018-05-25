@@ -22,6 +22,7 @@ public class GotoPosition : DogAction{
 		currentTarget = dog.transform.position;
 	}
 	public override void UpdateAction(){
+        Debug.Log(navAgent.path.status);
 		if(NavMesh.CalculatePath (dog.transform.position, targetPosition, NavMesh.AllAreas, path)){//DONT BE FALSE OR i :cryinglaughter::gun:
 		}else{
 			//navAgent.SetDestination (targetPosition);
@@ -42,7 +43,7 @@ public class GotoPosition : DogAction{
 
 		if (!isDone){
 			Vector2 dogPos = new Vector2 (dog.transform.position.x, dog.transform.position.z);
-			if (Vector2.Distance(dogPos, new Vector2(currentTarget.x, currentTarget.z)) > width){
+			if (Vector2.Distance(dogPos, new Vector2(currentTarget.x, currentTarget.z)) > width && navAgent.path.status == NavMeshPathStatus.PathComplete){
 				navAgent.SetDestination(currentTarget);
 			}
 			else if(Vector2.Distance(dogPos, new Vector2(targetPosition.x, targetPosition.z))> width){

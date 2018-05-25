@@ -42,6 +42,7 @@ public class Dog : MonoBehaviour, IInteractible {
 		characterMovement = player.GetComponent<CharacterMovement> ();
 	}
 	void Update(){
+        Debug.Log(currentAction.ToString());
 		Debug.DrawLine (transform.position, transform.position + transform.forward*3, Color.yellow);
 		if (itemHand.GetItemInHand () != null && itemHand.GetItemInHand ().name == "Stick") {
 			if (currentAction != null && currentAction.GetImportance() == DogAction.Importance.HIGH)
