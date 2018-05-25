@@ -57,6 +57,8 @@ public class DoorInteract : MonoBehaviour, IInteractible
             if (id.CheckDependency(Inventory.instance))
             {
                 sceneSwitcher.ActivateSceneSwitch(targetSceneBuildIndex);
+                enterSound.Play();
+                Debug.Log("ENTER SOUND");
             }
             else
             {
@@ -72,9 +74,10 @@ public class DoorInteract : MonoBehaviour, IInteractible
 
         else
         {
+            enterSound.Play();
+            Debug.Log("ENTER SOUND");
             sceneSwitcher.ActivateSceneSwitch(targetSceneBuildIndex);
-            if(enterSound)
-                enterSound.Play();
+
         }
 
     }
