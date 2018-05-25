@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.7302194, g: 0.7889753, b: 0.8498578, a: 1}
+  m_IndirectSpecularColor: {r: 0.72842723, g: 0.78805673, b: 0.8494473, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -880,7 +880,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneSwitcher: {fileID: 302217905}
-  active: 1
+  active: 0
   targetSceneBuildIndex: 6
 --- !u!114 &405932992
 MonoBehaviour:
@@ -1529,12 +1529,12 @@ Prefab:
     - target: {fileID: 224991946381626768, guid: 9b2d3b5cb5a87ed4e8c8cf2c29e9e80e,
         type: 2}
       propertyPath: m_LocalPosition.x
-      value: 485.5
+      value: 260
       objectReference: {fileID: 0}
     - target: {fileID: 224991946381626768, guid: 9b2d3b5cb5a87ed4e8c8cf2c29e9e80e,
         type: 2}
       propertyPath: m_LocalPosition.y
-      value: 234.5
+      value: 256
       objectReference: {fileID: 0}
     - target: {fileID: 224991946381626768, guid: 9b2d3b5cb5a87ed4e8c8cf2c29e9e80e,
         type: 2}
@@ -3479,6 +3479,11 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114803797635539802, guid: bbce3f17b2d01c742b6824cb37cc64e2,
+        type: 2}
+      propertyPath: Params.Array.data[0].Value
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114339328180440638, guid: bbce3f17b2d01c742b6824cb37cc64e2, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: bbce3f17b2d01c742b6824cb37cc64e2, type: 2}
@@ -3500,6 +3505,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemType: {fileID: 11400000, guid: 9ed9d23263696d7488d667022200e364, type: 2}
+--- !u!114 &1584693058
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1584693053}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5be6d9e3b26ab84692d6d993283500e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemsNeeded:
+  - {fileID: 11400000, guid: 9ed9d23263696d7488d667022200e364, type: 2}
+  itemsAmount: 01000000
 --- !u!1 &1604355752
 GameObject:
   m_ObjectHideFlags: 0
@@ -3895,7 +3914,7 @@ MeshCollider:
   m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300002, guid: 5624f5628035dfd438f59dab6f7fda5d, type: 3}
---- !u!114 &1762165587
+--- !u!114 &1762165585
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -3903,9 +3922,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 1762165580}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 78cd70283f00b8d4a841280c8a4a44e0, type: 3}
+  m_Script: {fileID: 11500000, guid: ca5e1562f5d027b48a34828ba2d0a21e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  doorKnockId: 0
+  knockEnabled: 0
+  knockSound: {fileID: 0}
+  enterSound: {fileID: 0}
+  denialVoiceLine: {fileID: 1762165588}
+  denialVoiceLineAlternatives: 0b000000
+  sceneSwitcher: {fileID: 302217905}
+  targetSceneBuildIndex: 4
 --- !u!114 &1762165588
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3917,7 +3944,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Event: event:/Sound/Avatar/Voice Acting Misc.
+  Event: event:/Sound/Avatar/Voice Acting MISC Take 2
   PlayEvent: 0
   StopEvent: 0
   CollisionTag: 
@@ -4586,6 +4613,8 @@ PlayableDirector:
     value: {fileID: 1878876837}
   - key: {fileID: 114834973846489310, guid: 6e66e3a1b18226f42b75477d41d6dd22, type: 2}
     value: {fileID: 918271820}
+  - key: {fileID: 114635326996704738, guid: 6e66e3a1b18226f42b75477d41d6dd22, type: 2}
+    value: {fileID: 0}
   m_ExposedReferences:
     m_References: []
 --- !u!4 &1878876840

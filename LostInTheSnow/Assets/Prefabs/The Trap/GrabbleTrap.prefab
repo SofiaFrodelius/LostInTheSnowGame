@@ -19,6 +19,8 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4107185067596156}
+  - component: {fileID: 114803797635539802}
+  - component: {fileID: 114104895278996212}
   - component: {fileID: 114339328180440638}
   m_Layer: 0
   m_Name: GrabbleTrap
@@ -197,6 +199,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.48808372, y: 0.48808372, z: 0.9813626}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &114104895278996212
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1311336923812398}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0889c5ebe9adc943af4c8acacba4dd3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  voiceLine: 9
 --- !u!114 &114339328180440638
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -209,3 +223,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemType: {fileID: 11400000, guid: 9ed9d23263696d7488d667022200e364, type: 2}
+--- !u!114 &114803797635539802
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1311336923812398}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event: event:/Sound/Avatar/Vocie Acting
+  PlayEvent: 11
+  StopEvent: 0
+  CollisionTag: 
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params:
+  - Name: Voice Line
+    Value: 9
+  OverrideAttenuation: 0
+  OverrideMinDistance: 0
+  OverrideMaxDistance: 0
