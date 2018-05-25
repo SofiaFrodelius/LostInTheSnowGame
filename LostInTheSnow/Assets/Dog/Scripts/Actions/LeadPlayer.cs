@@ -30,32 +30,34 @@ public class LeadPlayer : DogAction{
 		isWaiting = false;
 	}
     public override void UpdateAction(){
-		currentAction.UpdateAction ();
-		if (Vector2.Distance (new Vector2(dog.transform.position.x, dog.transform.position.z), new Vector2(target.x, target.z)) < width) {
-			if (waitForPlayerAtTarget) {
-				if (Vector2.Distance (new Vector2(player.position.x, player.position.z), new Vector2(target.x, target.z)) < 5f)
-					isDone = true;
-			} else {
-				isDone = true;
-			}
-		}
-		if (!ShouldWait()) {
-			if (isWaiting) {
-				if (currentAction.IsDone ()) {
-					currentAction.EndAction ();
-					currentAction = new GotoPosition (dog, target, width);
-					currentAction.StartAction ();
-					isWaiting = false;
-				}
-			}
-		} else {
-			if (!isWaiting) {
-				currentAction.EndAction ();
-				currentAction = new WaitForPlayer (dog, player,target, maxDistance);
-				currentAction.StartAction ();
-				isWaiting = true;
-			}
-		}
+        if (!isDone){
+            currentAction.UpdateAction();
+            if (Vector2.Distance(new Vector2(dog.transform.position.x, dog.transform.position.z), new Vector2(target.x, target.z)) < width){
+                if (waitForPlayerAtTarget){
+                    if (Vector2.Distance(new Vector2(player.position.x, player.position.z), new Vector2(target.x, target.z)) < 5f)
+                        isDone = true;
+                }else{
+                    isDone = true;
+                }
+            }
+            if (!ShouldWait()){
+                if (isWaiting){
+                    if (currentAction.IsDone()){
+                        currentAction.EndAction();
+                        currentAction = new GotoPosition(dog, target, width);
+                        currentAction.StartAction();
+                        isWaiting = false;
+                    }
+                }
+            }else{
+                if (!isWaiting){
+                    currentAction.EndAction();
+                    currentAction = new WaitForPlayer(dog, player, target, maxDistance);
+                    currentAction.StartAction();
+                    isWaiting = true;
+                }
+            }
+        }
     }
 	private bool ShouldWait(){
 		Vector2 playerPos = new Vector2 (player.position.x, player.position.z);

@@ -42,14 +42,15 @@ public class Dog : MonoBehaviour, IInteractible {
 		characterMovement = player.GetComponent<CharacterMovement> ();
 	}
 	void Update(){
-        Debug.Log(currentAction.ToString());
+        if(savedAction != null)
+            Debug.Log("saved action " + savedAction.ToString());
 		Debug.DrawLine (transform.position, transform.position + transform.forward*3, Color.yellow);
 		if (itemHand.GetItemInHand () != null && itemHand.GetItemInHand ().name == "Stick") {
 			if (currentAction != null && currentAction.GetImportance() == DogAction.Importance.HIGH)
 				savedAction = currentAction;
 			if (Vector3.Distance (transform.position, player.position) < 3) {
 				if (!isWaitingForFetch) {
-					ai.StartAction (new WaitForFetch (this));
+					ai.StartAction (new WaitForFetch (this,player));
 				}
 			} else {
 				ai.StartAction (new FollowPlayer (this, player));
@@ -60,6 +61,7 @@ public class Dog : MonoBehaviour, IInteractible {
 		} else if (savedAction != null) {
 			currentAction = savedAction;
 			currentAction.StartAction ();
+            savedAction = null;
 		}
     }
 	public void Interact(){
@@ -71,7 +73,7 @@ public class Dog : MonoBehaviour, IInteractible {
 		return currentAction == null;
 	}
 	public void Fetch(Transform stick = null) {
-		if (currentAction != null)
+		if (currentAction != null && currentAction.GetImportance() == DogAction.Importance.HIGH)
 			savedAction = currentAction;
 		if (stick != null)
 			ai.StartAction (new Fetch (this, player, stick));
@@ -79,7 +81,7 @@ public class Dog : MonoBehaviour, IInteractible {
 			ai.StartAction (new Fetch (this, player));
 	}
 	public void Call(){
-		if (currentAction != null)
+		if (currentAction != null && currentAction.GetImportance() == DogAction.Importance.HIGH)
 			savedAction = currentAction;
 		if (characterMovement.CutsceneLock) 
 			ai.StartAction (new Call (this, player, true));

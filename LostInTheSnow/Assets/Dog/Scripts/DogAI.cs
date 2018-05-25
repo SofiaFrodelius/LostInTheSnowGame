@@ -46,7 +46,8 @@ public class DogAI : MonoBehaviour {
 	}
     void OnDrawGizmos() {
         Gizmos.color = Color.yellow;
-        Gizmos.DrawSphere(navAgent.destination, 0.5f);
+        if(navAgent != null)
+            Gizmos.DrawSphere(navAgent.destination, 0.5f);
     }
     void Update(){
 		if (dog.currentAction != null) {
