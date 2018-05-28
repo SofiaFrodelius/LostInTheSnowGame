@@ -73,7 +73,8 @@ public class Dog : MonoBehaviour, IInteractible {
 		return currentAction == null;
 	}
 	public void Fetch(Transform stick = null) {
-		if (currentAction != null && currentAction.GetImportance() == DogAction.Importance.HIGH)
+        isSniffing = true;
+        if (currentAction != null && currentAction.GetImportance() == DogAction.Importance.HIGH)
 			savedAction = currentAction;
 		if (stick != null)
 			ai.StartAction (new Fetch (this, player, stick));
@@ -90,11 +91,13 @@ public class Dog : MonoBehaviour, IInteractible {
 			ai.StartAction (new Call (this, player));
 	}
 	public void Pet(){
+        isSniffing = true;
 		if(currentAction == null || currentAction.GetImportance() != DogAction.Importance.HIGH)
 			ai.StartAction (new Pet (this));
 	}
 	public void PickupDog(){
-		if(currentAction == null || currentAction.GetImportance() != DogAction.Importance.HIGH)
+        isSniffing = true;
+        if (currentAction == null || currentAction.GetImportance() != DogAction.Importance.HIGH)
 			ai.StartAction (new PickupDog (this));
 	}
 	public void ParentDog(){
