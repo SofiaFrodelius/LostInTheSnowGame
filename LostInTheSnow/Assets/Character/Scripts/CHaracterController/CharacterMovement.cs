@@ -289,6 +289,16 @@ public class CharacterMovement : MonoBehaviour {
         return forcedMove;
     }
 
+    public void CutsceneRelease()
+    {
+        CameraController camCon = Camera.main.GetComponent<CameraController>();
+        ChracterInteract charInteract = GetComponent<ChracterInteract>();
+        cutsceneLock = false;
+        if (camCon != null) camCon.CutsceneLock = false;
+        if (charInteract != null) charInteract.CutsceneLock = false;
+    }
+
+
     void OnControllerColliderHit(ControllerColliderHit hit)
     {
         hitNormal = hit.normal;
