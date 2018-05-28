@@ -13,6 +13,7 @@ public class ChracterInteract : MonoBehaviour
     private bool interactAllowed = true;
     private bool callDogAllowed = true;
     private bool interactDogAllowed = true;
+    private bool lastSceneExeptions = false;
     private bool pickUpDogAllowed = true;
     private IlaCallVoiceLinePicker picker;
     // Use this for initialization
@@ -32,6 +33,7 @@ public class ChracterInteract : MonoBehaviour
             if (callDogAllowed) CallDog();
             if (interactDogAllowed) InteractWithDog();
             if (pickUpDogAllowed) PickUpDog();
+            if (lastSceneExeptions) CallDog();
         }
     }
 
@@ -44,7 +46,8 @@ public class ChracterInteract : MonoBehaviour
             {
                 picker.PlayVoiceLine(Vector3.Distance(dog.transform.position, transform.position));
             }
-			dog.Call ();
+            if (!lastSceneExeptions)
+                dog.Call ();
         }
     }
     void PickUpDog()
@@ -126,6 +129,8 @@ public class ChracterInteract : MonoBehaviour
             interactDogAllowed = value;
         if (actionIndex == 3)
             pickUpDogAllowed = value;
+        if (actionIndex == 4)
+            lastSceneExeptions = value;
 
         Debug.Log(interactAllowed);
     }

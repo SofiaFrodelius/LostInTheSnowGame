@@ -20,6 +20,8 @@ public class MainMenuHandler : MonoBehaviour {
         mainMenu = mainMenuObject.transform.GetChild(0).gameObject;
         optionsMenu = mainMenuObject.transform.GetChild(1).gameObject;
         ExitMenu = mainMenuObject.transform.GetChild(2).gameObject;
+
+        Cursor.lockState = CursorLockMode.None;
     }
 	
 	// Update is called once per frame

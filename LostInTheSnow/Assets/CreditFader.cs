@@ -9,6 +9,7 @@ public class CreditFader : MonoBehaviour {
     [SerializeField] private float fadeInTime;
     [SerializeField] private float fadeOutTime;
     [SerializeField] private float showTime;
+    [SerializeField] private SceneSwitchScript sceneswitcher;
 
 
     // Use this for initialization
@@ -53,7 +54,7 @@ public class CreditFader : MonoBehaviour {
         }
         else
         {
-            
+            sceneswitcher.ActivateSceneSwitch();
         }
     }
     IEnumerator StayTime()

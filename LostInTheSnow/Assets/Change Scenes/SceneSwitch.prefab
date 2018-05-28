@@ -19,7 +19,8 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4306666088748672}
-  - component: {fileID: 114470667835846476}
+  - component: {fileID: 114826476273327650}
+  - component: {fileID: 114510100870281484}
   m_Layer: 0
   m_Name: SceneSwitch
   m_TagString: Untagged
@@ -70,7 +71,7 @@ Transform:
   m_Father: {fileID: 4306666088748672}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &114470667835846476
+--- !u!114 &114510100870281484
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -78,7 +79,20 @@ MonoBehaviour:
   m_GameObject: {fileID: 1643254973538334}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7b37f79d67879614484385119e541ed5, type: 3}
+  m_Script: {fileID: 11500000, guid: c1c48cc74fb1df148b9fc50dc797f275, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fadeTexture: {fileID: 2800000, guid: 3e521456e50f1974ab6f608eee336e46, type: 3}
+  fadeTime: 1000
+--- !u!114 &114826476273327650
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1643254973538334}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63e237fd9a87f49468daa89f278ac733, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   sceneTarget: 0
