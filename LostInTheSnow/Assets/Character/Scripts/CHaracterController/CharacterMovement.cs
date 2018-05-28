@@ -32,6 +32,14 @@ public class CharacterMovement : MonoBehaviour {
     private bool forcedMove = false;
     private float t = 0f;
     private int forcedTurn;
+    private bool forceRelease;
+
+
+    private Vector3 hitNormal;
+    private bool isSliding;
+    [SerializeField] private float slopeLimit = 45;
+    [SerializeField] private float friction = 0.7f;
+
 
     public float MovementSpeed
     {
@@ -67,6 +75,7 @@ public class CharacterMovement : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
+        isSliding = !((Vector3.Angle(Vector3.up, hitNormal) <= slopeLimit));
         if (!forcedMove && !cutsceneLock)
         {
             CheckInputs();
@@ -90,7 +99,7 @@ public class CharacterMovement : MonoBehaviour {
     {
         float dt = Time.deltaTime;
 
-        if (!cc.isGrounded)
+        if (!cc.isGrounded && !isSliding)
         {
             moveDirection.x = lastMoveDirection.x;
             moveDirection.z = lastMoveDirection.z;
@@ -112,7 +121,7 @@ public class CharacterMovement : MonoBehaviour {
     
     void CalculateJump()
     {
-        if (inputJump && cc.isGrounded)
+        if (inputJump && cc.isGrounded && !isSliding)
         {
             //Play jumpSound
             jumpEmitter.Play();
@@ -131,6 +140,7 @@ public class CharacterMovement : MonoBehaviour {
     void ApplyMovement()
     {
         moveDirection = transform.TransformDirection(moveDirection);
+        ApplySliding();
         cc.Move(moveDirection * Time.deltaTime);
         lastMoveDirection = transform.InverseTransformDirection(moveDirection);
         
@@ -182,16 +192,34 @@ public class CharacterMovement : MonoBehaviour {
         else accTajmer.ResetTimer();
     }
 
-    public void ForceMovement(Vector3 targetPosition, Vector2 targetLook)
+    private void ApplySliding()
+    {
+        if (isSliding && cc.isGrounded)
+        {
+            moveDirection.x += (1f - hitNormal.y) * hitNormal.x * friction;
+            moveDirection.z += (1f - hitNormal.y) * hitNormal.z * friction;
+        }
+    }
+
+
+    public void ForceMovement(Vector3 targetPosition, Vector2 targetLook, bool release)
     {
         forcedPosition = targetPosition;
         forcedLook = targetLook;
+        while (forcedLook.x < 0)
+            forcedLook.x += 360;
+        while (forcedLook.x >= 360)
+            forcedLook.x -= 360;
         forcedMove = true;
         cutsceneLock = true;
         CameraController camCon = Camera.main.GetComponent<CameraController>();
-        camCon.CutsceneLock = true;
-        float hAngle = targetLook.x - camCon.getLook().x;
-        if (hAngle >= 0)
+        if (camCon != null) camCon.CutsceneLock = true;
+        ChracterInteract charInteract = GetComponent<ChracterInteract>();
+        if (charInteract != null) charInteract.CutsceneLock = true;
+        float hAngle = forcedLook.x - camCon.getLook().x;
+        if (hAngle == 0)
+            forcedTurn = 0;
+        else if (hAngle > 0)
         {
             if (hAngle >= 180)
                 forcedTurn = -1;
@@ -205,25 +233,40 @@ public class CharacterMovement : MonoBehaviour {
             else
                 forcedTurn = -1;
         }
-        Debug.Log("ForceMovement");
+        forceRelease = release;
     }
 
     private void Forcing()
     {
-        transform.position = Vector3.MoveTowards(transform.position, forcedPosition, 1.5f);
+        transform.position = Vector3.MoveTowards(transform.position, forcedPosition, 0.2f);
         CameraController camCon = Camera.main.GetComponent<CameraController>();
+        ChracterInteract charInteract = GetComponent<ChracterInteract>();
         Vector2 newLook = camCon.getLook();
-        newLook.y = Mathf.MoveTowards(newLook.y, forcedLook.y, 2);
-        int turnSpeed = 4;
+        float turnSpeed = 4 * 60 * Time.deltaTime;
+        newLook.y = Mathf.MoveTowards(newLook.y, forcedLook.y, turnSpeed);
+        if (newLook.x == forcedLook.x)
+            forcedTurn = 0;
         newLook.x += forcedTurn * turnSpeed;
+        if (newLook.x >= 360) newLook.x -= 360;
+        else if (newLook.x < 0) newLook.x += 360;
         if (forcedTurn == 1)
         {
+            if (forcedLook.x >= 360 - turnSpeed)
+            {
+                if (newLook.x < turnSpeed)
+                    newLook.x = forcedLook.x;
+            }
             if (newLook.x > forcedLook.x)
                 if (newLook.x - forcedLook.x <= turnSpeed)
                     newLook.x = forcedLook.x;
         }
-        else
+        else if (forcedTurn == -1)
         {
+            if (forcedLook.x <= turnSpeed)
+            {
+                if (newLook.x > 360 - turnSpeed)
+                    newLook.x = forcedLook.x;
+            }
             if (newLook.x < forcedLook.x)
                 if (forcedLook.x - newLook.x <= turnSpeed)
                     newLook.x = forcedLook.x;
@@ -232,8 +275,12 @@ public class CharacterMovement : MonoBehaviour {
         if (transform.position == forcedPosition && camCon.getLook() == forcedLook)
         {
             forcedMove = false;
-            cutsceneLock = false;
-            camCon.CutsceneLock = false;
+            if (forceRelease)
+            {
+                cutsceneLock = false;
+                camCon.CutsceneLock = false;
+                charInteract.CutsceneLock = false;
+            }
         }
     }
 
@@ -241,4 +288,15 @@ public class CharacterMovement : MonoBehaviour {
     {
         return forcedMove;
     }
+
+    void OnControllerColliderHit(ControllerColliderHit hit)
+    {
+        hitNormal = hit.normal;
+    }
+
+    public void setForceRelease(bool v)
+    {
+        forceRelease = v;
+    }
+
 }

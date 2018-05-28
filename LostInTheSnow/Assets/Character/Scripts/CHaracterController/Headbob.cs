@@ -6,6 +6,7 @@ public class Headbob : MonoBehaviour
 {
     private Animator anim;
     private CharacterController cc;
+    private CharacterMovement cm;
     private int bobIsOn;
 
 
@@ -15,6 +16,8 @@ public class Headbob : MonoBehaviour
     {
         anim = GetComponent<Animator>();
         cc = transform.parent.GetComponent<CharacterController>();
+        cm = transform.parent.GetComponent<CharacterMovement>();
+        
     }
 	
 	// Update is called once per frame
@@ -32,7 +35,7 @@ public class Headbob : MonoBehaviour
                 anim.SetBool("IsWalking", false);
             }
 
-            if(transform.parent.GetComponent<CharacterMovement>().getSprint() && cc.isGrounded)
+            if(cm.getSprint() && cc.isGrounded)
             {
                 anim.SetBool("IsSprinting", true);
             }
@@ -41,7 +44,7 @@ public class Headbob : MonoBehaviour
                 anim.SetBool("IsSprinting", false);
             }
 
-            if((anim.GetBool("IsSprinting") || anim.GetBool("IsWalking")) && transform.parent.GetComponent<CharacterMovement>().CutsceneLock)
+            if((anim.GetBool("IsSprinting") || anim.GetBool("IsWalking")) && cm.CutsceneLock)
             {
                 anim.SetBool("IsSprinting", false);
                 anim.SetBool("IsWalking", false);
@@ -59,7 +62,7 @@ public class Headbob : MonoBehaviour
                 anim.SetBool("IsWalkingNoAnim", false);
             }
 
-            if (transform.parent.GetComponent<CharacterMovement>().getSprint() && cc.isGrounded)
+            if (cm.getSprint() && cc.isGrounded)
             {
                 anim.SetBool("IsSprintingNoAnim", true);
             }
@@ -68,7 +71,7 @@ public class Headbob : MonoBehaviour
                 anim.SetBool("IsSprintingNoAnim", false);
             }
 
-            if ((anim.GetBool("IsSprintingNoAnim") || anim.GetBool("IsWalkingNoAnim")) && transform.parent.GetComponent<CharacterMovement>().CutsceneLock)
+            if ((anim.GetBool("IsSprintingNoAnim") || anim.GetBool("IsWalkingNoAnim")) && cm.CutsceneLock)
             {
                 anim.SetBool("IsSprintingNoAnim", false);
                 anim.SetBool("IsWalkingNoAnim", false);
