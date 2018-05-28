@@ -13,30 +13,9 @@ public class InteractPrompt : MonoBehaviour
     private List<Item> itemDependencies;
     [SerializeField]
     private bool useDependencies;
-    private bool isItem = false;
-
-
-    [SerializeField] private Text pickupItemText;
-    GrabableObject gobj;
-
-    public void Start()
-    {
-        gobj = GetComponent<GrabableObject>();
-        if (gobj)
-        {
-            isItem = true;
-            promptToToggle.Add(pickupItemText);
-        }
-    }
 
     public void promptToggle(bool toggle) //can be used for prompts with and without dependencies
     {
-        if (isItem)
-        {
-            promptToToggle[0].text = "Press E to Pick up " + gobj.name;
-            promptToToggle[0].enabled = toggle;
-        }
-
         if (itemDependencies.Count > 0 && checkDependencies() || !useDependencies)
         {
             for (int i = 0; i < promptToToggle.Count; i++)
@@ -82,14 +61,6 @@ public class InteractPrompt : MonoBehaviour
 
     }
 
-
-    public void removeAllPrompts()
-    {
-        promptToToggle.Clear();
-        dependencyPrompts.Clear();
-    }
-
-
     private bool checkDependencies()
     {
         Inventory inv;
@@ -97,21 +68,15 @@ public class InteractPrompt : MonoBehaviour
         if (!inv || itemDependencies.Count == 0) return false;
         for(int i = 0; i < itemDependencies.Count; i++)
         {
-            if (inv.isItemInInventory(itemDependencies[i],1)) continue;
+            if (inv.isItemInInventory(itemDependencies[i])) continue;
             else return false;
         }
         return true;
     }
 
-
-
-    public void OnDestroy()
+    public void updatePrompts()
     {
-        if(isItem)
-        {
             disableAllPrompts();
-        }
+            promptToggle(true);
     }
-
-
 }
