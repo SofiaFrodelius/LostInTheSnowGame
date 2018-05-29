@@ -11,7 +11,7 @@ public class CameraController : MonoBehaviour
     private bool cutsceneLock = false;
     
 
-    private void Start()
+    private void Awake()
     {
         Cursor.lockState = CursorLockMode.Locked;
         playerTransform = GameObject.FindWithTag("Player").transform;
