@@ -9,6 +9,7 @@ public class StormItensifier : MonoBehaviour {
     [SerializeField] private GameObject newSnowParticleSystem;
     [SerializeField] private bool changeMusic = false;
     [SerializeField] private StudioEventEmitter musicToChange;
+    [SerializeField] private float fogAfterEnter;
 
     // Use this for initialization
     void Start () {
@@ -17,7 +18,7 @@ public class StormItensifier : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
+
 	}
     private void OnTriggerEnter(Collider other)
     {
@@ -37,6 +38,9 @@ public class StormItensifier : MonoBehaviour {
                 musicToChange.SetParameter("Last_Day_END", 1f);
             }
 
+            RenderSettings.fog = true;
+            RenderSettings.fogEndDistance = fogAfterEnter;
+            
         }
     }
 }

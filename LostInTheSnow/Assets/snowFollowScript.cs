@@ -8,6 +8,11 @@ public class snowFollowScript : MonoBehaviour
     private Vector3 moveDelta;
     public GameObject player;
     public int multiplier = 50;
+    private void Start()
+    {
+        player = GameObject.FindGameObjectWithTag("Player");
+    }
+
     public void Update()
     {
         moveDelta = player.transform.position - previousPos;

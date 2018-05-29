@@ -150,7 +150,7 @@ public class ChracterInteract : MonoBehaviour
         if (actionIndex == 4)
             lastSceneExeptions = value;
 
-        Debug.Log(interactAllowed);
+//        Debug.Log(interactAllowed);
     }
 
 }
