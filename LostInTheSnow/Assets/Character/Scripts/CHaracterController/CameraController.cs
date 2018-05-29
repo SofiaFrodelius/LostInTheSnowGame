@@ -36,13 +36,13 @@ public class CameraController : MonoBehaviour
             look.x -= 360;
         while (look.x < 0)
             look.x += 360;
-        //if (!cutsceneLock)
-        //{
+        if (!cutsceneLock)
+        {
 
             look.y = Mathf.Clamp(look.y, -90, 90);
             transform.localRotation = Quaternion.AngleAxis(-look.y, Vector3.right);
             playerTransform.localRotation = Quaternion.AngleAxis(look.x, playerTransform.up);
-        //}
+        }
         //Debug.Log(look.x);
 
         //Temp
