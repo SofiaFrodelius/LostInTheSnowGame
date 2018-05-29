@@ -30,12 +30,16 @@ public class MainMenuHandler : MonoBehaviour {
 	}
     public void StartGame()
     {
-        StartCoroutine(NewGame());
+        print("nytt spel");
+        SceneManager.LoadScene(1);
+//        StartCoroutine(NewGame());
     }
     IEnumerator NewGame()
     {
+        
         screenFadeScript.InvertFade();
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(1f);
+        print("nytt spel jaow");
         SceneManager.LoadScene(1);
     }
     public void ExitToggle(bool showExit)
