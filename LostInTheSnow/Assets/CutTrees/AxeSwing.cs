@@ -11,6 +11,7 @@ public class AxeSwing : MonoBehaviour, IUsable
     Animator anim;
     private bool isChopping = false;
     private int counter = 0;
+    [SerializeField] private int swingCounterLength = 140;
 
     void Start()
     {
@@ -33,7 +34,7 @@ public class AxeSwing : MonoBehaviour, IUsable
         if (isChopping)
         {
             counter++;
-            if (counter >= 275)
+            if (counter >= swingCounterLength)
             {
                 counter = 0;
                 isChopping = false;

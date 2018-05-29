@@ -11,6 +11,7 @@ public class CuttableTree : MonoBehaviour, IInteractible
     private CharacterMovement charMove = null;
     GameObject activeItem = null;
     [SerializeField] private GameObject firewood;
+    [SerializeField] private int firewoodAmount = 10;
 
     public void AlternateInteract()
     {
@@ -86,7 +87,7 @@ public class CuttableTree : MonoBehaviour, IInteractible
                             if (hitPoints <= 0)
                             {
                                 // Tree dying stuff goes here
-                                for (int i = 0; i < 10; i++)
+                                for (int i = 0; i < firewoodAmount; i++)
                                 {
                                     Instantiate(firewood, transform.position + new Vector3(0, 0.2f + (0.5f * i), 0), Quaternion.LookRotation(Vector3.up));
                                 }
