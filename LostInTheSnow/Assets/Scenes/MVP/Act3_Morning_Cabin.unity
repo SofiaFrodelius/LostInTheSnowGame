@@ -1334,6 +1334,8 @@ PlayableDirector:
     value: {fileID: 1242911421}
   - key: {fileID: 114834973846489310, guid: bc1ea1f068f98604e80b32347ea5d4c5, type: 2}
     value: {fileID: 902639197}
+  - key: {fileID: 114567249402062888, guid: bc1ea1f068f98604e80b32347ea5d4c5, type: 2}
+    value: {fileID: 1849131869}
   m_ExposedReferences:
     m_References: []
 --- !u!4 &1242911425
@@ -1347,6 +1349,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 902639207}
+  - {fileID: 1849131871}
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 50.904003, z: 0}
@@ -1696,12 +1699,12 @@ Prefab:
     - target: {fileID: 224991946381626768, guid: 9b2d3b5cb5a87ed4e8c8cf2c29e9e80e,
         type: 2}
       propertyPath: m_LocalPosition.x
-      value: 629
+      value: 237
       objectReference: {fileID: 0}
     - target: {fileID: 224991946381626768, guid: 9b2d3b5cb5a87ed4e8c8cf2c29e9e80e,
         type: 2}
       propertyPath: m_LocalPosition.y
-      value: 260.5
+      value: 133.5
       objectReference: {fileID: 0}
     - target: {fileID: 224991946381626768, guid: 9b2d3b5cb5a87ed4e8c8cf2c29e9e80e,
         type: 2}
@@ -1998,10 +2001,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 076936d509e635c4191a582c70e1de18, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  particleSys: {fileID: 1095208838755050, guid: c6ad3252c5e2a6044826148947811481,
-    type: 2}
+  particleSys: {fileID: 0}
   particlePos: {fileID: 0}
-  fireSound: {fileID: 1888312786}
+  fireSound: {fileID: 0}
   timeToLightFire: 3
   fireStriker: {fileID: 11400000, guid: cc75e486fc0f3d14088dd7cd5d9722ec, type: 2}
   wood: {fileID: 11400000, guid: 475d8b70b0cb4834ebedfe0687689834, type: 2}
@@ -2528,6 +2530,59 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 146.498, z: 0}
+--- !u!1 &1849131869
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1849131871}
+  - component: {fileID: 1849131870}
+  m_Layer: 0
+  m_Name: noiseline4
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1849131870
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1849131869}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event: event:/Sound/Cutscenes
+  PlayEvent: 11
+  StopEvent: 0
+  CollisionTag: 
+  AllowFadeout: 1
+  TriggerOnce: 1
+  Preload: 0
+  Params:
+  - Name: Voice Line
+    Value: 4
+  OverrideAttenuation: 0
+  OverrideMinDistance: 0
+  OverrideMaxDistance: 0
+--- !u!4 &1849131871
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1849131869}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1242911425}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1888312785
 GameObject:
   m_ObjectHideFlags: 0
