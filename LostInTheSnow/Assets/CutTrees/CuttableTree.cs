@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CuttableTree : MonoBehaviour, IInteractible
+public class CuttableTree : MonoBehaviour//, IInteractible
 {
     private int hitPoints = 3;
     private bool activated = false;
@@ -19,7 +19,7 @@ public class CuttableTree : MonoBehaviour, IInteractible
         throw new System.NotImplementedException();
     }
 
-    public void Interact()
+    public void AxeInteract()
     {
         playerObj = GameObject.FindWithTag("Player");
         if (playerObj != null)

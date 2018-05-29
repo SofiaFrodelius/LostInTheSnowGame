@@ -8,13 +8,17 @@ public class AxeSwing : MonoBehaviour, IUsable
     bool TreeChopBool = false;
     [SerializeField] private GameObject chopParticles;
     [SerializeField] private Transform particlePos;
+    [SerializeField] private LayerMask interactLayerMask;
+    [SerializeField] private float maxInteractLength;
     Animator anim;
     private bool isChopping = false;
     private int counter = 0;
     [SerializeField] private int swingCounterLength = 140;
+    Camera playerCam;
 
     void Start()
     {
+        playerCam = Camera.main;
         anim = GetComponent<Animator>();
     }
     public void Use(ItemHand ih)
@@ -25,8 +29,26 @@ public class AxeSwing : MonoBehaviour, IUsable
     {
         if (!isChopping)
         {
-            anim.SetTrigger("AxeChop");
-            isChopping = true;
+            RaycastHit hit = new RaycastHit();
+            Ray ray = new Ray(playerCam.transform.position, playerCam.transform.forward);
+            if (Physics.Raycast(ray, out hit, maxInteractLength, interactLayerMask))
+            {
+                CuttableTree ct = hit.transform.gameObject.GetComponent<CuttableTree>();
+                if (ct)
+                {
+
+                    Debug.Log(hit.transform.gameObject);
+                    hit.transform.GetComponent<CuttableTree>().AxeInteract();
+                    anim.SetTrigger("AxeChop");
+                    isChopping = true;
+                }
+
+            }
+            else
+            {
+                anim.SetTrigger("AxeChop");
+                isChopping = true;
+            }
         }
     }
     private void Update()
