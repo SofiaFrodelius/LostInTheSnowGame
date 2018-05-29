@@ -15,10 +15,14 @@ public class ScriptedDog : MonoBehaviour {
 	void Start () {
 		dog = GetComponent<Dog> ();
 		dogAI = GetComponent<DogAI> ();
-		for (int i = 0; i < wayPoints.Count; i++) {
-			if (wayPoints [i] != null)
-				actions.Add (new LeadPlayer (dog, dog.player, wayPoints [i].transform.position, maxDistance, false, wayPoints[wayPoints.Count-1].transform.position));
-			else
+        for (int i = 0; i < wayPoints.Count; i++) {
+            if (wayPoints[i] != null) {
+                if(wayPoints[(i < wayPoints.Count - 1) ? i + 1 : i] != null)
+                    actions.Add(new LeadPlayer(dog, dog.player, wayPoints[i].transform.position, maxDistance, false, wayPoints[(i < wayPoints.Count - 1) ? i + 1 : i].transform.position));
+                else
+                    actions.Add(new LeadPlayer(dog, dog.player, wayPoints[i].transform.position, maxDistance, false, wayPoints[i].transform.position));
+            }
+            else
 				actions.Add (new Sit (dog, sitTimer)); 
 		}
 		NextAction ();
@@ -40,7 +44,9 @@ public class ScriptedDog : MonoBehaviour {
 			}
 		}
 	}
-	void NextAction(){
+	public void NextAction(){
+        if (dog.currentAction != null  && dog.currentAction.ToString() == "Sit")
+            dog.GetComponent<Animator>().SetTrigger("StandUp");
 		dogAI.StartAction (actions [actionCount]);
 		actionCount++;
 	}

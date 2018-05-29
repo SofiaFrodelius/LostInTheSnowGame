@@ -6,7 +6,7 @@ public class LeadPlayer : DogAction{
     Transform player;
 	Vector3 target;
 	Vector3 endTarget;
-	float width = 1.5f;
+	float width = 4f;
 	float maxDistance;
 	DogAction currentAction;
 	bool isWaiting;
@@ -25,7 +25,7 @@ public class LeadPlayer : DogAction{
 	public override void StartAction(){
 		actionTimer = actionDelay;
 		isDone = false;
-		currentAction = new GotoPosition (dog, target);
+		currentAction = new GotoPosition (dog, target, 6f);
 		currentAction.StartAction ();
 		isWaiting = false;
 	}
@@ -44,7 +44,7 @@ public class LeadPlayer : DogAction{
                 if (isWaiting){
                     if (currentAction.IsDone()){
                         currentAction.EndAction();
-                        currentAction = new GotoPosition(dog, target, width);
+                        currentAction = new GotoPosition(dog, target, 6f);
                         currentAction.StartAction();
                         isWaiting = false;
                     }
@@ -63,13 +63,12 @@ public class LeadPlayer : DogAction{
 		Vector2 playerPos = new Vector2 (player.position.x, player.position.z);
 		Vector2 targetPos = new Vector2 (target.x, target.z);
 		Vector2 endTargetPos = Vector2.zero;
-		if(endTarget != null)
-			endTargetPos = new Vector2 (endTarget.x, endTarget.z);
+        if (endTarget != null)
+            endTargetPos = new Vector2(endTarget.x, endTarget.z);
 		Vector2 dogPos = new Vector2 (dog.transform.position.x, dog.transform.position.z);
         bool shouldWait = Vector2.Distance(playerPos, dogPos) > maxDistance && Vector2.Distance(playerPos, targetPos) > Vector2.Distance(dogPos, targetPos);
-        if(shouldWait)
+        if (shouldWait)
             shouldWait = (Vector2.Distance (playerPos, endTargetPos) > Vector2.Distance (dogPos, endTargetPos));
-        Debug.Log("Should wiat " + shouldWait);
         return shouldWait;
 	}
 	public override void EndAction(){

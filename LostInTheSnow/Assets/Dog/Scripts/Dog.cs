@@ -29,7 +29,8 @@ public class Dog : MonoBehaviour, IInteractible {
 	private CharacterMovement characterMovement;
 	private Item grabbedItem;
 	private GameObject itemObject;
-	public bool isWaitingForFetch = false;
+    [HideInInspector]
+    public bool isWaitingForFetch = false;
 
 	void Start () {
 		if (player == null)player = GameObject.FindGameObjectWithTag ("Player").transform;
@@ -57,7 +58,7 @@ public class Dog : MonoBehaviour, IInteractible {
 			}
 		}
 		if (currentAction != null) {
-			currentAction.UpdateAction ();
+		    currentAction.UpdateAction ();
 		} else if (savedAction != null) {
 			currentAction = savedAction;
 			currentAction.StartAction ();
