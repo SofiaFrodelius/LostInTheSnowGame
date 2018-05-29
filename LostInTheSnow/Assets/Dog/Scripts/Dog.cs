@@ -31,6 +31,7 @@ public class Dog : MonoBehaviour, IInteractible {
 	private GameObject itemObject;
     [HideInInspector]
     public bool isWaitingForFetch = false;
+    public float sniffPercent = 20;
 
 	void Start () {
 		if (player == null)player = GameObject.FindGameObjectWithTag ("Player").transform;

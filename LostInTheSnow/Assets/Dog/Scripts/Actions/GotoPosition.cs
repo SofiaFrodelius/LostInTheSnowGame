@@ -72,7 +72,7 @@ public class GotoPosition : DogAction{
 		GameObject obj = ScanForObject.Scan (scanPos, radius, tag, dog.dogLayerMask);
 		if (obj != null) {
 			pos = obj.transform.position;
-			if (Random.Range (0, 5) == 0)
+			if (Random.Range (0, 100/dog.sniffPercent) == 0)
 				dog.isSniffing = true;
             //Temporary I guess.
             width = 1.5f;
