@@ -12,6 +12,7 @@ public class CuttableTree : MonoBehaviour, IInteractible
     GameObject activeItem = null;
     [SerializeField] private GameObject firewood;
     [SerializeField] private int firewoodAmount = 10;
+    [SerializeField] private float cuttingDistance = 1.8f;
 
     public void AlternateInteract()
     {
@@ -46,7 +47,6 @@ public class CuttableTree : MonoBehaviour, IInteractible
                     Vector2 targetLook = new Vector2(hAngle, 0f);
                     Vector3 cuttingposition = new Vector3(-deltaVector.x, 0, -deltaVector.y);
                     cuttingposition.Normalize();
-                    float cuttingDistance = 1.9f;
                     charMove.ForceMovement(transform.position + new Vector3(cuttingposition.x * cuttingDistance, charMove.transform.position.y - transform.position.y,
                         cuttingposition.z * cuttingDistance), targetLook, false);
                 }

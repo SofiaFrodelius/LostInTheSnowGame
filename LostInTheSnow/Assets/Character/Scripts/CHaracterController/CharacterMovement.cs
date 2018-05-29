@@ -271,6 +271,11 @@ public class CharacterMovement : MonoBehaviour {
                 if (forcedLook.x - newLook.x <= turnSpeed)
                     newLook.x = forcedLook.x;
         }
+
+        newLook.y = Mathf.Clamp(newLook.y, -90, 90);
+        camCon.transform.localRotation = Quaternion.AngleAxis(-newLook.y, Vector3.right); // New ghetto solution
+        transform.localRotation = Quaternion.AngleAxis(newLook.x, transform.up);
+
         camCon.setLook(newLook);
         if (transform.position == forcedPosition && camCon.getLook() == forcedLook)
         {
