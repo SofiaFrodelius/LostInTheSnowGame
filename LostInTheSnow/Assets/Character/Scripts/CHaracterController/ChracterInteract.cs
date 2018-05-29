@@ -93,9 +93,9 @@ public class ChracterInteract : MonoBehaviour
         Ray ray = new Ray(playerCam.transform.position, playerCam.transform.forward);
         if (Input.GetButtonDown("Interact"))
         {
-            
             if (Physics.Raycast(ray, out hit, maxInteractLength, interactLayerMask))
             {
+                
                 ExecuteEvents.ExecuteHierarchy<IInteractible>(hit.transform.gameObject, null, (handler, eventData) => handler.Interact());
                 ExecuteEvents.ExecuteHierarchy<IGrabable>(hit.transform.gameObject, null, pickup);
             }

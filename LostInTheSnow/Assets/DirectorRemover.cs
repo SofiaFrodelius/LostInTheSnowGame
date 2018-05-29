@@ -17,14 +17,23 @@ public class DirectorRemover : MonoBehaviour {
                 player = transform.GetChild(0).gameObject;
                 player.GetComponent<CharacterMovement>().CutsceneLock = true;
                 player.GetComponentInChildren<CameraController>().CutsceneLock = true;
+
+                ChracterInteract characterIntercat = player.GetComponent<ChracterInteract>();
+                characterIntercat.PermitAction(0, false);
+                characterIntercat.PermitAction(1, false);
+                characterIntercat.PermitAction(2, false);
+                characterIntercat.PermitAction(3, false);
+                characterIntercat.PermitAction(4, true);
+
                 break;
             }
         }
 
-	}
-	
-	// Update is called once per frame
-	void Update () {
+
+    }
+
+    // Update is called once per frame
+    void Update () {
 
         if (player)
         {
@@ -35,8 +44,18 @@ public class DirectorRemover : MonoBehaviour {
                 player.transform.parent = null;
                 player.GetComponent<CharacterMovement>().CutsceneLock = false;
                 player.GetComponentInChildren<CameraController>().CutsceneLock = false;
+
+                ChracterInteract characterIntercat = player.GetComponent<ChracterInteract>();
+                characterIntercat.PermitAction(0, true);
+                characterIntercat.PermitAction(1, true);
+                characterIntercat.PermitAction(2, true);
+                characterIntercat.PermitAction(3, true);
+                characterIntercat.PermitAction(4, false);
+
                 Destroy(gameObject);
                 //Debug.Log("Thi");
+
+
             }
         }
     }
