@@ -8,6 +8,7 @@ public class UsebleTrap : MonoBehaviour, IUsable{
     [SerializeField] private float rotationDegrees;
     [SerializeField] private string locationName;
     [SerializeField] private GameObject trapToPlace;
+    [SerializeField] private LayerMask layerMask;
     Inventory inventory;
 
 
@@ -21,7 +22,7 @@ public class UsebleTrap : MonoBehaviour, IUsable{
     {
         RaycastHit hit = new RaycastHit();
         Ray ray = new Ray(playerCam.transform.position, playerCam.transform.forward);
-        if(Physics.Raycast(ray, out hit, useRange))
+        if(Physics.Raycast(ray, out hit, useRange, layerMask))
         {
             print(hit.transform.gameObject);
             if (hit.transform.name == locationName)
@@ -36,12 +37,13 @@ public class UsebleTrap : MonoBehaviour, IUsable{
             }
             else
             {
-                print("Aint allowed to put trap here");
+                Debug.Log(hit.transform.gameObject);
+              //  print("Aint allowed to put trap here");
             }
         }
         else
         {
-            print("Aint allowed to put trap here");
+         //   print("Aint allowed to put trap here");
         }
         
     }
