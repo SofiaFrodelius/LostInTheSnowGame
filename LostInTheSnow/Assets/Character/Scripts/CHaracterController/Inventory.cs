@@ -216,7 +216,9 @@ public class Inventory : MonoBehaviour
     }
     public int getNumOfUsedHoldableSlots()
     {
-        return holdableSlots.Count;
+        if (holdableSlots != null)
+            return holdableSlots.Count;
+        else return 0;
     }
 
     public int getNumOfRegularSlots()
