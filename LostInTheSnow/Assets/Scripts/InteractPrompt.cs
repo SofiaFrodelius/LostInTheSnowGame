@@ -19,11 +19,12 @@ public class InteractPrompt : MonoBehaviour
     private bool isItem = false;
 
 
-    [SerializeField] private TextMeshProUGUI pickupItemText;
+    private TextMeshProUGUI pickupItemText;
     GrabableObject gobj;
 
     public void Start()
     {
+        pickupItemText = GameObject.FindGameObjectWithTag("PickUpItemTag").GetComponent<TextMeshProUGUI>();
         gobj = GetComponent<GrabableObject>();
         if (gobj)
         {
