@@ -25,6 +25,7 @@ GameObject:
   - component: {fileID: 54651022306588844}
   - component: {fileID: 65194692472730176}
   - component: {fileID: 114361741922019984}
+  - component: {fileID: 114071532258445116}
   m_Layer: 0
   m_Name: stick
   m_TagString: Untagged
@@ -130,6 +131,21 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &114071532258445116
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1285644122373462}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28a374620bbcd254fb972989189404e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  promptToToggle: []
+  dependencyPrompts: []
+  itemDependencies: []
+  useDependencies: 0
 --- !u!114 &114361741922019984
 MonoBehaviour:
   m_ObjectHideFlags: 1

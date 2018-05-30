@@ -25,6 +25,7 @@ GameObject:
   - component: {fileID: 114846364947190054}
   - component: {fileID: 54160779152598328}
   - component: {fileID: 64371719940014278}
+  - component: {fileID: 114508644247099218}
   m_Layer: 0
   m_Name: firewood
   m_TagString: Untagged
@@ -132,6 +133,21 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &114508644247099218
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1753954243365204}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28a374620bbcd254fb972989189404e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  promptToToggle: []
+  dependencyPrompts: []
+  itemDependencies: []
+  useDependencies: 0
 --- !u!114 &114846364947190054
 MonoBehaviour:
   m_ObjectHideFlags: 1

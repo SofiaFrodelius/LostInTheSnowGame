@@ -301,6 +301,11 @@ MonoBehaviour:
   chopParticles: {fileID: 1122087454980176, guid: cd55405e5d656154eaecec01224b7e18,
     type: 2}
   particlePos: {fileID: 0}
+  interactLayerMask:
+    serializedVersion: 2
+    m_Bits: 0
+  maxInteractLength: 0
+  swingCounterLength: 140
 --- !u!114 &114519542349160376
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -331,7 +336,7 @@ SkinnedMeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 6a10d8787dc7b3246a1bdde921160dca, type: 2}
+  - {fileID: 2100000, guid: baf128e6eb717a4469edd9c38e9b5c00, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

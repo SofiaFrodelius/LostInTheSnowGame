@@ -26,6 +26,7 @@ GameObject:
   - component: {fileID: 114006907793943588}
   - component: {fileID: 114782027976490430}
   - component: {fileID: 114604382883449196}
+  - component: {fileID: 114365551417285064}
   m_Layer: 0
   m_Name: firestriker
   m_TagString: Untagged
@@ -128,6 +129,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemType: {fileID: 11400000, guid: cc75e486fc0f3d14088dd7cd5d9722ec, type: 2}
+--- !u!114 &114365551417285064
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1129497370890232}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28a374620bbcd254fb972989189404e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  promptToToggle: []
+  dependencyPrompts: []
+  itemDependencies: []
+  useDependencies: 0
 --- !u!114 &114604382883449196
 MonoBehaviour:
   m_ObjectHideFlags: 1
