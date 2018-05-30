@@ -85,11 +85,13 @@ public class InteractPrompt : MonoBehaviour
     {
         for (int i = 0; i < promptToToggle.Count; i++)
         {
-            promptToToggle[i].enabled = false;
+            if(promptToToggle[i] != null)
+                promptToToggle[i].enabled = false;
         }
         for (int i = 0; i < dependencyPrompts.Count; i++)
         {
-            dependencyPrompts[i].enabled = false;
+            if(dependencyPrompts[i])
+                dependencyPrompts[i].enabled = false;
         }
 
     }
