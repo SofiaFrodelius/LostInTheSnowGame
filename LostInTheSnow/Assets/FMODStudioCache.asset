@@ -13,7 +13,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EditorBanks:
   - {fileID: 114234385758761432}
-  - {fileID: 114341260064089580}
+  - {fileID: 114621915616022254}
   EditorEvents:
   - {fileID: 114429935944103100}
   - {fileID: 114691947736859706}
@@ -70,9 +70,9 @@ MonoBehaviour:
   - {fileID: 114358410293544488}
   - {fileID: 114366848691520336}
   - {fileID: 114290525444710500}
-  MasterBankRef: {fileID: 114341260064089580}
+  MasterBankRef: {fileID: 114621915616022254}
   StringsBankRef: {fileID: 114234385758761432}
-  stringsBankWriteTime: 636632117118927211
+  stringsBankWriteTime: 636632692913889001
   cacheVersion: 2
 --- !u!114 &114002208485990628
 MonoBehaviour:
@@ -216,6 +216,21 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 1060
+--- !u!114 &114011571320033536
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Volume
+  Min: 0
+  Max: 1
+  Default: 1
 --- !u!114 &114013355762232626
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -298,7 +313,7 @@ MonoBehaviour:
   Path: event:/Sound/Dog/Bark
   guid: 7d81519649650f41991b7f73a40f8083
   Banks:
-  - {fileID: 114341260064089580}
+  - {fileID: 114621915616022254}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -552,7 +567,7 @@ MonoBehaviour:
   Path: event:/Sound/Events_Happenings/Fire Loop
   guid: 96bcb8a5b19e55478cacc03608334b9f
   Banks:
-  - {fileID: 114341260064089580}
+  - {fileID: 114621915616022254}
   IsStream: 1
   Is3D: 1
   IsOneShot: 0
@@ -809,12 +824,12 @@ MonoBehaviour:
   Path: event:/Music/Cutscenes/Night/Cutscene_Night
   guid: c33d2fd449770c4fbd69b3e1a58f0bd8
   Banks:
-  - {fileID: 114341260064089580}
+  - {fileID: 114621915616022254}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: 114601220096756766}
+  - {fileID: 114893884423708488}
   MinDistance: 0
   MaxDistance: 0
   Length: 32138
@@ -1014,7 +1029,7 @@ MonoBehaviour:
   Path: snapshot:/Music Snapshot
   guid: 447dbf95dd4b634c86ad30a1e1c9c168
   Banks:
-  - {fileID: 114341260064089580}
+  - {fileID: 114621915616022254}
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
@@ -1118,7 +1133,7 @@ MonoBehaviour:
   Path: event:/Sound/Avatar/Work Moan
   guid: a8b265435b51054d9cd43f046d4ffffd
   Banks:
-  - {fileID: 114341260064089580}
+  - {fileID: 114621915616022254}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -1534,6 +1549,21 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
+--- !u!114 &114103454651579562
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Volume
+  Min: 0
+  Max: 1
+  Default: 1
 --- !u!114 &114104716925161706
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1634,12 +1664,12 @@ MonoBehaviour:
   Path: event:/Sound/Avatar/Voice Acting Ila
   guid: dbc773912b2ce146abd01edc9aa5b58c
   Banks:
-  - {fileID: 114341260064089580}
+  - {fileID: 114621915616022254}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
   Parameters:
-  - {fileID: 114411409583781422}
+  - {fileID: 114172573062139438}
   MinDistance: 0
   MaxDistance: 0
   Length: 1438
@@ -1688,6 +1718,21 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 1256
+--- !u!114 &114117272208878948
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Voice Line
+  Min: 0
+  Max: 90
+  Default: 0
 --- !u!114 &114117616518165946
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1814,6 +1859,21 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 1
+--- !u!114 &114128045905279156
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Voice Line
+  Min: 0
+  Max: 90
+  Default: 0
 --- !u!114 &114128485997446230
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1850,13 +1910,13 @@ MonoBehaviour:
   Path: event:/Music/Prologue/Prologue
   guid: 88c78a864242c947a742428f87df503b
   Banks:
-  - {fileID: 114341260064089580}
+  - {fileID: 114621915616022254}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: 114004475656198550}
-  - {fileID: 114906102403765272}
+  - {fileID: 114220508279015514}
+  - {fileID: 114601999274136282}
   MinDistance: 0
   MaxDistance: 0
   Length: 90000
@@ -1889,7 +1949,7 @@ MonoBehaviour:
   Path: event:/Sound/Dog/Dog Footsteps Snow
   guid: 2ee83651c56d5843915cc3c6074301b0
   Banks:
-  - {fileID: 114341260064089580}
+  - {fileID: 114621915616022254}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -1972,6 +2032,21 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 3615
+--- !u!114 &114141849340116266
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Volume
+  Min: 0
+  Max: 1
+  Default: 1
 --- !u!114 &114142365533421466
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2175,12 +2250,12 @@ MonoBehaviour:
   Path: event:/Sound/Storm Wind
   guid: 43896eea59dd40449196e284cb54794e
   Banks:
-  - {fileID: 114341260064089580}
+  - {fileID: 114621915616022254}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: 114142858428889674}
+  - {fileID: 114888785651664096}
   MinDistance: 0
   MaxDistance: 0
   Length: 2348
@@ -2390,12 +2465,12 @@ MonoBehaviour:
   Path: event:/Music/Main_Menu/Lits_Main_Menu
   guid: 5948531faebf0c4fa123c81911704992
   Banks:
-  - {fileID: 114341260064089580}
+  - {fileID: 114621915616022254}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: 114423896169507372}
+  - {fileID: 114165170308877796}
   MinDistance: 0
   MaxDistance: 0
   Length: 72004
@@ -2465,6 +2540,21 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 11000
+--- !u!114 &114165170308877796
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Volume
+  Min: 0
+  Max: 1
+  Default: 1
 --- !u!114 &114166772868153838
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2501,7 +2591,7 @@ MonoBehaviour:
   Path: event:/Sound/Outside_Ambiance_Calm/Wind&Birds
   guid: d41d75ac5371f449aabbcaf1844439b1
   Banks:
-  - {fileID: 114341260064089580}
+  - {fileID: 114621915616022254}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -2525,6 +2615,21 @@ MonoBehaviour:
   Max: 90
   Default: 0
 --- !u!114 &114170328807193944
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Voice Line
+  Min: 0
+  Max: 90
+  Default: 0
+--- !u!114 &114172573062139438
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -2694,12 +2799,12 @@ MonoBehaviour:
   Path: event:/Sound/Avatar/Voice Acting MISC.
   guid: 9ec307e2fd18fa449d47bbdbe9226575
   Banks:
-  - {fileID: 114341260064089580}
+  - {fileID: 114621915616022254}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
   Parameters:
-  - {fileID: 114375576912237804}
+  - {fileID: 114117272208878948}
   MinDistance: 0
   MaxDistance: 0
   Length: 6375
@@ -2907,12 +3012,12 @@ MonoBehaviour:
   Path: event:/Sound/Door/Bang
   guid: 210a2c4daaff144ab2f4517b33531d30
   Banks:
-  - {fileID: 114341260064089580}
+  - {fileID: 114621915616022254}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
   Parameters:
-  - {fileID: 114224635641851488}
+  - {fileID: 114857444111467928}
   MinDistance: 0
   MaxDistance: 0
   Length: 2022
@@ -2993,7 +3098,7 @@ MonoBehaviour:
   Path: event:/Sound/Door/Open
   guid: 8057f1da1af1414194a78a349a0966c4
   Banks:
-  - {fileID: 114341260064089580}
+  - {fileID: 114621915616022254}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -3052,7 +3157,7 @@ MonoBehaviour:
   Path: event:/Sound/Avatar/Soar Moan
   guid: 4eeed896726d004d852b08aeda920079
   Banks:
-  - {fileID: 114341260064089580}
+  - {fileID: 114621915616022254}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -3060,6 +3165,21 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 3503
+--- !u!114 &114220508279015514
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Volume
+  Min: 0
+  Max: 1
+  Default: 1
 --- !u!114 &114220637191537958
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3200,7 +3320,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Path: Assets\FMODBANKS\Desktop\Master Bank.strings.bank
-  lastModified: 636632117118927211
+  lastModified: 636632692913889001
   LoadResult: 0
   FileSizes:
   - Name: 
@@ -3393,14 +3513,14 @@ MonoBehaviour:
   Path: event:/Music/Music_Outside/Music_Outside_Day_Night
   guid: 9a338f18095715469b03d6a3aadf1630
   Banks:
-  - {fileID: 114341260064089580}
+  - {fileID: 114621915616022254}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: 114623338433048804}
-  - {fileID: 114544594754236006}
-  - {fileID: 114724716697385602}
+  - {fileID: 114103454651579562}
+  - {fileID: 114996472628415352}
+  - {fileID: 114967252868766278}
   MinDistance: 0
   MaxDistance: 0
   Length: 316580
@@ -3985,7 +4105,7 @@ MonoBehaviour:
   Path: snapshot:/Stup Cutscene
   guid: 99903dd8e8507544823260fe398903ed
   Banks:
-  - {fileID: 114341260064089580}
+  - {fileID: 114621915616022254}
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
@@ -4079,6 +4199,21 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 37056
+--- !u!114 &114296836867543548
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Voice Line
+  Min: 0
+  Max: 90
+  Default: 0
 --- !u!114 &114297514689916698
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4342,6 +4477,21 @@ MonoBehaviour:
   Name: Distance Dog
   Min: 0
   Max: 100
+  Default: 0
+--- !u!114 &114317491866550360
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Voice Line
+  Min: 0
+  Max: 90
   Default: 0
 --- !u!114 &114320330870586356
 MonoBehaviour:
@@ -4799,7 +4949,7 @@ MonoBehaviour:
   Path: event:/Sound/Dog/Growl
   guid: fd657be0120be748ad85140f53a3338d
   Banks:
-  - {fileID: 114341260064089580}
+  - {fileID: 114621915616022254}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -4899,12 +5049,12 @@ MonoBehaviour:
   Path: event:/Sound/Cutscenes
   guid: 4fe7d953dbfd0f4a940e448d0d521368
   Banks:
-  - {fileID: 114341260064089580}
+  - {fileID: 114621915616022254}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: 114965678105106166}
+  - {fileID: 114296836867543548}
   MinDistance: 0
   MaxDistance: 0
   Length: 25562
@@ -4944,13 +5094,13 @@ MonoBehaviour:
   Path: event:/Music/Last_Day/Last_Day
   guid: bb69c8721e685a4293e2e4cfbb4658cd
   Banks:
-  - {fileID: 114341260064089580}
+  - {fileID: 114621915616022254}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: 114875483045563572}
-  - {fileID: 114561253438473842}
+  - {fileID: 114440305294194342}
+  - {fileID: 114141849340116266}
   MinDistance: 0
   MaxDistance: 0
   Length: 140800
@@ -5161,7 +5311,7 @@ MonoBehaviour:
   Path: event:/Sound/Avatar/Land
   guid: 1e959a9ca3762e4b8a36d232749719f7
   Banks:
-  - {fileID: 114341260064089580}
+  - {fileID: 114621915616022254}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -5326,7 +5476,7 @@ MonoBehaviour:
   Path: event:/Sound/Avatar/Footsteps/Footsteps_Cabin
   guid: ae9c7733ccd7e6459f700f6171befd6e
   Banks:
-  - {fileID: 114341260064089580}
+  - {fileID: 114621915616022254}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -5567,7 +5717,7 @@ MonoBehaviour:
   Path: event:/Sound/Avatar/Jump
   guid: 049d17069127074098501b6ca48787ac
   Banks:
-  - {fileID: 114341260064089580}
+  - {fileID: 114621915616022254}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -5767,6 +5917,21 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 19000
+--- !u!114 &114440305294194342
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Last_Day_END
+  Min: 0
+  Max: 1
+  Default: 0
 --- !u!114 &114441126449296900
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5862,7 +6027,7 @@ MonoBehaviour:
   Path: event:/Sound/Dog/Eating
   guid: 4dd0dd3eb596a345a1799f14b449b2ca
   Banks:
-  - {fileID: 114341260064089580}
+  - {fileID: 114621915616022254}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -5899,7 +6064,7 @@ MonoBehaviour:
   Path: event:/Sound/Cabin_Ambience/Cabin_Wind
   guid: b23744842c5c194ca6c954b317b607ea
   Banks:
-  - {fileID: 114341260064089580}
+  - {fileID: 114621915616022254}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -5921,7 +6086,7 @@ MonoBehaviour:
   Path: event:/Sound/Dog/Dog Footsteps Cabin
   guid: a71ff0a99be97f4c8a6fb5f7b15a4173
   Banks:
-  - {fileID: 114341260064089580}
+  - {fileID: 114621915616022254}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -5980,7 +6145,7 @@ MonoBehaviour:
   Path: event:/Sound/Avatar/Yawn
   guid: c45e8d782093ab4dbefab5e478d660e9
   Banks:
-  - {fileID: 114341260064089580}
+  - {fileID: 114621915616022254}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -6549,12 +6714,12 @@ MonoBehaviour:
   Path: event:/Sound/Avatar/Voice Acting Trailer
   guid: d8578b401e803442909531f4efc78fab
   Banks:
-  - {fileID: 114341260064089580}
+  - {fileID: 114621915616022254}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
   Parameters:
-  - {fileID: 114124648051892854}
+  - {fileID: 114601292473858348}
   MinDistance: 0
   MaxDistance: 0
   Length: 9824
@@ -6925,7 +7090,7 @@ MonoBehaviour:
   Path: event:/Sound/Events_Happenings/Kill Hare
   guid: 41c6df2b2809b14fafeb9110bbfd75dd
   Banks:
-  - {fileID: 114341260064089580}
+  - {fileID: 114621915616022254}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -6977,7 +7142,7 @@ MonoBehaviour:
   Path: event:/Sound/Avatar/Drinking
   guid: a23fbe8bc156c949a5eca405840ac44f
   Banks:
-  - {fileID: 114341260064089580}
+  - {fileID: 114621915616022254}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -7059,7 +7224,7 @@ MonoBehaviour:
   Path: event:/Sound/Events_Happenings/Breaking Ice
   guid: 466d1309ff1307419d1e5ec77120c622
   Banks:
-  - {fileID: 114341260064089580}
+  - {fileID: 114621915616022254}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -7125,12 +7290,12 @@ MonoBehaviour:
   Path: event:/Sound/Avatar/Voice Acting Story Take 2
   guid: e593074dc5273e44a4c263b6bb97d534
   Banks:
-  - {fileID: 114341260064089580}
+  - {fileID: 114621915616022254}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
   Parameters:
-  - {fileID: 114173098963132022}
+  - {fileID: 114317491866550360}
   MinDistance: 0
   MaxDistance: 0
   Length: 5486
@@ -7148,7 +7313,7 @@ MonoBehaviour:
   Path: event:/Sound/Dog/Sniffing
   guid: e5a88653f4417442874d7a7dab9e2459
   Banks:
-  - {fileID: 114341260064089580}
+  - {fileID: 114621915616022254}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -7400,7 +7565,7 @@ MonoBehaviour:
   Path: event:/Sound/Avatar/Gasp
   guid: e4d44666ccfadf489ea004d042602e54
   Banks:
-  - {fileID: 114341260064089580}
+  - {fileID: 114621915616022254}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -7586,7 +7751,7 @@ MonoBehaviour:
   Path: event:/Sound/Avatar/Waking from Nightmare
   guid: e75055d3373a9a4291ee1de7b4f54942
   Banks:
-  - {fileID: 114341260064089580}
+  - {fileID: 114621915616022254}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -7649,6 +7814,36 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 1
+--- !u!114 &114601292473858348
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Voice Line
+  Min: 0
+  Max: 90
+  Default: 0
+--- !u!114 &114601999274136282
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: introloop_to_stingercabin
+  Min: 0
+  Max: 1
+  Default: 0
 --- !u!114 &114602484668424070
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7813,7 +8008,7 @@ MonoBehaviour:
   Path: event:/Sound/Events_Happenings/Start Fire
   guid: 7671cb1a57a8344581b4981344214ac6
   Banks:
-  - {fileID: 114341260064089580}
+  - {fileID: 114621915616022254}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -7970,6 +8165,25 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 980
+--- !u!114 &114621915616022254
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: C:\Users\b16oskla.HS\GameMaker\LostintheSnow\LostInTheSnowGame\LostInTheSnow\Assets\FMODBANKS\Desktop\Master
+    Bank.bank
+  lastModified: 636632692911749001
+  LoadResult: 0
+  FileSizes:
+  - Name: 
+    Value: 85828768
+  Exists: 1
 --- !u!114 &114622314477698608
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8062,7 +8276,7 @@ MonoBehaviour:
   Path: event:/Sound/Avatar/Calm Breathing
   guid: ec4cf943835bb147a52bd981d0cfc256
   Banks:
-  - {fileID: 114341260064089580}
+  - {fileID: 114621915616022254}
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
@@ -8331,7 +8545,7 @@ MonoBehaviour:
   Path: event:/Sound/Events_Happenings/Scooping Snow
   guid: e1303c1f4cb6a44ba8f33bdfbb44ac44
   Banks:
-  - {fileID: 114341260064089580}
+  - {fileID: 114621915616022254}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -8473,7 +8687,7 @@ MonoBehaviour:
   Path: event:/Sound/Dog/Whimp
   guid: 4ae852fccf6ba34fbf19c56f9dab49d6
   Banks:
-  - {fileID: 114341260064089580}
+  - {fileID: 114621915616022254}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -8681,7 +8895,7 @@ MonoBehaviour:
   Path: event:/Sound/Avatar/Freezing
   guid: 1c3078527a061048af7e5aaad4150302
   Banks:
-  - {fileID: 114341260064089580}
+  - {fileID: 114621915616022254}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -8867,7 +9081,7 @@ MonoBehaviour:
   Path: event:/Sound/Avatar/Humm
   guid: 0bdf48229e3a76419b43d01dbb8f1dbf
   Banks:
-  - {fileID: 114341260064089580}
+  - {fileID: 114621915616022254}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -8889,12 +9103,12 @@ MonoBehaviour:
   Path: event:/Sound/Avatar/Vocie Acting
   guid: 1521907af07d4b468e3e8e91e72a4dc6
   Banks:
-  - {fileID: 114341260064089580}
+  - {fileID: 114621915616022254}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
   Parameters:
-  - {fileID: 114181317681459234}
+  - {fileID: 114128045905279156}
   MinDistance: 0
   MaxDistance: 0
   Length: 9503
@@ -9150,7 +9364,7 @@ MonoBehaviour:
   Path: event:/Sound/Avatar/Eating
   guid: 92b3e678c8fdf74c8c2e0644c7fe822a
   Banks:
-  - {fileID: 114341260064089580}
+  - {fileID: 114621915616022254}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -10329,7 +10543,7 @@ MonoBehaviour:
   Path: event:/Sound/Door/Knocking
   guid: 44893389ca5ff940af5e1264ca119527
   Banks:
-  - {fileID: 114341260064089580}
+  - {fileID: 114621915616022254}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -10640,7 +10854,7 @@ MonoBehaviour:
   Path: event:/Sound/Dog/Breathing After Sprint
   guid: ea06c91d88340f419b64b09110d37f90
   Banks:
-  - {fileID: 114341260064089580}
+  - {fileID: 114621915616022254}
   IsStream: 1
   Is3D: 1
   IsOneShot: 1
@@ -10795,7 +11009,7 @@ MonoBehaviour:
   Path: event:/Sound/Door/Close
   guid: d983c0d4423a5e46b0a1a76cd371f0e9
   Banks:
-  - {fileID: 114341260064089580}
+  - {fileID: 114621915616022254}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -10948,6 +11162,21 @@ MonoBehaviour:
   Name: Voice Line
   Min: 0
   Max: 90
+  Default: 0
+--- !u!114 &114857444111467928
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Door Bang
+  Min: 0
+  Max: 1
   Default: 0
 --- !u!114 &114861698432425932
 MonoBehaviour:
@@ -11187,7 +11416,7 @@ MonoBehaviour:
   Path: event:/Sound/Cabin_Ambience/Boiling Water
   guid: 4dc94045c4da81449f00a8cd112c8f34
   Banks:
-  - {fileID: 114341260064089580}
+  - {fileID: 114621915616022254}
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
@@ -11321,6 +11550,21 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 1
+--- !u!114 &114888785651664096
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Voice Line
+  Min: 0
+  Max: 90
+  Default: 0
 --- !u!114 &114890319117539384
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11432,6 +11676,21 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 5
   Length: 14906
+--- !u!114 &114893884423708488
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Volume
+  Min: 0
+  Max: 1
+  Default: 1
 --- !u!114 &114894400205652784
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11513,7 +11772,7 @@ MonoBehaviour:
   Path: event:/Sound/Avatar/Footsteps/Footsteps_Snow
   guid: c6226063ccbd5841bc02f74aa07b0871
   Banks:
-  - {fileID: 114341260064089580}
+  - {fileID: 114621915616022254}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -11763,7 +12022,7 @@ MonoBehaviour:
   Path: event:/Sound/Avatar/Throw
   guid: a7678be9089acb409292d2d576818ccc
   Banks:
-  - {fileID: 114341260064089580}
+  - {fileID: 114621915616022254}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -11839,7 +12098,7 @@ MonoBehaviour:
   Path: snapshot:/Start Fire Snapshot
   guid: 4c3636af10f9604c86f0f8f61c6a150b
   Banks:
-  - {fileID: 114341260064089580}
+  - {fileID: 114621915616022254}
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
@@ -11913,7 +12172,7 @@ MonoBehaviour:
   Path: snapshot:/Find Cabin Snapshot
   guid: 76edc444e9fa5b41a3893f9107cd29b0
   Banks:
-  - {fileID: 114341260064089580}
+  - {fileID: 114621915616022254}
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
@@ -11995,12 +12254,12 @@ MonoBehaviour:
   Path: event:/Music/Northern_Lights/Northern_Lights
   guid: aaf9217aa394704d9f17cae2a9a8ee3f
   Banks:
-  - {fileID: 114341260064089580}
+  - {fileID: 114621915616022254}
   IsStream: 1
   Is3D: 0
   IsOneShot: 1
   Parameters:
-  - {fileID: 114730726310876828}
+  - {fileID: 114011571320033536}
   MinDistance: 0
   MaxDistance: 0
   Length: 37056
@@ -12077,7 +12336,7 @@ MonoBehaviour:
   Path: event:/Sound/Outside_Ambiance_Calm/Wolf Pack
   guid: 54ffe284aaefb5478ded62fb499b8512
   Banks:
-  - {fileID: 114341260064089580}
+  - {fileID: 114621915616022254}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -12326,6 +12585,21 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 9503
+--- !u!114 &114957377037847828
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Voice Line
+  Min: 0
+  Max: 90
+  Default: 0
 --- !u!114 &114957987306479220
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12380,12 +12654,12 @@ MonoBehaviour:
   Path: event:/Sound/Avatar/Voice Acting MISC Take 2
   guid: 5200082b4f00b8489a5340f6ec35d9ee
   Banks:
-  - {fileID: 114341260064089580}
+  - {fileID: 114621915616022254}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
   Parameters:
-  - {fileID: 114868990920296902}
+  - {fileID: 114957377037847828}
   MinDistance: 0
   MaxDistance: 0
   Length: 4256
@@ -12594,6 +12868,21 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 19000
+--- !u!114 &114967252868766278
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Day_Night
+  Min: 0
+  Max: 1
+  Default: 0
 --- !u!114 &114970094263504408
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12608,12 +12897,12 @@ MonoBehaviour:
   Path: event:/Music/End_Credits/Lits_End_Credits
   guid: 344a2a6876ca5a4b9ee16c55b6efcafa
   Banks:
-  - {fileID: 114341260064089580}
+  - {fileID: 114621915616022254}
   IsStream: 1
   Is3D: 0
   IsOneShot: 1
   Parameters:
-  - {fileID: 114952206764079856}
+  - {fileID: 114995006557527494}
   MinDistance: 0
   MaxDistance: 0
   Length: 147202
@@ -12842,3 +13131,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 10
   Length: 2191
+--- !u!114 &114995006557527494
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Volume
+  Min: 0
+  Max: 1
+  Default: 1
+--- !u!114 &114996472628415352
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Distance Dog
+  Min: 0
+  Max: 100
+  Default: 0
