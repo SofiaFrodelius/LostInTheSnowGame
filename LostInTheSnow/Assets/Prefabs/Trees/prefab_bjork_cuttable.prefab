@@ -23,6 +23,7 @@ GameObject:
   - component: {fileID: 23498532742090248}
   - component: {fileID: 95190882384205328}
   - component: {fileID: 136181092675777608}
+  - component: {fileID: 114679350913435612}
   m_Layer: 0
   m_Name: prefab_bjork_cuttable
   m_TagString: Untagged
@@ -101,6 +102,20 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &114679350913435612
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1081346154659128}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 570ccab6a7597424fb968511607bc37c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  firewood: {fileID: 1753954243365204, guid: f2c24385d637b624facc4c227c94b9ec, type: 2}
+  firewoodAmount: 10
+  cuttingDistance: 1.8
 --- !u!136 &136181092675777608
 CapsuleCollider:
   m_ObjectHideFlags: 1
