@@ -13,7 +13,7 @@ public class GotoPosition : DogAction{
 	Vector3 targetPosition;
     float startWidth;
 	float width = 1.5f;
-    DogTimer timer;
+    //DogTimer timer;
 	public GotoPosition(Dog d, Vector3 targetPosition, float width = 1.5f) : base(d){
 		this.targetPosition = targetPosition;
         startWidth = width;
@@ -23,8 +23,8 @@ public class GotoPosition : DogAction{
 		isDone = false;	
 		path = new NavMeshPath ();
 		currentTarget = dog.transform.position;
-        timer = new DogTimer(Vector3.Distance(dog.transform.position, targetPosition) * dog.waypointMultiplierPerMeter);
-        timer.ResetTimer();
+        //timer = new DogTimer(Vector3.Distance(dog.transform.position, targetPosition) * dog.waypointMultiplierPerMeter);
+        //timer.ResetTimer();
     }
 	public override void UpdateAction(){
         Debug.Log(navAgent.path.status);
@@ -49,12 +49,12 @@ public class GotoPosition : DogAction{
 				isDone = true;
 				EndAction ();
 			}
-            timer.AddTime(Time.deltaTime);
+            //timer.AddTime(Time.deltaTime);
 		}
 	}
 	private void GetNewTarget(){
 		float maxForward = 20f;
-		if (Vector2.Distance (new Vector2 (dog.transform.position.x, dog.transform.position.z), new Vector2 (targetPosition.x, targetPosition.z))< maxForward || timer.IsDone()) {
+		if (Vector2.Distance (new Vector2 (dog.transform.position.x, dog.transform.position.z), new Vector2 (targetPosition.x, targetPosition.z))< maxForward) {
             width = 1.5f;
 			currentTarget = targetPosition;
 			return;

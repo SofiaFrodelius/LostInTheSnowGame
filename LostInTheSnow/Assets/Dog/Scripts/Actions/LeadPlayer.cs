@@ -25,7 +25,7 @@ public class LeadPlayer : DogAction{
 	public override void StartAction(){
 		actionTimer = actionDelay;
 		isDone = false;
-		currentAction = new GotoPosition (dog, target, 6f);
+		currentAction = new GoStraightToPosition (dog, target, 1-5f);
 		currentAction.StartAction ();
 		isWaiting = false;
 	}
@@ -44,7 +44,7 @@ public class LeadPlayer : DogAction{
                 if (isWaiting){
                     if (currentAction.IsDone()){
                         currentAction.EndAction();
-                        currentAction = new GotoPosition(dog, target, 6f);
+                        currentAction = new GoStraightToPosition(dog, target, 1.5f);
                         currentAction.StartAction();
                         isWaiting = false;
                     }
