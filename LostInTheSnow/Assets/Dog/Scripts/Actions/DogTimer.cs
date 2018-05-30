@@ -8,7 +8,6 @@ public class DogTimer {
 	private bool isDone = false;
 	public DogTimer(float time){
 		this.time = time;
-		this.currentTime = currentTime;
 	}
 	public void AddTime(float t){
 		if (time < 0)

@@ -13,6 +13,7 @@ public class GotoPosition : DogAction{
 	Vector3 targetPosition;
     float startWidth;
 	float width = 1.5f;
+    DogTimer timer;
 	public GotoPosition(Dog d, Vector3 targetPosition, float width = 1.5f) : base(d){
 		this.targetPosition = targetPosition;
         startWidth = width;
@@ -22,7 +23,9 @@ public class GotoPosition : DogAction{
 		isDone = false;	
 		path = new NavMeshPath ();
 		currentTarget = dog.transform.position;
-	}
+        timer = new DogTimer(Vector3.Distance(dog.transform.position, targetPosition) * dog.waypointMultiplierPerMeter);
+        timer.ResetTimer();
+    }
 	public override void UpdateAction(){
         Debug.Log(navAgent.path.status);
 		if(NavMesh.CalculatePath (dog.transform.position, targetPosition, NavMesh.AllAreas, path)){//DONT BE FALSE OR i :cryinglaughter::gun:
@@ -38,24 +41,25 @@ public class GotoPosition : DogAction{
 		if (!isDone){
 			Vector2 dogPos = new Vector2 (dog.transform.position.x, dog.transform.position.z);
 			if (Vector2.Distance(dogPos, new Vector2(currentTarget.x, currentTarget.z)) > width && navAgent.path.status == NavMeshPathStatus.PathComplete){
-				navAgent.SetDestination(currentTarget);
-			}
-			else if(Vector2.Distance(dogPos, new Vector2(targetPosition.x, targetPosition.z))> width){
+		        navAgent.SetDestination(currentTarget);
+			}else if(Vector2.Distance(dogPos, new Vector2(targetPosition.x, targetPosition.z))> width){
 				dog.isSniffing = false;
 				GetNewTarget ();
 			}else{
 				isDone = true;
 				EndAction ();
 			}
+            timer.AddTime(Time.deltaTime);
 		}
 	}
 	private void GetNewTarget(){
 		float maxForward = 20f;
-		if (Vector2.Distance (new Vector2 (dog.transform.position.x, dog.transform.position.z), new Vector2 (targetPosition.x, targetPosition.z))< maxForward) {
+		if (Vector2.Distance (new Vector2 (dog.transform.position.x, dog.transform.position.z), new Vector2 (targetPosition.x, targetPosition.z))< maxForward || timer.IsDone()) {
             width = 1.5f;
 			currentTarget = targetPosition;
 			return;
 		}
+
 		NavMeshHit hit;
         if (Vector3.Distance(dog.transform.position, dog.player.transform.position) < 40){
             NavMesh.SamplePosition(GetPos(20, 30, -10, 10, 5, "Tree"), out hit, 2, NavMesh.AllAreas);
