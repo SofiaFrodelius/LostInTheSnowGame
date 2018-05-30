@@ -7,6 +7,7 @@ public class PauseMenu : MonoBehaviour {
     private GameObject pauseMenuMain;
     private GameObject optionsMenu;
     private GameObject exitMenu;
+    private GameObject activeMenu;
     [SerializeField] private GameObject[] uiToHide;
     [SerializeField] private CharacterMovement charMov;
     [SerializeField] private CameraController camCon;
@@ -52,7 +53,20 @@ public class PauseMenu : MonoBehaviour {
                 if (!isPaused)
                     PauseGame();
                 else
-                    UnPauseGame();
+                {
+                    if (activeMenu == optionsMenu)
+                    {
+                        OptionsToggle(false);
+                    }
+                    else if (activeMenu == exitMenu)
+                    {
+                        ExitGameToggle(false);
+                    }
+                    else if (activeMenu == pauseMenuMain)
+                    {
+                        UnPauseGame();
+                    }
+                }
             }
         }	
 	}
@@ -67,6 +81,7 @@ public class PauseMenu : MonoBehaviour {
         camCon.CutsceneLock = isPaused;
         charMov.CutsceneLock = isPaused;
         pauseMenuMain.SetActive(isPaused);
+        activeMenu = pauseMenuMain;
         Time.timeScale = 0;
         foreach (GameObject g in uiToHide)
         {
@@ -91,12 +106,16 @@ public class PauseMenu : MonoBehaviour {
 
     public void OptionsToggle(bool showOptions)
     {
+        if (showOptions) activeMenu = optionsMenu;
+        else activeMenu = pauseMenuMain;
         pauseMenuMain.SetActive(!showOptions);
         optionsMenu.SetActive(showOptions);
     }
 
     public void ExitGameToggle(bool showExit)
     {
+        if (showExit) activeMenu = exitMenu;
+        else activeMenu = pauseMenuMain;
         pauseMenuMain.SetActive(!showExit);
         exitMenu.SetActive(showExit);
     }
