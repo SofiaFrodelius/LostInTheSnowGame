@@ -69,9 +69,10 @@ MonoBehaviour:
   - {fileID: 114624418718337444}
   - {fileID: 114358410293544488}
   - {fileID: 114366848691520336}
+  - {fileID: 114290525444710500}
   MasterBankRef: {fileID: 114512145702570584}
   StringsBankRef: {fileID: 114234385758761432}
-  stringsBankWriteTime: 636632037937006002
+  stringsBankWriteTime: 636632692913889001
   cacheVersion: 2
 --- !u!114 &114002208485990628
 MonoBehaviour:
@@ -133,6 +134,21 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 37056
+--- !u!114 &114004371915815226
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: introloop_to_stingercabin
+  Min: 0
+  Max: 1
+  Default: 0
 --- !u!114 &114004879281672886
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -299,6 +315,21 @@ MonoBehaviour:
   MaxDistance: 0
   Length: 10600
 --- !u!114 &114022818610834476
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Voice Line
+  Min: 0
+  Max: 90
+  Default: 0
+--- !u!114 &114023112130235812
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -508,10 +539,9 @@ MonoBehaviour:
   Banks:
   - {fileID: 114512145702570584}
   IsStream: 1
-  Is3D: 0
+  Is3D: 1
   IsOneShot: 0
-  Parameters:
-  - {fileID: 114911253859655836}
+  Parameters: []
   MinDistance: 0
   MaxDistance: 0
   Length: 10600
@@ -602,6 +632,21 @@ MonoBehaviour:
     Value: 3638
   Exists: 1
 --- !u!114 &114041032783144122
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Voice Line
+  Min: 0
+  Max: 90
+  Default: 0
+--- !u!114 &114043097551049584
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -754,7 +799,7 @@ MonoBehaviour:
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: 114718412319205966}
+  - {fileID: 114237784526587320}
   MinDistance: 0
   MaxDistance: 0
   Length: 32138
@@ -1029,6 +1074,21 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
+--- !u!114 &114062935709578120
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Volume
+  Min: 0
+  Max: 1
+  Default: 1
 --- !u!114 &114063704034638244
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1564,7 +1624,7 @@ MonoBehaviour:
   Is3D: 0
   IsOneShot: 1
   Parameters:
-  - {fileID: 114544775209668534}
+  - {fileID: 114424144040566024}
   MinDistance: 0
   MaxDistance: 0
   Length: 1438
@@ -1765,8 +1825,8 @@ MonoBehaviour:
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: 114932349203624706}
-  - {fileID: 114742009825338484}
+  - {fileID: 114062935709578120}
+  - {fileID: 114004371915815226}
   MinDistance: 0
   MaxDistance: 0
   Length: 90000
@@ -2074,10 +2134,11 @@ MonoBehaviour:
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
-  Parameters: []
+  Parameters:
+  - {fileID: 114387884935216042}
   MinDistance: 0
   MaxDistance: 0
-  Length: 19000
+  Length: 2348
 --- !u!114 &114151353937293942
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2289,7 +2350,7 @@ MonoBehaviour:
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: 114047997765177862}
+  - {fileID: 114615403468872096}
   MinDistance: 0
   MaxDistance: 0
   Length: 72004
@@ -2563,7 +2624,7 @@ MonoBehaviour:
   Is3D: 0
   IsOneShot: 1
   Parameters:
-  - {fileID: 114213666445714874}
+  - {fileID: 114653750948503610}
   MinDistance: 0
   MaxDistance: 0
   Length: 6375
@@ -2776,7 +2837,7 @@ MonoBehaviour:
   Is3D: 0
   IsOneShot: 1
   Parameters:
-  - {fileID: 114074432917506140}
+  - {fileID: 114899999675382298}
   MinDistance: 0
   MaxDistance: 0
   Length: 2022
@@ -3049,13 +3110,28 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Path: Assets\FMODBANKS\Desktop\Master Bank.strings.bank
-  lastModified: 636632037937006002
+  lastModified: 636632692913889001
   LoadResult: 0
   FileSizes:
   - Name: 
-    Value: 4326
+    Value: 4380
   Exists: 1
 --- !u!114 &114234833588212864
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Volume
+  Min: 0
+  Max: 1
+  Default: 1
+--- !u!114 &114237784526587320
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -3174,6 +3250,21 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 3542
+--- !u!114 &114250028511130984
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Day_Night
+  Min: 0
+  Max: 1
+  Default: 0
 --- !u!114 &114250325913077812
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3217,9 +3308,9 @@ MonoBehaviour:
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: 114517340951533044}
-  - {fileID: 114530254092336462}
-  - {fileID: 114960348632377966}
+  - {fileID: 114888663902643460}
+  - {fileID: 114381918814684244}
+  - {fileID: 114250028511130984}
   MinDistance: 0
   MaxDistance: 0
   Length: 316580
@@ -3328,6 +3419,21 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 250
   Length: 2247
+--- !u!114 &114258079331644210
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Voice Line
+  Min: 0
+  Max: 90
+  Default: 0
 --- !u!114 &114259302239867228
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3775,6 +3881,28 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 3795
+--- !u!114 &114290525444710500
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: snapshot:/Stup Cutscene
+  guid: 99903dd8e8507544823260fe398903ed
+  Banks:
+  - {fileID: 114512145702570584}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
 --- !u!114 &114291801905531324
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4665,9 +4793,9 @@ MonoBehaviour:
   - {fileID: 114512145702570584}
   IsStream: 1
   Is3D: 0
-  IsOneShot: 1
+  IsOneShot: 0
   Parameters:
-  - {fileID: 114211643092257588}
+  - {fileID: 114546838918363654}
   MinDistance: 0
   MaxDistance: 0
   Length: 25562
@@ -4712,8 +4840,8 @@ MonoBehaviour:
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: 114303256797771358}
-  - {fileID: 114610107572254332}
+  - {fileID: 114630554315871320}
+  - {fileID: 114611812899765306}
   MinDistance: 0
   MaxDistance: 0
   Length: 140800
@@ -4880,6 +5008,21 @@ MonoBehaviour:
   - Name: 
     Value: 3904
   Exists: 1
+--- !u!114 &114381918814684244
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Distance Dog
+  Min: 0
+  Max: 100
+  Default: 0
 --- !u!114 &114387610760785700
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4902,6 +5045,21 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 780
+--- !u!114 &114387884935216042
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Voice Line
+  Min: 0
+  Max: 90
+  Default: 0
 --- !u!114 &114390028767031380
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5203,6 +5361,21 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 7145
+--- !u!114 &114424144040566024
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Voice Line
+  Min: 0
+  Max: 90
+  Default: 0
 --- !u!114 &114428798124980776
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5322,6 +5495,21 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
+--- !u!114 &114433474210914028
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Volume
+  Min: 0
+  Max: 1
+  Default: 1
 --- !u!114 &114434088480845282
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6212,7 +6400,7 @@ MonoBehaviour:
   Is3D: 0
   IsOneShot: 1
   Parameters:
-  - {fileID: 114478218979994020}
+  - {fileID: 114783952564584246}
   MinDistance: 0
   MaxDistance: 0
   Length: 9824
@@ -6244,11 +6432,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: C:\Users\b16oskla.HS\GameMaker\LostintheSnow\LostInTheSnowGame\LostInTheSnow\Assets\FMODBANKS\Desktop\Master
     Bank.bank
-  lastModified: 636632037934686002
+  lastModified: 636632692911749001
   LoadResult: 0
   FileSizes:
   - Name: 
-    Value: 85824992
+    Value: 85828768
   Exists: 1
 --- !u!114 &114517340951533044
 MonoBehaviour:
@@ -6658,6 +6846,36 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 1
+--- !u!114 &114546346897648670
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Volume
+  Min: 0
+  Max: 1
+  Default: 1
+--- !u!114 &114546838918363654
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Voice Line
+  Min: 0
+  Max: 90
+  Default: 0
 --- !u!114 &114553729298133510
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6743,7 +6961,7 @@ MonoBehaviour:
   Is3D: 0
   IsOneShot: 1
   Parameters:
-  - {fileID: 114013355762232626}
+  - {fileID: 114043097551049584}
   MinDistance: 0
   MaxDistance: 0
   Length: 5486
@@ -7367,6 +7585,21 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 9503
+--- !u!114 &114611812899765306
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Volume
+  Min: 0
+  Max: 1
+  Default: 1
 --- !u!114 &114614337604375182
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7404,6 +7637,21 @@ MonoBehaviour:
   Min: 0
   Max: 90
   Default: 0
+--- !u!114 &114615403468872096
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Volume
+  Min: 0
+  Max: 1
+  Default: 1
 --- !u!114 &114615600940531298
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7683,6 +7931,21 @@ MonoBehaviour:
   Min: 0
   Max: 90
   Default: 0
+--- !u!114 &114630554315871320
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Last_Day_END
+  Min: 0
+  Max: 1
+  Default: 0
 --- !u!114 &114631356455713216
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7921,6 +8184,21 @@ MonoBehaviour:
   Name: Volume
   Min: 0
   Max: 1
+  Default: 0
+--- !u!114 &114653750948503610
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Voice Line
+  Min: 0
+  Max: 90
   Default: 0
 --- !u!114 &114656956573708100
 MonoBehaviour:
@@ -8402,7 +8680,7 @@ MonoBehaviour:
   Is3D: 0
   IsOneShot: 1
   Parameters:
-  - {fileID: 114242451474567646}
+  - {fileID: 114023112130235812}
   MinDistance: 0
   MaxDistance: 0
   Length: 9503
@@ -9640,6 +9918,21 @@ MonoBehaviour:
   Min: 0
   Max: 90
   Default: 0
+--- !u!114 &114783952564584246
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Voice Line
+  Min: 0
+  Max: 90
+  Default: 0
 --- !u!114 &114784333795898516
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10739,6 +11032,21 @@ MonoBehaviour:
   Min: 0
   Max: 90
   Default: 0
+--- !u!114 &114888663902643460
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Volume
+  Min: 0
+  Max: 1
+  Default: 1
 --- !u!114 &114890319117539384
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10953,6 +11261,21 @@ MonoBehaviour:
   Name: Voice Line
   Min: 0
   Max: 90
+  Default: 0
+--- !u!114 &114899999675382298
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Door Bang
+  Min: 0
+  Max: 1
   Default: 0
 --- !u!114 &114900489908851008
 MonoBehaviour:
@@ -11388,7 +11711,7 @@ MonoBehaviour:
   Is3D: 0
   IsOneShot: 1
   Parameters:
-  - {fileID: 114180146483430200}
+  - {fileID: 114546346897648670}
   MinDistance: 0
   MaxDistance: 0
   Length: 37056
@@ -11758,7 +12081,7 @@ MonoBehaviour:
   Is3D: 0
   IsOneShot: 1
   Parameters:
-  - {fileID: 114372777658174914}
+  - {fileID: 114258079331644210}
   MinDistance: 0
   MaxDistance: 0
   Length: 4256
@@ -11971,7 +12294,7 @@ MonoBehaviour:
   Is3D: 0
   IsOneShot: 1
   Parameters:
-  - {fileID: 114865081130816624}
+  - {fileID: 114433474210914028}
   MinDistance: 0
   MaxDistance: 0
   Length: 147202
