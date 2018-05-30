@@ -26,6 +26,8 @@ public class Inventory : MonoBehaviour
     public delegate void UpdateItemInHand();
     public UpdateItemInHand updateItemInHandCallback;
 
+    public bool clearInventory = false;
+
 
     InventoryHUD inventoryHUD;
     private InventorySaveLoad invSaveLoad;
@@ -56,6 +58,12 @@ public class Inventory : MonoBehaviour
         {
             invSaveLoad.loadInventory();
         }
+
+        if (clearInventory)
+        {
+            ClearInventory();
+        }
+
     }
 
 
@@ -73,6 +81,7 @@ public class Inventory : MonoBehaviour
 
     public Item getItemFromHoldableSlot(int slot)
     {
+
         if (holdableSlots.Count > slot)
             return holdableSlots[slot].getItem();
         else return null;
@@ -205,6 +214,31 @@ public class Inventory : MonoBehaviour
                 }
                 inventoryChangedCallback.Invoke();
                 return;
+            }
+        }
+    }
+
+    public void ClearInventory()
+    {
+        if(holdableSlots != null)
+        {
+            if (holdableSlots.Count > 0)
+            {
+                for (int i = 0; i < holdableSlots.Count; i++)
+                {
+                    holdableSlots[i].setItem(null);
+                }
+            }
+        }
+
+        if (inventorySlots != null)
+        {
+            if (inventorySlots.Count > 0)
+            {
+                for (int i = 0; i < inventorySlots.Count; i++)
+                {
+                    inventorySlots[i].setItem(null);
+                }
             }
         }
     }

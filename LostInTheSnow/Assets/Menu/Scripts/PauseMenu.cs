@@ -11,6 +11,7 @@ public class PauseMenu : MonoBehaviour {
     [SerializeField] private GameObject[] uiToHide;
     [SerializeField] private CharacterMovement charMov;
     [SerializeField] private CameraController camCon;
+    private DogLocomotion dl;
     private bool isPaused = false;
 
     private bool inCameraLockSinceBefore = false;
@@ -19,6 +20,7 @@ public class PauseMenu : MonoBehaviour {
     
 
     void Start () {
+        dl = GameObject.FindGameObjectWithTag("Dog").GetComponent<DogLocomotion>();
         if (!pauseMenuFull)
         {
             pauseMenuFull = GameObject.FindGameObjectWithTag("PauseMenu");
@@ -73,6 +75,7 @@ public class PauseMenu : MonoBehaviour {
 
     void PauseGame()
     {
+        dl.enabled = false;
         camLooks = camCon.getLook();
         Cursor.lockState = CursorLockMode.Confined;
         isPaused = true;
@@ -81,6 +84,7 @@ public class PauseMenu : MonoBehaviour {
         camCon.CutsceneLock = isPaused;
         charMov.CutsceneLock = isPaused;
         pauseMenuMain.SetActive(isPaused);
+        
         activeMenu = pauseMenuMain;
         Time.timeScale = 0;
         foreach (GameObject g in uiToHide)
@@ -91,7 +95,7 @@ public class PauseMenu : MonoBehaviour {
 
     public void UnPauseGame()
     {
-        Cursor.lockState = CursorLockMode.Locked;
+        
         isPaused = false;
         camCon.CutsceneLock = inCameraLockSinceBefore;
         charMov.CutsceneLock = inCharacterLockSinceBefore;
@@ -102,6 +106,8 @@ public class PauseMenu : MonoBehaviour {
             g.SetActive(!isPaused);
         }
         camCon.setLook(camLooks);
+        dl.enabled = true;
+        Cursor.lockState = CursorLockMode.Locked;
     }
 
     public void OptionsToggle(bool showOptions)

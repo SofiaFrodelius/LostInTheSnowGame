@@ -13,7 +13,7 @@ public class ChracterInteract : MonoBehaviour
     private bool interactAllowed = true;
     private bool callDogAllowed = true;
     private bool interactDogAllowed = true;
-    private bool lastSceneExeptions = false;
+    [SerializeField] private bool lastSceneExeptions = false;
     private bool pickUpDogAllowed = true;
     private IlaCallVoiceLinePicker picker;
     // Use this for initialization

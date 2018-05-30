@@ -33,7 +33,8 @@ QualitySettings:
     asyncUploadTimeSlice: 2
     asyncUploadBufferSize: 4
     resolutionScalingFixedDPIFactor: 1
-    excludedTargetPlatforms: []
+    excludedTargetPlatforms:
+    - Standalone
   - serializedVersion: 2
     name: Low
     pixelLightCount: 0
@@ -61,7 +62,8 @@ QualitySettings:
     asyncUploadTimeSlice: 2
     asyncUploadBufferSize: 4
     resolutionScalingFixedDPIFactor: 1
-    excludedTargetPlatforms: []
+    excludedTargetPlatforms:
+    - Standalone
   - serializedVersion: 2
     name: Medium
     pixelLightCount: 1
@@ -89,7 +91,8 @@ QualitySettings:
     asyncUploadTimeSlice: 2
     asyncUploadBufferSize: 4
     resolutionScalingFixedDPIFactor: 1
-    excludedTargetPlatforms: []
+    excludedTargetPlatforms:
+    - Standalone
   - serializedVersion: 2
     name: High
     pixelLightCount: 2
@@ -110,7 +113,7 @@ QualitySettings:
     softVegetation: 1
     realtimeReflectionProbes: 1
     billboardsFaceCameraPosition: 1
-    vSyncCount: 1
+    vSyncCount: 0
     lodBias: 1
     maximumLODLevel: 0
     particleRaycastBudget: 256
@@ -138,7 +141,7 @@ QualitySettings:
     softVegetation: 1
     realtimeReflectionProbes: 1
     billboardsFaceCameraPosition: 1
-    vSyncCount: 1
+    vSyncCount: 0
     lodBias: 1.5
     maximumLODLevel: 0
     particleRaycastBudget: 1024
@@ -166,7 +169,7 @@ QualitySettings:
     softVegetation: 1
     realtimeReflectionProbes: 1
     billboardsFaceCameraPosition: 1
-    vSyncCount: 1
+    vSyncCount: 0
     lodBias: 2
     maximumLODLevel: 0
     particleRaycastBudget: 4096
@@ -174,4 +177,5 @@ QualitySettings:
     asyncUploadBufferSize: 4
     resolutionScalingFixedDPIFactor: 1
     excludedTargetPlatforms: []
-  m_PerPlatformDefaultQuality: {}
+  m_PerPlatformDefaultQuality:
+    Standalone: 5

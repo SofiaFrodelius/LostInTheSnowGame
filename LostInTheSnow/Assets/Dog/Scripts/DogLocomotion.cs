@@ -110,8 +110,12 @@ public class DogLocomotion : MonoBehaviour {
 		update = true;
 	}
 	void OnAnimatorMove(){
-		navAgent.velocity = animator.deltaPosition / Time.deltaTime;
-		transform.eulerAngles = new Vector3(animator.rootRotation.eulerAngles.x, animator.rootRotation.eulerAngles.y, animator.rootRotation.eulerAngles.z);
+        if(Time.deltaTime > 0)
+        {
+            navAgent.velocity = animator.deltaPosition / Time.deltaTime;
+            transform.eulerAngles = new Vector3(animator.rootRotation.eulerAngles.x, animator.rootRotation.eulerAngles.y, animator.rootRotation.eulerAngles.z);
+        }
+        
 	}
 	void SetParameters(float speed, float direction){
 		AnimatorStateInfo state = animator.GetCurrentAnimatorStateInfo(0);

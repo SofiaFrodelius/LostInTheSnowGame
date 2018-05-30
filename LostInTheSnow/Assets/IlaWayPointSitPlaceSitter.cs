@@ -30,6 +30,7 @@ public class IlaWayPointSitPlaceSitter : MonoBehaviour {
 
 
             Dog dog = GameObject.FindGameObjectWithTag("Dog").GetComponent<Dog>();
+            Debug.Log("Tjaba");
             //dog.gameObject.transform.position = ilaTelPos;
             DogAI dogai = dog.gameObject.GetComponent<DogAI>();
             dogai.StartAction(new GoStraightToPosition(dog, ilaTelPos));

@@ -49,7 +49,7 @@ public class Dog : MonoBehaviour, IInteractible {
         if(savedAction != null)
             Debug.Log("saved action " + savedAction.ToString());
 		Debug.DrawLine (transform.position, transform.position + transform.forward*3, Color.yellow);
-		if (itemHand.GetItemInHand () != null && itemHand.GetItemInHand ().name == "Stick") {
+		if (itemHand != null && itemHand.GetItemInHand () != null && itemHand.GetItemInHand ().name == "Stick") {
 			if (currentAction != null && currentAction.GetImportance() == DogAction.Importance.HIGH)
 				savedAction = currentAction;
 			if (Vector3.Distance (transform.position, player.position) < 3) {

@@ -7,7 +7,7 @@
 [LOG] OutputWASAPI::init                       : Output buffer size: 4096 samples, latency: 10.67ms, period: 10.00ms, DSP buffer: 1024 * 4
 [LOG] Thread::initThread                       : Init FMOD stream thread. Priority: 2, Stack Size: 65536, Semaphore: No, Sleep Time: 10, Looping: Yes.
 [LOG] Thread::initThread                       : Init FMOD mixer thread. Priority: 3, Stack Size: 49152, Semaphore: No, Sleep Time: 0, Looping: Yes.
-[LOG] AsyncManager::init                       : manager 0000000043E8D238 isAsync 0 updatePeriod 0.02
+[LOG] AsyncManager::init                       : manager 00000000C36D5928 isAsync 0 updatePeriod 0.02
 [LOG] AsyncManager::init                       : done
 [LOG] PlaybackSystem::init                     : 
 [LOG] Thread::initThread                       : Init FMOD Studio sample load thread. Priority: 0, Stack Size: 65536, Semaphore: No, Sleep Time: 1, Looping: No.
@@ -15,12 +15,945 @@
 [LOG] Thread::initThread                       : Init FMOD Studio bank load thread. Priority: 0, Stack Size: 65536, Semaphore: No, Sleep Time: 1, Looping: No.
 [LOG] Manager::init                            : done.
 [LOG] Manager::readBank                        : fileversion = 99, compatVersion = 99 (oldest = 44, newest = 100)
-[LOG] Manager::readBank                        : fileversion = 99, compatVersion = 99 (oldest = 44, newest = 100)
-[LOG] Manager::readBank                        : fileversion = 99, compatVersion = 99 (oldest = 44, newest = 100)
-[LOG] Manager::readBank                        : fileversion = 99, compatVersion = 99 (oldest = 44, newest = 100)
-[LOG] Manager::readBank                        : fileversion = 99, compatVersion = 99 (oldest = 44, newest = 100)
+[LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 3
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 85639808
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 189088
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000009B01F5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 000007FED338E4B0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 000007FED338E480
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 000007FED338E580
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 000007FED338E640
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000000248B69688
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='replikovrig_02_ila_atadistance,happy_3', format=2, channels=2, frequency=48000, lengthbytes=83040, lengthpcm=110370, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.991180.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 85639808
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 189088
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000009B01F5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 000007FED338E4B0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 000007FED338E480
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 000007FED338E580
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 000007FED338E640
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000000248B69688
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='replikovrig_03_ila_command,closeby,calm_2', format=2, channels=2, frequency=48000, lengthbytes=54592, lengthpcm=85418, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.941315.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 85639808
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 189088
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000009B01F5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 000007FED338E4B0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 000007FED338E480
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 000007FED338E580
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 000007FED338E640
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000000248B69688
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='replikovrig_16_itstoocoldicantsleep', format=2, channels=2, frequency=48000, lengthbytes=243360, lengthpcm=306003, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.967163.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 85639808
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 189088
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000009B01F5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 000007FED338E4B0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 000007FED338E480
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 000007FED338E580
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 000007FED338E640
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000000248B69688
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='replikovrig_01_ila_closeby,happy_3', format=2, channels=2, frequency=48000, lengthbytes=64416, lengthpcm=86452, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.999969.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 85639808
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 189088
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000009B01F5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 000007FED338E4B0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 000007FED338E480
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 000007FED338E580
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 000007FED338E640
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000000248B69688
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='replikovrig_15_itsstillfreezinginhere', format=2, channels=2, frequency=48000, lengthbytes=146432, lengthpcm=180632, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.999969.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 85639808
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 189088
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000009B01F5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 000007FED338E4B0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 000007FED338E480
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 000007FED338E580
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 000007FED338E640
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000000248B69688
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='replikovrig_12_icantsleepyet', format=2, channels=2, frequency=48000, lengthbytes=80768, lengthpcm=116917, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.795197.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 85639808
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 189088
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000009B01F5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 000007FED338E4B0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 000007FED338E480
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 000007FED338E580
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 000007FED338E640
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000000248B69688
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='replikovrig_25_itsgettingdark', format=2, channels=2, frequency=48000, lengthbytes=89088, lengthpcm=170109, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.961548.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 85639808
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 189088
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000009B01F5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 000007FED338E4B0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 000007FED338E480
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 000007FED338E580
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 000007FED338E640
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000000248B69688
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='replikovrig_24_nojustnostop', format=2, channels=2, frequency=48000, lengthbytes=186112, lengthpcm=270731, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.992584.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 85639808
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 189088
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000009B01F5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 000007FED338E4B0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 000007FED338E480
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 000007FED338E580
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 000007FED338E640
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000000248B69688
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='replikovrig_11_notimeforsleeping', format=2, channels=2, frequency=48000, lengthbytes=77472, lengthpcm=95192, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.953064.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 85639808
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 189088
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000009B01F5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 000007FED338E4B0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 000007FED338E480
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 000007FED338E580
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 000007FED338E640
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000000248B69688
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='replikovrig_10_ivegotthingstodo', format=2, channels=2, frequency=48000, lengthbytes=74784, lengthpcm=105104, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.975677.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 85639808
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 189088
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000009B01F5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 000007FED338E4B0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 000007FED338E480
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 000007FED338E580
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 000007FED338E640
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000000248B69688
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='replikovrig_20_ishouldkeepmydistance', format=2, channels=2, frequency=48000, lengthbytes=87584, lengthpcm=209261, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.999969.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 85639808
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 189088
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000009B01F5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 000007FED338E4B0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 000007FED338E480
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 000007FED338E580
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 000007FED338E640
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000000248B69688
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='replikovrig_04_ila_command,atadistance,neutral_1', format=2, channels=2, frequency=48000, lengthbytes=44288, lengthpcm=92516, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.964539.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 85639808
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 189088
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000009B01F5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 000007FED338E4B0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 000007FED338E480
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 000007FED338E580
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 000007FED338E640
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000000248B69688
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='replikovrig_08_whatshappanedhere', format=2, channels=2, frequency=48000, lengthbytes=77120, lengthpcm=111676, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.988739.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 85639808
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 189088
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000009B01F5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 000007FED338E4B0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 000007FED338E480
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 000007FED338E580
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 000007FED338E640
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000000248B69688
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='replikovrig_okand_damnitineedmorewood', format=2, channels=2, frequency=48000, lengthbytes=141568, lengthpcm=186145, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.993073.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 85639808
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 189088
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000009B01F5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 000007FED338E4B0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 000007FED338E480
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 000007FED338E580
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 000007FED338E640
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000000248B69688
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='replikovrig_06_ila_pleading,atadistance,panicked', format=2, channels=2, frequency=48000, lengthbytes=77504, lengthpcm=144773, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.938934.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 85639808
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 189088
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000009B01F5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 000007FED338E4B0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 000007FED338E480
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 000007FED338E580
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 000007FED338E640
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000000248B69688
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='replikovrig_04_ila_command,atadistance,neutral_2', format=2, channels=2, frequency=48000, lengthbytes=42624, lengthpcm=103856, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.968628.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 85639808
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 189088
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000009B01F5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 000007FED338E4B0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 000007FED338E480
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 000007FED338E580
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 000007FED338E640
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000000248B69688
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='replikovrig_02_ila_atadistance,happy_2', format=2, channels=2, frequency=48000, lengthbytes=76352, lengthpcm=99679, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.945374.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 85639808
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 189088
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000009B01F5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 000007FED338E4B0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 000007FED338E480
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 000007FED338E580
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 000007FED338E640
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000000248B69688
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='replikovrig_05_ila_pleading,atadistance,worried_2', format=2, channels=2, frequency=48000, lengthbytes=66304, lengthpcm=149196, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.986877.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 85639808
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 189088
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000009B01F5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 000007FED338E4B0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 000007FED338E480
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 000007FED338E580
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 000007FED338E640
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000000248B69688
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='replikovrig_03_ila_command,closeby,calm_3', format=2, channels=2, frequency=48000, lengthbytes=69920, lengthpcm=83672, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.976868.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 85639808
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 189088
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000009B01F5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 000007FED338E4B0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 000007FED338E480
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 000007FED338E580
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 000007FED338E640
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000000248B69688
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='replikovrig_03_ila_command,closeby,calm_1', format=2, channels=2, frequency=48000, lengthbytes=66816, lengthpcm=108356, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.983215.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 85639808
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 189088
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000009B01F5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 000007FED338E4B0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 000007FED338E480
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 000007FED338E580
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 000007FED338E640
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000000248B69688
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='replikovrig_okand_ithinkthatshouldbeenough', format=2, channels=2, frequency=48000, lengthbytes=108640, lengthpcm=152861, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.992950.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 85639808
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 189088
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000009B01F5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 000007FED338E4B0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 000007FED338E480
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 000007FED338E580
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 000007FED338E640
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000000248B69688
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='replikovrig_23_itsnotsafe', format=2, channels=2, frequency=48000, lengthbytes=123392, lengthpcm=200344, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.958130.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 85639808
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 189088
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000009B01F5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 000007FED338E4B0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 000007FED338E480
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 000007FED338E580
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 000007FED338E640
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000000248B69688
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='replikovrig_17_itwillbedonesoon', format=2, channels=2, frequency=48000, lengthbytes=69952, lengthpcm=176847, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.974670.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 85639808
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 189088
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000009B01F5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 000007FED338E4B0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 000007FED338E480
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 000007FED338E580
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 000007FED338E640
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000000248B69688
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='replikovrig_02_ila_atadistance,happy_1', format=2, channels=2, frequency=48000, lengthbytes=49472, lengthpcm=64606, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.990509.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 85639808
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 189088
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000009B01F5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 000007FED338E4B0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 000007FED338E480
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 000007FED338E580
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 000007FED338E640
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000000248B69688
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='replikovrig_01_ila_closeby,happy_2', format=2, channels=2, frequency=48000, lengthbytes=77472, lengthpcm=109039, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.999969.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 85639808
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 189088
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000009B01F5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 000007FED338E4B0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 000007FED338E480
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 000007FED338E580
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 000007FED338E640
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000000248B69688
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='replikovrig_21_thelakeshouldbecompletelyfrozenwhathappaned', format=2, channels=2, frequency=48000, lengthbytes=194240, lengthpcm=242845, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.959473.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 85639808
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 189088
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000009B01F5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 000007FED338E4B0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 000007FED338E480
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 000007FED338E580
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 000007FED338E640
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000000248B69688
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='replikovrig_07_somethingsbeenhere', format=2, channels=2, frequency=48000, lengthbytes=124704, lengthpcm=166716, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.995850.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 85639808
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 189088
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000009B01F5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 000007FED338E4B0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 000007FED338E480
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 000007FED338E580
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 000007FED338E640
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000000248B69688
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='replikovrig_22_imnotgoingoutthereagain', format=2, channels=2, frequency=48000, lengthbytes=142784, lengthpcm=204926, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.997284.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 85639808
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 189088
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000009B01F5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 000007FED338E4B0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 000007FED338E480
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 000007FED338E580
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 000007FED338E640
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000000248B69688
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='replikovrig_13_idonthaveenoughwood', format=2, channels=2, frequency=48000, lengthbytes=100928, lengthpcm=150502, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.963318.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 85639808
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 189088
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000009B01F5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 000007FED338E4B0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 000007FED338E480
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 000007FED338E580
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 000007FED338E640
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000000248B69688
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='replikovrig_18_woah', format=2, channels=2, frequency=48000, lengthbytes=74688, lengthpcm=108549, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.999969.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 85639808
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 189088
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000009B01F5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 000007FED338E4B0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 000007FED338E480
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 000007FED338E580
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 000007FED338E640
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000000248B69688
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='replikovrig_19_icouldhavejesuschrist', format=2, channels=2, frequency=48000, lengthbytes=169216, lengthpcm=245427, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.968445.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 85639808
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 189088
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000009B01F5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 000007FED338E4B0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 000007FED338E480
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 000007FED338E580
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 000007FED338E640
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000000248B69688
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='replikovrig_01_ila_closeby,happy_1', format=2, channels=2, frequency=48000, lengthbytes=92224, lengthpcm=120521, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.992645.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 85639808
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 189088
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000009B01F5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 000007FED338E4B0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 000007FED338E480
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 000007FED338E580
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 000007FED338E640
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000000248B69688
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='replikovrig_09_weregoingtoneedmorefirewood', format=2, channels=2, frequency=48000, lengthbytes=74592, lengthpcm=95001, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.987213.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 85639808
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 189088
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000009B01F5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 000007FED338E4B0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 000007FED338E480
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 000007FED338E580
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 000007FED338E640
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000000248B69688
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='replikovrig_14_ishouldgathermorewoodbeforeigoinside', format=2, channels=2, frequency=48000, lengthbytes=126048, lengthpcm=207396, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.975769.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 85639808
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 189088
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000009B01F5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 000007FED338E4B0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 000007FED338E480
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 000007FED338E580
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 000007FED338E640
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000000248B69688
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='replikovrig_05_ila_pleading,atadistance,worried_1', format=2, channels=2, frequency=48000, lengthbytes=58368, lengthpcm=173847, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.990509.
+[LOG] SoundI::release                          :  (000000009FC89FD8)
+[LOG] SoundI::release                          :     replikovrig_15_itsstillfreezinginhere (000000020E53CF78)
+[LOG] SoundI::release                          :  (000000020E653FC8)
+[LOG] SoundI::release                          :     replikovrig_okand_ithinkthatshouldbeenough (0000000249682AA8)
+[LOG] SoundI::release                          :  (000000020E6542A8)
+[LOG] SoundI::release                          :     replikovrig_03_ila_command,closeby,calm_1 (0000000249682908)
+[LOG] SoundI::release                          :  (000000009FC89E68)
+[LOG] SoundI::release                          :     replikovrig_03_ila_command,closeby,calm_2 (000000020E53DAD8)
+[LOG] SoundI::release                          :  (000000020E654868)
+[LOG] SoundI::release                          :     replikovrig_03_ila_command,closeby,calm_3 (0000000249682288)
+[LOG] SoundI::release                          :  (000000020E6D8FA8)
+[LOG] SoundI::release                          :     replikovrig_11_notimeforsleeping (000000020E53D118)
+[LOG] SoundI::release                          :  (000000013459C4A8)
+[LOG] SoundI::release                          :     replikovrig_13_idonthaveenoughwood (000000020E650E28)
+[LOG] SoundI::release                          :  (000000020E653898)
+[LOG] SoundI::release                          :     replikovrig_06_ila_pleading,atadistance,panicked (0000000249683128)
+[LOG] SoundI::release                          :  (000000020E6DA538)
+[LOG] SoundI::release                          :     replikovrig_10_ivegotthingstodo (000000020E53DE18)
+[LOG] SoundI::release                          :  (000000020E6DA0E8)
+[LOG] SoundI::release                          :     replikovrig_20_ishouldkeepmydistance (000000020E53E7D8)
+[LOG] SoundI::release                          :  (000000020E6DA988)
+[LOG] SoundI::release                          :     replikovrig_12_icantsleepyet (000000020E53D798)
+[LOG] SoundI::release                          :  (000000013459DE88)
+[LOG] SoundI::release                          :     replikovrig_09_weregoingtoneedmorefirewood (000000020E6514A8)
+[LOG] SoundI::release                          :  (000000020E653E58)
+[LOG] SoundI::release                          :     replikovrig_22_imnotgoingoutthereagain (000000020E651308)
+[LOG] SoundI::release                          :  (000000013459C338)
+[LOG] SoundI::release                          :     replikovrig_14_ishouldgathermorewoodbeforeigoinside (000000020E651B28)
+[LOG] SoundI::release                          :  (000000013459C1C8)
+[LOG] SoundI::release                          :     replikovrig_05_ila_pleading,atadistance,worried_1 (000000020E650FC8)
+[LOG] SoundI::release                          :  (000000020E655278)
+[LOG] SoundI::release                          :     replikovrig_05_ila_pleading,atadistance,worried_2 (0000000249682768)
+[LOG] SoundI::release                          :  (000000020E654CB8)
+[LOG] SoundI::release                          :     replikovrig_17_itwillbedonesoon (00000002496825C8)
+[LOG] SoundI::release                          :  (000000020E6DA258)
+[LOG] SoundI::release                          :     replikovrig_04_ila_command,atadistance,neutral_1 (0000000249683608)
+[LOG] SoundI::release                          :  (000000020E654F98)
+[LOG] SoundI::release                          :     replikovrig_04_ila_command,atadistance,neutral_2 (00000002496820E8)
+[LOG] SoundI::release                          :  (000000020E6D9B28)
+[LOG] SoundI::release                          :     replikovrig_08_whatshappanedhere (00000002496832C8)
+[LOG] SoundI::release                          :  (000000013459DD18)
+[LOG] SoundI::release                          :     replikovrig_01_ila_closeby,happy_1 (000000020E651648)
+[LOG] SoundI::release                          :  (000000020E653728)
+[LOG] SoundI::release                          :     replikovrig_01_ila_closeby,happy_2 (0000000249683468)
+[LOG] SoundI::release                          :  (000000009FC8A428)
+[LOG] SoundI::release                          :     replikovrig_01_ila_closeby,happy_3 (000000020E53CC38)
+[LOG] SoundI::release                          :  (000000013459DA38)
+[LOG] SoundI::release                          :     replikovrig_18_woah (000000020E652B68)
+[LOG] SoundI::release                          :  (000000020E6D96D8)
+[LOG] SoundI::release                          :     replikovrig_okand_damnitineedmorewood (0000000249682428)
+[LOG] SoundI::release                          :  (000000020E653B78)
+[LOG] SoundI::release                          :     replikovrig_02_ila_atadistance,happy_1 (0000000249683AE8)
+[LOG] SoundI::release                          :  (000000020E654E28)
+[LOG] SoundI::release                          :     replikovrig_02_ila_atadistance,happy_2 (0000000249682DE8)
+[LOG] SoundI::release                          :  (000000009FC89A18)
+[LOG] SoundI::release                          :     replikovrig_02_ila_atadistance,happy_3 (000000020E53E158)
+[LOG] SoundI::release                          :  (000000009FC898A8)
+[LOG] SoundI::release                          :     replikovrig_16_itstoocoldicantsleep (000000020E53CDD8)
+[LOG] SoundI::release                          :  (000000020E654138)
+[LOG] SoundI::release                          :     replikovrig_21_thelakeshouldbecompletelyfrozenwhathappaned (000000020E651CC8)
+[LOG] SoundI::release                          :  (000000020E6D93F8)
+[LOG] SoundI::release                          :     replikovrig_24_nojustnostop (000000020E53E498)
+[LOG] SoundI::release                          :  (000000020E6DA6A8)
+[LOG] SoundI::release                          :     replikovrig_25_itsgettingdark (000000020E53E978)
+[LOG] SoundI::release                          :  (000000020E6553E8)
+[LOG] SoundI::release                          :     replikovrig_23_itsnotsafe (0000000249681F48)
+[LOG] SoundI::release                          :  (000000013459CEB8)
+[LOG] SoundI::release                          :     replikovrig_19_icouldhavejesuschrist (000000020E651988)
+[LOG] SoundI::release                          :  (000000020E653CE8)
+[LOG] SoundI::release                          :     replikovrig_07_somethingsbeenhere (000000020E6517E8)
 [LOG] Manager::readBank                        : fileversion = 99, compatVersion = 99 (oldest = 44, newest = 100)
 [LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 3
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 85639808
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 189088
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000009B01F5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 000007FED338E4B0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 000007FED338E480
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 000007FED338E580
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 000007FED338E640
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000000248B69688
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='story_replik_16_strangeidontrememberplacingthetraphere', format=2, channels=2, frequency=48000, lengthbytes=156416, lengthpcm=189212, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.999969.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 85639808
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 189088
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000009B01F5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 000007FED338E4B0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 000007FED338E480
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 000007FED338E580
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 000007FED338E640
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000000248B69688
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='story_replik_10_wearegoingtoneedwoodforthefire', format=2, channels=2, frequency=48000, lengthbytes=78880, lengthpcm=84901, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.994385.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 85639808
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 189088
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000009B01F5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 000007FED338E4B0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 000007FED338E480
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 000007FED338E580
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 000007FED338E640
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000000248B69688
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='story_replik_18_ithinkitstimewegobackila', format=2, channels=2, frequency=48000, lengthbytes=84512, lengthpcm=92537, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.837982.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 85639808
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 189088
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000009B01F5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 000007FED338E4B0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 000007FED338E480
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 000007FED338E580
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 000007FED338E640
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000000248B69688
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='story_replik_13_thetrapissetletsgoback', format=2, channels=2, frequency=48000, lengthbytes=101120, lengthpcm=135926, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.995605.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 85639808
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 189088
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000009B01F5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 000007FED338E4B0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 000007FED338E480
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 000007FED338E580
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 000007FED338E640
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000000248B69688
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='story_replik_06_acabin', format=2, channels=2, frequency=48000, lengthbytes=45760, lengthpcm=52240, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.999390.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 85639808
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 189088
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000009B01F5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 000007FED338E4B0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 000007FED338E480
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 000007FED338E580
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 000007FED338E640
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000000248B69688
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='story_replik_11_goodgirlbutwellneedmorethenthat', format=2, channels=2, frequency=48000, lengthbytes=102880, lengthpcm=136864, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.995575.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 85639808
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 189088
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000009B01F5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 000007FED338E4B0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 000007FED338E480
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 000007FED338E580
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 000007FED338E640
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000000248B69688
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='story_replik_17_ilawhereareyougoing', format=2, channels=2, frequency=48000, lengthbytes=118144, lengthpcm=149037, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.999969.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 85639808
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 189088
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000009B01F5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 000007FED338E4B0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 000007FED338E480
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 000007FED338E580
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 000007FED338E640
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000000248B69688
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='story_replik_15_thisisthesamecabin', format=2, channels=2, frequency=48000, lengthbytes=92064, lengthpcm=105064, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.981476.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 85639808
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 189088
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000009B01F5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 000007FED338E4B0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 000007FED338E480
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 000007FED338E580
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 000007FED338E640
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000000248B69688
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='story_replik_14_isthisthesamecabin', format=2, channels=2, frequency=48000, lengthbytes=92128, lengthpcm=109017, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.999969.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 85639808
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 189088
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000009B01F5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 000007FED338E4B0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 000007FED338E480
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 000007FED338E580
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 000007FED338E640
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000000248B69688
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='story_replik_02_wherearewe', format=2, channels=2, frequency=48000, lengthbytes=53792, lengthpcm=65560, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.889526.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 85639808
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 189088
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000009B01F5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 000007FED338E4B0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 000007FED338E480
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 000007FED338E580
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 000007FED338E640
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000000248B69688
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='story_replik_03_wheresshegoing', format=2, channels=2, frequency=48000, lengthbytes=45760, lengthpcm=50017, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.995758.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 85639808
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 189088
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000009B01F5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 000007FED338E4B0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 000007FED338E480
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 000007FED338E580
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 000007FED338E640
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000000248B69688
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='story_replik_07_itsempty', format=2, channels=2, frequency=48000, lengthbytes=38304, lengthpcm=38686, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.999969.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 85639808
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 189088
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000009B01F5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 000007FED338E4B0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 000007FED338E480
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 000007FED338E580
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 000007FED338E640
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000000248B69688
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='story_replik_08_goodmorningila', format=2, channels=2, frequency=48000, lengthbytes=229120, lengthpcm=263344, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.999969.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 85639808
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 189088
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000009B01F5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 000007FED338E4B0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 000007FED338E480
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 000007FED338E580
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 000007FED338E640
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000000248B69688
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='story_replik_09_areyouhungryletsfindsomefood', format=2, channels=2, frequency=48000, lengthbytes=149216, lengthpcm=183384, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.999969.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 85639808
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 189088
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000009B01F5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 000007FED338E4B0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 000007FED338E480
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 000007FED338E580
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 000007FED338E640
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000000248B69688
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='story_replik_05_whatisthat', format=2, channels=2, frequency=48000, lengthbytes=57760, lengthpcm=63903, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.964844.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 85639808
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 189088
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000009B01F5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 000007FED338E4B0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 000007FED338E480
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 000007FED338E580
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 000007FED338E640
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000000248B69688
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='story_replik_04_whatwasthat', format=2, channels=2, frequency=48000, lengthbytes=32864, lengthpcm=37095, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.986603.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 85639808
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 189088
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000009B01F5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 000007FED338E4B0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 000007FED338E480
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 000007FED338E580
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 000007FED338E640
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000000248B69688
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='story_replik_12_letsgobacktothecabin', format=2, channels=2, frequency=48000, lengthbytes=63360, lengthpcm=63685, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.999969.
+[LOG] SoundI::release                          :  (000000020E654CB8)
+[LOG] SoundI::release                          :     story_replik_15_thisisthesamecabin (000000020E651308)
+[LOG] SoundI::release                          :  (000000013459DD18)
+[LOG] SoundI::release                          :     story_replik_12_letsgobacktothecabin (0000000249683468)
+[LOG] SoundI::release                          :  (000000020E653728)
+[LOG] SoundI::release                          :     story_replik_11_goodgirlbutwellneedmorethenthat (000000020E650FC8)
+[LOG] SoundI::release                          :  (000000020E653E58)
+[LOG] SoundI::release                          :     story_replik_02_wherearewe (000000020E650E28)
+[LOG] SoundI::release                          :  (000000020E653898)
+[LOG] SoundI::release                          :     story_replik_03_wheresshegoing (000000020E652828)
+[LOG] SoundI::release                          :  (000000020E654E28)
+[LOG] SoundI::release                          :     story_replik_13_thetrapissetletsgoback (000000020E652B68)
+[LOG] SoundI::release                          :  (000000020E654868)
+[LOG] SoundI::release                          :     story_replik_07_itsempty (000000020E6521A8)
+[LOG] SoundI::release                          :  (000000020E654138)
+[LOG] SoundI::release                          :     story_replik_18_ithinkitstimewegobackila (000000020E651CC8)
+[LOG] SoundI::release                          :  (000000020E653CE8)
+[LOG] SoundI::release                          :     story_replik_16_strangeidontrememberplacingthetraphere (000000020E6517E8)
+[LOG] SoundI::release                          :  (000000020E653B78)
+[LOG] SoundI::release                          :     story_replik_06_acabin (000000020E651648)
+[LOG] SoundI::release                          :  (000000020E6553E8)
+[LOG] SoundI::release                          :     story_replik_10_wearegoingtoneedwoodforthefire (000000020E651988)
+[LOG] SoundI::release                          :  (000000020E653FC8)
+[LOG] SoundI::release                          :     story_replik_09_areyouhungryletsfindsomefood (0000000249682DE8)
+[LOG] SoundI::release                          :  (000000020E655278)
+[LOG] SoundI::release                          :     story_replik_14_isthisthesamecabin (000000020E6514A8)
+[LOG] SoundI::release                          :  (000000020E6542A8)
+[LOG] SoundI::release                          :     story_replik_08_goodmorningila (0000000249681F48)
+[LOG] SoundI::release                          :  (000000020E654F98)
+[LOG] SoundI::release                          :     story_replik_17_ilawhereareyougoing (000000020E651B28)
+[LOG] SoundI::release                          :  (000000013459CEB8)
+[LOG] SoundI::release                          :     story_replik_05_whatisthat (0000000249683AE8)
+[LOG] SoundI::release                          :  (000000013459DA38)
+[LOG] SoundI::release                          :     story_replik_04_whatwasthat (0000000249682428)
 [LOG] Thread::callback                         : FMOD Studio bank load thread finished.
 [LOG] Thread::callback                         : FMOD Studio sample load thread finished.
 [LOG] LiveUpdate::release                      : 

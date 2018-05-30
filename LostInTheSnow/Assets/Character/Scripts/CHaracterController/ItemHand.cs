@@ -132,7 +132,7 @@ public class ItemHand : MonoBehaviour
     }
 	//Emil did this might be wrong
 	public Item GetItemInHand(){
-		return inventory.getItemFromHoldableSlot (selectedItem);
+		return Inventory.instance.getItemFromHoldableSlot (selectedItem);
 	}
     public void IncrementSelectedItem()
     {
