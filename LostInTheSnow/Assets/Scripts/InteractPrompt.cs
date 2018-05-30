@@ -2,20 +2,52 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class InteractPrompt : MonoBehaviour
 {
     [SerializeField]
-    private List<Text> promptToToggle;
+    private List<TextMeshProUGUI> promptToToggle;
     [SerializeField]
-    private List<Text> dependencyPrompts;
+    private List<TextMeshProUGUI> dependencyPrompts;
     [SerializeField]
     private List<Item> itemDependencies;
     [SerializeField]
     private bool useDependencies;
 
+
+    private bool isItem = false;
+
+
+    [SerializeField] private TextMeshProUGUI pickupItemText;
+    GrabableObject gobj;
+
+    public void Start()
+    {
+        gobj = GetComponent<GrabableObject>();
+        if (gobj)
+        {
+            isItem = true;
+            promptToToggle.Add(pickupItemText);
+        }
+    }
+
+
+    public void removeAllPrompts()
+    {
+        promptToToggle.Clear();
+        dependencyPrompts.Clear();
+    }
+
     public void promptToggle(bool toggle) //can be used for prompts with and without dependencies
     {
+        if (isItem)
+        {
+            promptToToggle[0].text = "Press E to Pick up " + gobj.getItemOnPickup().getName();
+            promptToToggle[0].enabled = toggle;
+        }
+
+
         if (itemDependencies.Count > 0 && checkDependencies() || !useDependencies)
         {
             for (int i = 0; i < promptToToggle.Count; i++)
@@ -79,4 +111,10 @@ public class InteractPrompt : MonoBehaviour
             disableAllPrompts();
             promptToggle(true);
     }
+
+    public void OnDestroy()
+    {
+        disableAllPrompts();
+    }
+
 }
