@@ -8227,12 +8227,12 @@ Prefab:
     - target: {fileID: 224991946381626768, guid: 9b2d3b5cb5a87ed4e8c8cf2c29e9e80e,
         type: 2}
       propertyPath: m_LocalPosition.x
-      value: 471.5
+      value: 267.5
       objectReference: {fileID: 0}
     - target: {fileID: 224991946381626768, guid: 9b2d3b5cb5a87ed4e8c8cf2c29e9e80e,
         type: 2}
       propertyPath: m_LocalPosition.y
-      value: 278.5
+      value: 150.5
       objectReference: {fileID: 0}
     - target: {fileID: 224991946381626768, guid: 9b2d3b5cb5a87ed4e8c8cf2c29e9e80e,
         type: 2}
@@ -28609,6 +28609,21 @@ Prefab:
       propertyPath: Event
       value: event:/Sound/Avatar/Footsteps/Footsteps_Snow
       objectReference: {fileID: 0}
+    - target: {fileID: 114842960195493138, guid: 01cb98abec9806640b709a5f30da47af,
+        type: 2}
+      propertyPath: voiceLineMiscEmitter
+      value: 
+      objectReference: {fileID: 1524549183}
+    - target: {fileID: 114550982783676028, guid: 01cb98abec9806640b709a5f30da47af,
+        type: 2}
+      propertyPath: Event
+      value: event:/Sound/Avatar/Voice Acting MISC.
+      objectReference: {fileID: 0}
+    - target: {fileID: 114842960195493138, guid: 01cb98abec9806640b709a5f30da47af,
+        type: 2}
+      propertyPath: moodState
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 01cb98abec9806640b709a5f30da47af, type: 2}
   m_IsPrefabParent: 0
@@ -29197,6 +29212,12 @@ GameObject:
   m_PrefabParentObject: {fileID: 1796018197999996, guid: 01cb98abec9806640b709a5f30da47af,
     type: 2}
   m_PrefabInternal: {fileID: 1508135230}
+--- !u!114 &1524549183 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114550982783676028, guid: 01cb98abec9806640b709a5f30da47af,
+    type: 2}
+  m_PrefabInternal: {fileID: 1508135230}
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
 --- !u!1 &1533453184
 GameObject:
   m_ObjectHideFlags: 0

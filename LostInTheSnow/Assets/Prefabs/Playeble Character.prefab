@@ -549,7 +549,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1796018197999996}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b03de3a524928be4db23a7fe9e65dd3a, type: 3}
   m_Name: 
@@ -572,7 +572,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Event: event:/Sound/Avatar/Voice Acting MISC Take 2
+  Event: event:/Sound/Avatar/Voice Acting MISC.
   PlayEvent: 0
   StopEvent: 0
   CollisionTag: 
@@ -638,7 +638,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1796018197999996}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b03de3a524928be4db23a7fe9e65dd3a, type: 3}
   m_Name: 
@@ -718,7 +718,7 @@ MonoBehaviour:
   pleadFar: 5
   panicedFar: 6
   closeFarThreshold: 8
-  voiceLineMiscEmitter: {fileID: 0}
+  voiceLineMiscEmitter: {fileID: 114550982783676028}
 --- !u!114 &114858302693233096
 MonoBehaviour:
   m_ObjectHideFlags: 1
