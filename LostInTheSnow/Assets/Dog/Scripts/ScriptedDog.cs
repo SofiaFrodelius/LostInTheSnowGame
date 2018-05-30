@@ -45,9 +45,19 @@ public class ScriptedDog : MonoBehaviour {
 		}
 	}
 	public void NextAction(){
-        if (dog.currentAction != null  && dog.currentAction.ToString() == "Sit")
-            dog.GetComponent<Animator>().SetTrigger("StandUp");
 		dogAI.StartAction (actions [actionCount]);
 		actionCount++;
 	}
+    public void ForceStopSit() {
+        if (dog.currentAction != null && dog.currentAction.ToString() == "Sit"){
+            dog.GetComponent<Animator>().SetTrigger("StandUp");
+            dogAI.StartAction(actions[actionCount]);
+            actionCount++;
+        }else {
+            actionCount++;
+            dogAI.StartAction(actions[actionCount]);
+            actionCount++;
+        }
+      
+    }
 }

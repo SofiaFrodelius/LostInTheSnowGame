@@ -56,10 +56,13 @@ public class GotoPosition : DogAction{
 			currentTarget = targetPosition;
 			return;
 		}
-		//Temporary values.
 		NavMeshHit hit;
-		NavMesh.SamplePosition (GetPos (20, 30, -10, 10, 5, "Tree"), out hit, 2, NavMesh.AllAreas);
-		currentTarget = hit.position;
+        if (Vector3.Distance(dog.transform.position, dog.player.transform.position) < 40){
+            NavMesh.SamplePosition(GetPos(20, 30, -10, 10, 5, "Tree"), out hit, 2, NavMesh.AllAreas);
+            currentTarget = hit.position;
+        }else {
+            currentTarget = dog.player.transform.position;
+        }
 	}
 	Vector3 GetPos(float minForward, float maxForward, float minRight, float maxRight, float radius, string tag){
         width = startWidth;

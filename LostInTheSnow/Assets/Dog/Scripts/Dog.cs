@@ -31,9 +31,17 @@ public class Dog : MonoBehaviour, IInteractible {
 	private GameObject itemObject;
     [HideInInspector]
     public bool isWaitingForFetch = false;
+    [Header("Dog Settings")]
     public float sniffPercent = 20;
+    [Range(10,50)]
+    public float minForward = 20f;
+    [Range(10, 50)]
+    public float maxForward = 30f;
+    public float minRight = -10f;
+    public float maxRight = 10f;
 
-	void Start () {
+
+    void Start () {
 		if (player == null)player = GameObject.FindGameObjectWithTag ("Player").transform;
 		if (itemBone == null)itemBone = transform;
 		if(terrain == null) terrain = Terrain.activeTerrain;

@@ -9,6 +9,6 @@ public class DogWaitForTrap : MonoBehaviour {
         sdog = GameObject.FindGameObjectWithTag("Dog").GetComponent<ScriptedDog>();
 	}
     void OnDestroy(){
-        sdog.NextAction();
+        sdog.ForceStopSit();
     }
 }
