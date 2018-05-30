@@ -36,7 +36,6 @@ public class ChracterInteract : MonoBehaviour
             }
             if (callDogAllowed) CallDog();
             if (interactDogAllowed) InteractWithDog();
-            if (pickUpDogAllowed) PickUpDog();
             if (lastSceneExeptions) CallDog();
         }
     }
