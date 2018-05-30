@@ -57,6 +57,7 @@ GameObject:
   - component: {fileID: 65869116071626658}
   - component: {fileID: 65485674100458212}
   - component: {fileID: 114217735334526454}
+  - component: {fileID: 114128242165312854}
   m_Layer: 0
   m_Name: PlacedEmptyBucket
   m_TagString: Untagged
@@ -226,6 +227,21 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.41, y: 0.25, z: 0.05}
   m_Center: {x: 0, y: 0.51, z: 0}
+--- !u!114 &114128242165312854
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1865017713355552}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28a374620bbcd254fb972989189404e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  promptToToggle: []
+  dependencyPrompts: []
+  itemDependencies: []
+  useDependencies: 0
 --- !u!114 &114217735334526454
 MonoBehaviour:
   m_ObjectHideFlags: 1

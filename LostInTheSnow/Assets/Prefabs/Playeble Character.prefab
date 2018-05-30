@@ -41,7 +41,8 @@ GameObject:
   - component: {fileID: 114277141471394336}
   - component: {fileID: 114433927477578646}
   - component: {fileID: 114817931860055914}
-  - component: {fileID: 95381963937785186}
+  - component: {fileID: 95936711259076490}
+  - component: {fileID: 114858302693233096}
   m_Layer: 8
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -197,16 +198,16 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1796018197999996}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.9, y: 0.9, z: 0.9}
+  m_LocalRotation: {x: -0, y: 0.6994326, z: -0, w: -0.71469855}
+  m_LocalPosition: {x: 235.029, y: 0.592, z: 277.33298}
+  m_LocalScale: {x: 0.9000041, y: 0.9, z: 0.9000041}
   m_Children:
   - {fileID: 4631084388765738}
   - {fileID: 4829929743713680}
   - {fileID: 4572815453307148}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 271.237, z: 0}
 --- !u!4 &4631084388765738
 Transform:
   m_ObjectHideFlags: 1
@@ -352,23 +353,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1796018197999996}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
---- !u!95 &95381963937785186
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1022698544136396}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
 --- !u!95 &95475272720926426
 Animator:
   serializedVersion: 3
@@ -410,6 +394,23 @@ Animator:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1796018197999996}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+--- !u!95 &95936711259076490
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1022698544136396}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 0}
@@ -494,7 +495,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Event: event:/Sound/Avatar/Footsteps/Footsteps_Snow
+  Event: event:/Sound/Avatar/Footsteps/Footsteps_Cabin
   PlayEvent: 0
   StopEvent: 0
   CollisionTag: 
@@ -516,7 +517,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff26db721962cdf4a8edcdfa9a767d2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  profile: {fileID: 11400000, guid: b38a3ad30b4f83541ba9398774373938, type: 2}
+  profile: {fileID: 11400000, guid: c8c28496f9c19d9419b1eec2bf39d87e, type: 2}
 --- !u!114 &114458593385712848
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -571,7 +572,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Event: event:/Sound/Avatar/Voice Acting Misc.
+  Event: event:/Sound/Avatar/Voice Acting MISC Take 2
   PlayEvent: 0
   StopEvent: 0
   CollisionTag: 
@@ -679,10 +680,10 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 0
   movementSpeed: 4
-  sprintMultiplier: 2
+  sprintMultiplier: 1
   jumpStartSpeed: 4.8
   fallMultiplier: 2.5
-  canJump: 1
+  canJump: 0
   jumpEmitter: {fileID: 114702778610133820}
   slopeLimit: 45
   friction: 0.7
@@ -717,7 +718,19 @@ MonoBehaviour:
   pleadFar: 5
   panicedFar: 6
   closeFarThreshold: 8
-  voiceLineMiscEmitter: {fileID: 114550982783676028}
+  voiceLineMiscEmitter: {fileID: 0}
+--- !u!114 &114858302693233096
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1022698544136396}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 765df3e53ccd01c438d4625bb4e9deb3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ci: {fileID: 114691187319596884}
 --- !u!114 &114877400239294074
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -925,7 +938,7 @@ ParticleSystem:
       serializedVersion: 2
       minMaxState: 0
       minColor: {r: 1, g: 1, b: 1, a: 1}
-      maxColor: {r: 1, g: 1, b: 1, a: 0.191}
+      maxColor: {r: 1, g: 1, b: 1, a: 0.197}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}
