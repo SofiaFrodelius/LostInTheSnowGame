@@ -373,7 +373,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1379173092104138}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
   m_Name: 
@@ -408,7 +408,8 @@ MonoBehaviour:
   fireStriker: {fileID: 11400000, guid: cc75e486fc0f3d14088dd7cd5d9722ec, type: 2}
   wood: {fileID: 11400000, guid: 475d8b70b0cb4834ebedfe0687689834, type: 2}
   woodNeeded: 0
-  suposedToBrake: 0
+  suposedToBrake: 1
+  isBroken: 0
 --- !u!114 &114504115967231250
 MonoBehaviour:
   m_ObjectHideFlags: 1
