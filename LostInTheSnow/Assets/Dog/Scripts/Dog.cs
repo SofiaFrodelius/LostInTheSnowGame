@@ -87,8 +87,10 @@ public class Dog : MonoBehaviour, IInteractible {
 	}
 	public void Call(){
         isSniffing = false;
-		if (currentAction != null && currentAction.GetImportance() == DogAction.Importance.HIGH)
-			savedAction = currentAction;
+        if (currentAction != null && currentAction.GetImportance() == DogAction.Importance.HIGH)
+            savedAction = currentAction;
+        else if (currentAction != null && currentAction.ToString() == "Sit")
+            animator.SetTrigger("StandUp");
 		if (characterMovement.CutsceneLock) 
 			ai.StartAction (new Call (this, player, true));
 		else 
@@ -96,6 +98,8 @@ public class Dog : MonoBehaviour, IInteractible {
 	}
 	public void Pet(){
         isSniffing = false;
+        if (currentAction != null && currentAction.ToString() == "Sit")
+            animator.SetTrigger("StandUp");
         if (currentAction == null || currentAction.GetImportance() != DogAction.Importance.HIGH)
 			ai.StartAction (new Pet (this));
 	}

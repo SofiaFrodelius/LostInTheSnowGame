@@ -52,7 +52,7 @@ public class LeadPlayer : DogAction{
             }else{
                 if (!isWaiting){
                     currentAction.EndAction();
-                    currentAction = new WaitForPlayer(dog, player, target, maxDistance);
+                    currentAction = new WaitForPlayer(dog, player, target, maxDistance/2);
                     currentAction.StartAction();
                     isWaiting = true;
                 }
